@@ -443,5 +443,9 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("../../images/nr.png");
+  background-image: url("../images/nr.png");
+}
+
+.skills h4 {
+  color: #6E07F3;
 }
