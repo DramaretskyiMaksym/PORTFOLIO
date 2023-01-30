@@ -1,4 +1,14 @@
+// @use "./variables.scss/variables" as *;
+// @use "./special/mixins" as *;
+
+
 @import "./normalize";
 @import "./special/fonts";
 @import "./special/setting";
 @import "./sections/header";
+
+
+@import "./media/tablet-768.scss";
+// @import "./media/tablet-1024";
+// @import "./media/tablet-1440";
+@import "./media/tablet-1920.scss";
