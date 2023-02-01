@@ -1,4 +1,4 @@
-// @use "./variables.scss/variables" as *;
+@use "./variables/variables" as *;
 // @use "./special/mixins" as *;
 
 
@@ -6,7 +6,7 @@
 @import "./special/fonts";
 @import "./special/setting";
 @import "./sections/header";
-
+@import "./special/icon-fons-setting";
 
 @import "./media/tablet-768.scss";
 // @import "./media/tablet-1024";
