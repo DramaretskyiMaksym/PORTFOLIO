@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -359,10 +360,13 @@ body {
 body a {
   text-decoration: none;
 }
+body footer {
+  background: #0F0F0F;
+}
 
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.ttf?8obuh4") format("truetype"), url("../../images/fonts/icomoon.woff") format("woff"), url("fonts/icomoon.svg?8obuh4#icomoon") format("svg");
+  src: url("../images/fonts/icomoon.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -381,15 +385,15 @@ body a {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-telegram:before {
+.icon-gmail:before {
   content: "\e900";
 }
 
-.icon-instagram:before {
+.icon-dribbble:before {
   content: "\e901";
 }
 
-.icon-linkedin:before {
+.icon-behance:before {
   content: "\e902";
 }
 
@@ -397,12 +401,16 @@ body a {
   content: "\e903";
 }
 
-.icon-behance:before {
+.icon-linkedin:before {
   content: "\e904";
 }
 
-.icon-dribbble:before {
+.icon-instagram:before {
   content: "\e905";
+}
+
+.icon-telegram:before {
+  content: "\e906";
 }
 
 .styles {
@@ -425,6 +433,146 @@ body a {
   border: 2px solid #FC490B;
 }
 
+.footer {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.footer__contact {
+  max-width: 388px;
+  margin-right: 170px;
+}
+
+.footer__information {
+  position: relative;
+  display: flex;
+  max-width: 150px;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+.footer__information::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 20px;
+  bottom: 12px;
+  right: 0px;
+  background-color: white;
+}
+
+.footer__description {
+  display: flex;
+  align-items: center;
+  max-width: 356px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-bottom: 18px;
+  color: #878A8F;
+}
+
+.footer__follow {
+  max-width: 274px;
+}
+
+.footer__network {
+  max-width: 82px;
+  position: relative;
+  display: flex;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+.footer__network::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 20px;
+  bottom: 12px;
+  right: 0px;
+  background-color: white;
+}
+
+.footer__creatorname {
+  color: #FC490B;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.footer__didjob {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #878A8F;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.footer__secondary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo {
+  display: flex;
+}
+
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer__year {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #FC490B;
+  margin-bottom: 4px;
+}
+.footer__year::before {
+  content: "";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #878A8F;
+  width: 23px;
+  height: 23px;
+  left: -30px;
+  background-repeat: no-repeat;
+  background-image: url("../../images/c.svg");
+}
+
+.footer__сountry {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: #878A8F;
+}
+
 .wrapper {
   padding-left: 60px;
   padding-right: 60px;
@@ -439,7 +587,6 @@ body a {
   align-items: center;
   padding-top: 30px;
   height: auto;
-  margin-bottom: 200px;
 }
 .header source {
   display: none;
@@ -454,8 +601,8 @@ body a {
 
 .header__portfolio {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 20px;
+  line-height: 20px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -472,20 +619,22 @@ body a {
 .header__link {
   display: flex;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 120%;
+  font-size: 20px;
+  line-height: 20px;
   color: #FFFFFF;
   text-decoration: none;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-.opening__title {
+.banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-self: center;
   min-width: 40px;
+  margin-bottom: 40px;
+  padding: 198px 0px 424px;
 }
 
 .banner__title {
@@ -503,7 +652,7 @@ body a {
   font-size: 64px;
   line-height: 120%;
   letter-spacing: 0.03em;
-  color: #FC490B;
+  color: white;
   margin-left: 18px;
   min-width: 400px;
 }
@@ -518,14 +667,14 @@ body a {
   color: #B0B0B0;
 }
 
-.profession__name {
+.banner__profession {
   min-width: 400px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 54px;
   line-height: 120%;
   display: inline-block;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #FC490B;
 }
 
 .ampersand {
@@ -535,9 +684,17 @@ body a {
   display: inline-block;
   letter-spacing: 0.03em;
   margin-right: 18px;
-  color: #FC490B;
+  color: #B0B0B0;
 }
 
-span:hover svg path {
-  stroke: #FC490B;
+.banner__description {
+  margin-top: 36px;
+  font-weight: 500;
+  max-width: 838px;
+  font-size: 20px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #878A8F;
 }

@@ -11,8 +11,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 30px;
-  height: auto;
-  margin-bottom: 200px;
+  height: auto;;
   source {
     display: none;
   }
@@ -27,8 +26,8 @@
 }
 .header__portfolio {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 20px;
+  line-height: 20px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -38,15 +37,16 @@
 
   }
 
-  .header__nav {
+.header__nav {
     display: flex;
     gap: 60px;
-  }
+}
+
 .header__link{
   display: flex;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 120%;
+  font-size: 20px;
+  line-height: 20px;
   color: #FFFFFF;
   text-decoration: none;
   letter-spacing: 0.03em;
@@ -54,12 +54,14 @@
 }
 
 
-.opening__title{
+.banner{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-self: center;
   min-width: 40px;
+  margin-bottom: 40px;
+  padding: 198px 0px 424px;
 }
 
 .banner__title {
@@ -78,7 +80,7 @@
   font-size: 64px;
   line-height: 120%;
   letter-spacing: 0.03em;
-  color: $AccentColor;
+  color: $BaseColor;
   margin-left: 18px;
   min-width: 400px;
 }
@@ -92,14 +94,15 @@
   letter-spacing: 0.03em;
   color: #B0B0B0;
 }
-.profession__name {
+.banner__profession {
   min-width: 400px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 54px;
   line-height: 120%;
   display: inline-block;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: $AccentColor;
+
 }
 .ampersand {
   font-weight: 700;
@@ -108,10 +111,16 @@
   display: inline-block;
   letter-spacing: 0.03em;
   margin-right: 18px;
-  color: $AccentColor;
+  color: $SecondaryColor;
 }
-
-
-span:hover svg path {
-  stroke: #FC490B;
+.banner__description {
+    margin-top: 36px;
+    font-weight: $TretiryFontWeight;
+    max-width: 838px;
+    font-size: 20px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: $TertiaryColor;
 }

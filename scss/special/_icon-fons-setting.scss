@@ -1,9 +1,7 @@
 @font-face {
   font-family: 'icomoon';
   src:
-    url('fonts/icomoon.ttf?8obuh4') format('truetype'),
-    url('../../images/fonts/icomoon.woff') format('woff'),
-    url('fonts/icomoon.svg?8obuh4#icomoon') format('svg');
+    url('../images/fonts/icomoon.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,24 +22,35 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-telegram:before {
+.icon-gmail:before {
   content: "\e900";
+
 }
-.icon-instagram:before {
+.icon-dribbble:before {
   content: "\e901";
+
 }
-.icon-linkedin:before {
+.icon-behance:before {
   content: "\e902";
+
 }
 .icon-github:before {
   content: "\e903";
+
 }
-.icon-behance:before {
+.icon-linkedin:before {
   content: "\e904";
+
 }
-.icon-dribbble:before {
+.icon-instagram:before {
   content: "\e905";
+
 }
+.icon-telegram:before {
+  content: "\e906";
+
+}
+
 
 .styles {
   font-size: 40px;
@@ -61,3 +70,6 @@
     border: 2px solid $AccentColor;
    }
 }
+
+
+

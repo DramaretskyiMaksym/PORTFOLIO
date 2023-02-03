@@ -1,0 +1,135 @@
+
+.footer {
+  @include py(100px,70px);
+}
+.footer__contact {
+  max-width: 388px;
+  margin-right: 170px;
+}
+
+.footer__information {
+  position: relative;
+  display: flex;
+  max-width: 150px;
+  color:$BaseColor;
+  font-weight:$BaseFontWeight;
+  font-size: $MainFontSize;
+  line-height: 30px;
+  margin-bottom: 8px;
+  &::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 20px;
+    bottom: 12px;
+    right:  0px;
+    background-color:$BaseColor;
+  }
+}
+
+.footer__description {
+  display: flex;
+  align-items: center;
+  max-width: 356px;
+  font-size:$LessFontSize;
+  line-height: 20px;
+  font-weight:$TretiryFontWeight;
+  margin-bottom: 18px;
+  color:$TertiaryColor;
+}
+.footer__follow {
+  max-width: 274px;
+}
+
+
+.footer__network {
+    max-width: 82px;
+    position: relative;
+    display: flex;
+    color:$BaseColor;
+    font-weight:$BaseFontWeight;
+    font-size:$MainFontSize;
+    line-height: 30px;
+    margin-bottom: 8px;
+    &::after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 20px;
+      bottom: 12px;
+      right:  0px;
+      background-color:$BaseColor;
+    }
+  }
+
+.footer__creatorname {
+  color: $AccentColor;
+  font-weight:$SecondaryFontWeight;
+  font-size:$SecondaryFontSize;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.footer__didjob {
+  font-style: normal;
+  font-weight:$TretiryFontWeight;
+  font-size:$MainFontSize;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #878A8F;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.footer__secondary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo{
+  display: flex;
+}
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer__year {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-weight:$SecondaryFontWeight;
+  font-size: $MainFontSize;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: $AccentColor;
+  margin-bottom: 4px;
+  &::before {
+    content: "";
+    position:absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:$TertiaryColor;
+    width: 23px;
+    height: 23px;
+    left: -30px;
+    background-repeat: no-repeat;
+    background-image: url("../../images/c.svg") ;
+  }
+}
+
+.footer__сountry{
+    display: flex;
+    justify-content: center;
+    font-weight:$SecondaryFontWeight;
+    @include font (14px,14px);
+    color:$TertiaryColor;
+}
