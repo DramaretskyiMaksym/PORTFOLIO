@@ -12,16 +12,12 @@
 
 .footer__contact {
   max-width: 330px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
 }
 
 .footer__information {
   position: relative;
-  display: flex;
   max-width: 150px;
+  margin-bottom: 10px;
   color:$BaseColor;
   font-weight:$BaseFontWeight;
   font-size: $MainFontSize;
@@ -38,25 +34,19 @@
 }
 
 .footer__description {
-  display: flex;
-  align-items: center;
   font-size:$LessFontSize;
   line-height: 20px;
   font-weight:$TretiryFontWeight;
   color:$TertiaryColor;
+  margin-bottom: 10px;
   }
-  .footer__icons {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-  }
+  
+  // .footer__icons {
+  //   a;
+  // }
 
 .footer__follow {
   max-width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
 }
 
 .footer__network {
@@ -67,13 +57,14 @@
     font-weight:$BaseFontWeight;
     font-size:$MainFontSize;
     line-height: 30px;
+    margin-bottom: 10px;
     &::after {
       position: absolute;
       content: "";
       height: 2px;
       width: 20px;
       bottom: 12px;
-      right:  0px;
+      right:  -12px;
       background-color:$BaseColor;
     }
   }
