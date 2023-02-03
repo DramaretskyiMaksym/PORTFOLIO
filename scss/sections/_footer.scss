@@ -2,9 +2,20 @@
 .footer {
   @include py(100px,70px);
 }
+
+.footer__content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  gap:170px;
+}
+
 .footer__contact {
-  max-width: 388px;
-  margin-right: 170px;
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .footer__information {
@@ -15,7 +26,6 @@
   font-weight:$BaseFontWeight;
   font-size: $MainFontSize;
   line-height: 30px;
-  margin-bottom: 8px;
   &::after {
     position: absolute;
     content: "";
@@ -30,17 +40,24 @@
 .footer__description {
   display: flex;
   align-items: center;
-  max-width: 356px;
   font-size:$LessFontSize;
   line-height: 20px;
   font-weight:$TretiryFontWeight;
-  margin-bottom: 18px;
   color:$TertiaryColor;
-}
-.footer__follow {
-  max-width: 274px;
-}
+  }
+  .footer__icons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
 
+.footer__follow {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
 
 .footer__network {
     max-width: 82px;
@@ -50,7 +67,6 @@
     font-weight:$BaseFontWeight;
     font-size:$MainFontSize;
     line-height: 30px;
-    margin-bottom: 8px;
     &::after {
       position: absolute;
       content: "";
@@ -81,12 +97,6 @@
   color: #878A8F;
 }
 
-.footer__content {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 100px;
-}
-
 .footer__secondary {
   display: flex;
   justify-content: space-between;
@@ -95,6 +105,7 @@
 
 .footer__logo{
   display: flex;
+  width: 200px;
 }
 .footer__block {
   display: flex;
@@ -122,7 +133,7 @@
     height: 23px;
     left: -30px;
     background-repeat: no-repeat;
-    background-image: url("../../images/c.svg") ;
+    background-image: url("../images/c.svg") ;
   }
 }
 
