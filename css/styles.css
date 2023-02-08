@@ -391,6 +391,7 @@ body footer {
 
 .icon-dribbble:before {
   content: "\e901";
+  font-size: 44px;
 }
 
 .icon-behance:before {
@@ -399,6 +400,7 @@ body footer {
 
 .icon-github:before {
   content: "\e903";
+  font-size: 44px;
 }
 
 .icon-linkedin:before {
@@ -407,14 +409,18 @@ body footer {
 
 .icon-instagram:before {
   content: "\e905";
+  font-size: 40px;
 }
 
 .icon-telegram:before {
   content: "\e906";
+  font-size: 44px;
 }
 
 .styles {
-  font-size: 40px;
+  text-align: center;
+  font-size: 42px;
+  margin-right: 30px;
   color: #fff;
 }
 .styles:hover {
@@ -475,6 +481,16 @@ body footer {
   margin-bottom: 10px;
 }
 
+.footer__icons {
+  display: flex;
+  align-items: center;
+}
+
+.transform:hover {
+  transition: 0.7s;
+  transform: rotate(360deg);
+}
+
 .footer__follow {
   max-width: 300px;
 }
@@ -502,7 +518,7 @@ body footer {
 .footer__creatorname {
   color: #FC490B;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 29px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -511,7 +527,7 @@ body footer {
 .footer__didjob {
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -535,26 +551,26 @@ body footer {
   justify-content: center;
 }
 
-.footer__year {
+.footer__copyright {
   position: relative;
   display: flex;
   align-items: center;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.03em;
   color: #FC490B;
   margin-bottom: 4px;
 }
-.footer__year::before {
+.footer__copyright::before {
   content: "";
   position: absolute;
   display: flex;
   align-items: center;
   text-align: center;
   color: #878A8F;
-  width: 23px;
-  height: 23px;
+  width: 18px;
+  height: 18px;
   left: -30px;
   background-repeat: no-repeat;
   background-image: url("../images/c.svg");
@@ -564,9 +580,10 @@ body footer {
   display: flex;
   justify-content: center;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 12px;
+  line-height: 12px;
   color: #878A8F;
+  font-style: normal;
 }
 
 .wrapper {
@@ -609,14 +626,14 @@ body footer {
 
 .header__nav {
   display: flex;
-  gap: 60px;
+  gap: 30px;
 }
 
 .header__link {
   display: flex;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 14px;
   color: #FFFFFF;
   text-decoration: none;
   letter-spacing: 0.03em;
@@ -627,37 +644,36 @@ body footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-self: center;
   min-width: 40px;
-  margin-bottom: 40px;
   padding: 198px 0px 424px;
 }
 
 .banner__title {
+  display: flex;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 40px;
   line-height: 120%;
   letter-spacing: 0.03em;
   color: #B0B0B0;
   margin: 0px;
+  margin-right: 18px;
 }
 
-.name {
+.banner__name {
   display: inline-block;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 40px;
   line-height: 120%;
   letter-spacing: 0.03em;
   color: white;
-  margin-left: 18px;
   min-width: 400px;
 }
 
 .banner__subtitle {
-  display: inline-block;
+  display: flex;
   min-width: 400px;
   font-weight: 700;
-  font-size: 54px;
+  font-size: 40px;
   line-height: 120%;
   letter-spacing: 0.03em;
   color: #B0B0B0;
@@ -666,7 +682,7 @@ body footer {
 .banner__profession {
   min-width: 400px;
   font-weight: 600;
-  font-size: 54px;
+  font-size: 40px;
   line-height: 120%;
   display: inline-block;
   letter-spacing: 0.03em;
@@ -675,7 +691,7 @@ body footer {
 
 .ampersand {
   font-weight: 700;
-  font-size: 54px;
+  font-size: 40px;
   line-height: 120%;
   display: inline-block;
   letter-spacing: 0.03em;
@@ -684,11 +700,12 @@ body footer {
 }
 
 .banner__description {
-  margin-top: 36px;
+  display: flex;
+  margin-top: 20px;
   font-weight: 500;
-  max-width: 838px;
-  font-size: 20px;
-  line-height: 140%;
+  max-width: 600px;
+  font-size: 16px;
+  line-height: 120%;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
