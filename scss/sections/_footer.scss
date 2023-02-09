@@ -48,7 +48,17 @@
   .transform:hover {
     transition:0.7s;
     transform: rotate(360deg);
+    
   }
+  .header__link {
+    padding: 14px;
+  }
+  .header__link:hover {
+    transition:0.3s;
+    transform: scaleX(1.5) scaleY(1.5);
+    color:$AccentColor;
+  }
+
 
 .footer__follow {
   max-width: 300px;
