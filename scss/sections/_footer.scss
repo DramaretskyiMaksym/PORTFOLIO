@@ -44,19 +44,12 @@
   .footer__icons {
     display: flex;
     align-items: center;
+    transform: rotate(360deg);
   }
+
   .transform:hover {
     transition:0.7s;
     transform: rotate(360deg);
-    
-  }
-  .header__link {
-    padding: 14px;
-  }
-  .header__link:hover {
-    transition:0.3s;
-    transform: scaleX(1.5) scaleY(1.5);
-    color:$AccentColor;
   }
 
 
@@ -112,6 +105,9 @@
 .footer__logo{
   display: flex;
   width: 200px;
+  animation-duration: 2s;
+  transition:0.3s;
+  transform: scaleX(1.2) scaleY(1.2);
 }
 .footer__block {
   display: flex;
@@ -150,4 +146,58 @@
     @include font (12px,12px);
     color:$TertiaryColor;
     font-style: normal;
+}
+
+.styles {
+  text-align: center;
+  font-size: 36px;
+  margin-right: 30px;
+  color: #fff;
+  &:hover {
+    color:#FFEF5C;
+  }
+  &:last-child {
+    margin: 0px;
+  }
+}
+.border {
+   border: 2px solid #fff;
+   border-radius: 30px;
+   &:hover {
+    border: 2px solid $AccentColor;
+   }
+}
+.behance__hover:hover {
+  transition:0.3s;
+  transform: scaleX(1.2) scaleY(1.2);
+  color:white;
+  padding: 4px 6px;
+  border-radius: 10px;
+  background-color: #053eff;
+}
+.linkedin__hover:hover {
+  transition:0.3s;
+  transform: scaleX(1.2) scaleY(1.2);
+  color:white;
+  padding: 4px 6px;
+  border-radius: 10px;
+  background-color:#0e76a8 ;
+}
+
+.instagram__hover:hover {
+  transition:0.3s;
+  transform: scaleX(1.2) scaleY(1.2);
+  color:white;
+  padding: 4px 6px;
+  border-radius: 10px;
+  background: radial-gradient(92.18% 99.11% at 26.56% 107.7%, #FFDD55 0%, #FFDD55 10%, #FF543E 50%, #C837AB 100%);;
+}
+
+.github__hover:hover {
+  transition:0.3s;
+  transform: scaleX(1.2) scaleY(1.2);
+  color:white;
+  padding: 4px 6px;
+  border-radius: 10px;
+  background-color: #171515;
 }

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import 'animate.css';
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -355,13 +356,13 @@ body {
   margin: 0px;
   min-width: 375px;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
+  background-color: #F7F7F7;
 }
 body a {
   text-decoration: none;
 }
 body footer {
-  background: #0F0F0F;
+  background: #F7F7F7;
 }
 
 @font-face {
@@ -420,27 +421,6 @@ body footer {
   font-size: 38px;
 }
 
-.styles {
-  text-align: center;
-  font-size: 36px;
-  margin-right: 30px;
-  color: #fff;
-}
-.styles:hover {
-  color: #FC490B;
-}
-.styles:last-child {
-  margin: 0px;
-}
-
-.border {
-  border: 2px solid #fff;
-  border-radius: 30px;
-}
-.border:hover {
-  border: 2px solid #FC490B;
-}
-
 .footer {
   padding-top: 100px;
   padding-bottom: 70px;
@@ -487,21 +467,12 @@ body footer {
 .footer__icons {
   display: flex;
   align-items: center;
+  transform: rotate(360deg);
 }
 
 .transform:hover {
   transition: 0.7s;
   transform: rotate(360deg);
-}
-
-.header__link {
-  padding: 14px;
-}
-
-.header__link:hover {
-  transition: 0.3s;
-  transform: scaleX(1.5) scaleY(1.5);
-  color: #FC490B;
 }
 
 .footer__follow {
@@ -556,6 +527,9 @@ body footer {
 .footer__logo {
   display: flex;
   width: 200px;
+  animation-duration: 2s;
+  transition: 0.3s;
+  transform: scaleX(1.2) scaleY(1.2);
 }
 
 .footer__block {
@@ -599,9 +573,66 @@ body footer {
   font-style: normal;
 }
 
+.styles {
+  text-align: center;
+  font-size: 36px;
+  margin-right: 30px;
+  color: #fff;
+}
+.styles:hover {
+  color: #FFEF5C;
+}
+.styles:last-child {
+  margin: 0px;
+}
+
+.border {
+  border: 2px solid #fff;
+  border-radius: 30px;
+}
+.border:hover {
+  border: 2px solid #FC490B;
+}
+
+.behance__hover:hover {
+  transition: 0.3s;
+  transform: scaleX(1.2) scaleY(1.2);
+  color: white;
+  padding: 4px 6px;
+  border-radius: 10px;
+  background-color: #053eff;
+}
+
+.linkedin__hover:hover {
+  transition: 0.3s;
+  transform: scaleX(1.2) scaleY(1.2);
+  color: white;
+  padding: 4px 6px;
+  border-radius: 10px;
+  background-color: #0e76a8;
+}
+
+.instagram__hover:hover {
+  transition: 0.3s;
+  transform: scaleX(1.2) scaleY(1.2);
+  color: white;
+  padding: 4px 6px;
+  border-radius: 10px;
+  background: radial-gradient(92.18% 99.11% at 26.56% 107.7%, #FFDD55 0%, #FFDD55 10%, #FF543E 50%, #C837AB 100%);
+}
+
+.github__hover:hover {
+  transition: 0.3s;
+  transform: scaleX(1.2) scaleY(1.2);
+  color: white;
+  padding: 4px 6px;
+  border-radius: 10px;
+  background-color: #171515;
+}
+
 .wrapper {
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 160px;
+  padding-right: 160px;
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
@@ -609,80 +640,113 @@ body footer {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  max-width: 1300px;
   align-items: center;
   padding-top: 30px;
-  height: auto;
+  flex-wrap: wrap;
+  position: fixed;
+  padding: 18px 25px 18px 25px;
+  background-color: #fff;
+  border-radius: 50px;
+  margin-top: 40px;
 }
-.header source {
-  display: none;
-}
-
-.header__logo {
-  display: flex;
-  width: 236px;
-  display: flex;
-  padding-right: 30px;
+.header:hover {
+  box-shadow: 8px 10px 5px 2px rgba(0, 0, 255, 0.2);
 }
 
-.header__portfolio {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.8em;
-  text-transform: uppercase;
-  color: #313131;
+.tran {
+  animation-name: bran;
+  animation-duration: 2s;
+  transform: rotate(360deg);
 }
 
+@keyframes bran {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes bran {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .header__nav {
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0px 70px 0px 50px;
 }
 
 .header__link {
   display: flex;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 14px;
-  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 120%;
+  color: #000000;
   text-decoration: none;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
+  text-align: center;
+  padding: 4px 6px;
+  margin-right: 40px;
+}
+.header__link:last-child {
+  margin: 0px;
+}
+
+.header__link:hover {
+  transition: 0.3s;
+  transform: scaleX(1.2) scaleY(1.2);
+  color: black;
+  padding: 4px 6px;
+  border-radius: 10px;
+  background-color: #FFEF5C;
+}
+
+hr {
+  height: 24px;
+  border: 1px solid #878A8F;
+}
+
+.webresource {
+  display: flex;
+  padding: 0px 0px 0px 70px;
+  flex-wrap: wrap;
+}
+
+.webresource__link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
+  padding: 4px 6px;
+  margin-right: 40px;
+}
+.webresource__link:last-child {
+  margin: 0px;
 }
 
 .banner {
-  position: relative;
   display: flex;
-  z-index: 10;
   flex-direction: column;
   justify-content: center;
   min-width: 40px;
-  padding: 198px 0px 424px;
-}
-
-.photo {
-  position: absolute;
-  top: -300px;
-  left: 70%;
-  display: flex;
-  height: 300px;
-  width: 300px;
-  position: relative;
-  background-image: url("../../images/21.svg");
-  background-color: black;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  padding: 290px 0px 424px;
 }
 
 .banner__title {
   display: flex;
   align-items: center;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 64px;
   line-height: 120%;
   letter-spacing: 0.03em;
   color: #B0B0B0;
@@ -692,19 +756,19 @@ body footer {
 
 .banner__name {
   display: inline-block;
-  z-index: 10;
   font-weight: 700;
-  text-align: center;
-  font-size: 40px;
+  font-size: 58px;
   line-height: 120%;
   letter-spacing: 0.03em;
-  color: black;
+  margin-left: 10px;
+  color: #000;
   min-width: 400px;
+  padding: 18px 30px;
   border-radius: 20px;
+  background-color: #FFEF5C;
 }
 
 .banner__subtitle {
-  z-index: 10;
   display: flex;
   min-width: 400px;
   font-weight: 700;
@@ -715,7 +779,6 @@ body footer {
 }
 
 .banner__profession {
-  z-index: 10;
   min-width: 400px;
   font-weight: 600;
   font-size: 40px;

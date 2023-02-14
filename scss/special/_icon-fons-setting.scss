@@ -52,25 +52,6 @@
 }
 
 
-.styles {
-  text-align: center;
-  font-size: 36px;
-  margin-right: 30px;
-  color: #fff;
-  &:hover {
-    color:$AccentColor;
-  }
-  &:last-child {
-    margin: 0px;
-  }
-}
-.border {
-   border: 2px solid #fff;
-   border-radius: 30px;
-   &:hover {
-    border: 2px solid $AccentColor;
-   }
-}
 
 
 

@@ -1,7 +1,7 @@
 @use "./variables/variables" as *;
 @use "./special/mixins" as *;
 
-
+@import 'animate.css';
 @import "./normalize";
 @import "./special/fonts";
 @import "./special/setting";
