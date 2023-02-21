@@ -112,6 +112,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
   span {
     padding: 10px 14px;
     background-color: #FFEF5C;
@@ -124,5 +125,46 @@
     letter-spacing: 0.03em;
     color: #000000;
     margin-bottom: 12px;
+  }
+}
+
+.Scroll {
+  position: relative;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.43em;
+  margin-bottom: 208px;
+  color: #000000;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 94px;
+    top: 46px;
+    left: 52px;
+    background: #FC490B;
+    border-radius: 16px;
+  }
+}
+.banner__description {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #5D5F62;
+  p{
+    margin-bottom: 14px;
+  }
+  :last-child {
+    margin: 0px;
   }
 }
