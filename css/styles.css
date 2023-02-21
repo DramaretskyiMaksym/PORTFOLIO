@@ -499,7 +499,7 @@ body footer {
   margin-bottom: 12px;
 }
 
-.Scroll {
+.scroll {
   position: relative;
   font-weight: 600;
   font-size: 20px;
@@ -510,7 +510,7 @@ body footer {
   margin-bottom: 208px;
   color: #000000;
 }
-.Scroll::after {
+.scroll::after {
   position: absolute;
   content: "";
   width: 2px;
