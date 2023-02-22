@@ -9,11 +9,12 @@
 
 // let userAll = 'Hello!' + ' ' + userName + '! ' + 'You are' + ' ' +  userOld + ' ' + 'years old!' + ' '  + 'You live in' + ' ' + userFrom ;
 // alert(userAll)
-
 let headerBurger = document.querySelector('.header__burger');
 let menu = document.querySelector('.menu');
 
-headerBurger.addEventListener('click',() => {
+
+
+headerBurger.addEventListener('click', function(){
   headerBurger.classList.toggle('active');
   menu.classList.toggle('active');
 });
