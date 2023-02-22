@@ -390,15 +390,18 @@ body footer {
 .menu {
   position: fixed;
   display: none;
+  z-index: 99;
   left: 0px;
   top: 0px;
   right: 10px;
   bottom: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .menu.active {
   display: block;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 hr {
@@ -414,34 +417,28 @@ hr {
   justify-content: space-between;
   flex-direction: column;
   gap: 10px;
-  padding: 20px;
+  padding: 60px 0px;
   border-radius: 20px;
+  width: 60%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
-.webresource {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  gap: 10px;
+.header__nav {
+  box-shadow: 8px 10px 5px 2px rgba(0, 0, 255, 0.2);
 }
 
 .header__link {
-  display: flex;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
   color: #000000;
   text-decoration: none;
   letter-spacing: 0.03em;
-  text-align: center;
   padding: 4px 6px;
 }
 
-.header__link:active {
+.header__link:hover {
   transition: 0.3s;
   transform: scaleX(1.2) scaleY(1.2);
   color: black;
@@ -453,15 +450,58 @@ hr {
   box-shadow: 0 0 10px #FFEF5C;
 }
 
-.webresource__link {
+.webresource {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.webresource__link {
   font-weight: 500;
   font-size: 18px;
   line-height: 120%;
   color: #000000;
   text-decoration: none;
+  padding: 4px 6px;
   letter-spacing: 0.03em;
+}
+
+.behance__hover:hover {
+  transition: 0.3s;
+  transform: scaleX(1.2) scaleY(1.2);
+  color: white;
+  padding: 4px 6px;
+  border-radius: 10px;
+  background-color: #053eff;
+}
+
+.linkedin__hover:hover {
+  transition: 0.3s;
+  transform: scaleX(1.2) scaleY(1.2);
+  color: white;
+  padding: 4px 6px;
+  border-radius: 10px;
+  background-color: #0e76a8;
+}
+
+.instagram__hover:hover {
+  transition: 0.3s;
+  transform: scaleX(1.2) scaleY(1.2);
+  color: white;
+  padding: 4px 6px;
+  border-radius: 10px;
+  background: radial-gradient(92.18% 99.11% at 26.56% 107.7%, #FFDD55 0%, #FFDD55 10%, #FF543E 50%, #C837AB 100%);
+}
+
+.github__hover:hover {
+  transition: 0.3s;
+  transform: scaleX(1.2) scaleY(1.2);
+  color: white;
+  padding: 4px 6px;
+  border-radius: 10px;
+  background-color: #171515;
 }
 
 .header__burger {
@@ -469,6 +509,7 @@ hr {
   width: 30px;
   height: 25px;
   overflow: hidden;
+  z-index: 20;
 }
 
 .header__burger span {
@@ -520,6 +561,10 @@ hr {
 .header__burger.active::after {
   transform: rotate(-45deg);
   top: 12px;
+}
+
+.mobile__none {
+  display: none;
 }
 
 @font-face {
@@ -749,42 +794,6 @@ hr {
 }
 .border:hover {
   border: 2px solid #FC490B;
-}
-
-.behance__hover:hover {
-  transition: 0.3s;
-  transform: scaleX(1.2) scaleY(1.2);
-  color: white;
-  padding: 4px 6px;
-  border-radius: 10px;
-  background-color: #053eff;
-}
-
-.linkedin__hover:hover {
-  transition: 0.3s;
-  transform: scaleX(1.2) scaleY(1.2);
-  color: white;
-  padding: 4px 6px;
-  border-radius: 10px;
-  background-color: #0e76a8;
-}
-
-.instagram__hover:hover {
-  transition: 0.3s;
-  transform: scaleX(1.2) scaleY(1.2);
-  color: white;
-  padding: 4px 6px;
-  border-radius: 10px;
-  background: radial-gradient(92.18% 99.11% at 26.56% 107.7%, #FFDD55 0%, #FFDD55 10%, #FF543E 50%, #C837AB 100%);
-}
-
-.github__hover:hover {
-  transition: 0.3s;
-  transform: scaleX(1.2) scaleY(1.2);
-  color: white;
-  padding: 4px 6px;
-  border-radius: 10px;
-  background-color: #171515;
 }
 
 @media (min-width: 1440px) {

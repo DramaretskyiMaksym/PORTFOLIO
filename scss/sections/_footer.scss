@@ -167,37 +167,3 @@
     border: 2px solid $AccentColor;
    }
 }
-.behance__hover:hover {
-  transition:0.3s;
-  transform: scaleX(1.2) scaleY(1.2);
-  color:white;
-  padding: 4px 6px;
-  border-radius: 10px;
-  background-color: #053eff;
-}
-.linkedin__hover:hover {
-  transition:0.3s;
-  transform: scaleX(1.2) scaleY(1.2);
-  color:white;
-  padding: 4px 6px;
-  border-radius: 10px;
-  background-color:#0e76a8 ;
-}
-
-.instagram__hover:hover {
-  transition:0.3s;
-  transform: scaleX(1.2) scaleY(1.2);
-  color:white;
-  padding: 4px 6px;
-  border-radius: 10px;
-  background: radial-gradient(92.18% 99.11% at 26.56% 107.7%, #FFDD55 0%, #FFDD55 10%, #FF543E 50%, #C837AB 100%);;
-}
-
-.github__hover:hover {
-  transition:0.3s;
-  transform: scaleX(1.2) scaleY(1.2);
-  color:white;
-  padding: 4px 6px;
-  border-radius: 10px;
-  background-color: #171515;
-}

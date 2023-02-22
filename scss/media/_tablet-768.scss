@@ -83,3 +83,25 @@
 //     }
 //   }
 // }
+// .tran{
+//   animation-name: bran;
+//   animation-duration: 2s;
+
+//   transform: rotate(360deg);
+// }
+// @keyframes bran {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
+// @-webkit-keyframes bran {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
