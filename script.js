@@ -1,5 +1,5 @@
-var myHeading = document.querySelector('.header__link');
-myHeading.textContent = 'Hello world!';
+// var myHeading = document.querySelector('.header__link');
+// myHeading.textContent = 'Hello world!';
 
 // alert('Hello')
 
@@ -9,4 +9,13 @@ myHeading.textContent = 'Hello world!';
 
 // let userAll = 'Hello!' + ' ' + userName + '! ' + 'You are' + ' ' +  userOld + ' ' + 'years old!' + ' '  + 'You live in' + ' ' + userFrom ;
 // alert(userAll)
+
+let headerBurger = document.querySelector('.header__burger');
+let menu = document.querySelector('.menu');
+
+headerBurger.addEventListener('click',() => {
+  headerBurger.classList.toggle('active');
+  menu.classList.toggle('active');
+});
+
 
