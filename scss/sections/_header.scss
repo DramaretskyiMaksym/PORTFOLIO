@@ -28,15 +28,18 @@
   top: 0px;
   right: 10px;
   bottom: 10px;
-  transform: translateY(-100%);
+  transform: translateY(-200%);
   transition: transform 0.5s;
 }
 
+.close {
+  display: none;
+}
 .menu.active {
   display:block;
+  position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 10;
   transform: translateY(0%);
   transition: transform 0.5s;
   background-color: rgba(0, 0, 0, .5);
@@ -57,8 +60,8 @@ hr {
   flex-direction: column;
   gap: 10px ;
   padding: 60px 0px;
-  border-radius: 20px;
-  width: 60%;
+  width: 100%;
+  height: 100%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -281,12 +284,12 @@ hr {
   // color: $TertiaryColor;
   margin-bottom: 60px;
 }
-.scroll {
+.scroll{
+  display: flex;
   position: relative;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  display: flex;
   align-items: center;
   letter-spacing: 0.43em;
   margin-bottom: 180px;
@@ -302,6 +305,7 @@ hr {
     border-radius: 16px;
   }
 }
+
 .banner__description {
   display: flex;
   justify-content: space-between;

@@ -11,12 +11,14 @@
 // alert(userAll)
 let headerBurger = document.querySelector('.header__burger');
 let menu = document.querySelector('.menu');
+let close =document.querySelector('.banner');
 
 
 
 headerBurger.addEventListener('click', function(){
   headerBurger.classList.toggle('active');
   menu.classList.toggle('active');
+  close.classList.toggle('close')
 });
 
 
