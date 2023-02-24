@@ -421,7 +421,8 @@ body footer {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 50px;
+    padding-bottom: 20px;
     height: 100%;
   }
   .header__nav .header__link:nth-child(3) {
@@ -429,8 +430,8 @@ body footer {
   }
   .header__link {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 18px;
+    line-height: 18px;
     color: #000000;
     text-decoration: none;
     letter-spacing: 0.03em;
@@ -452,13 +453,14 @@ body footer {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 50px;
+    padding-top: 20px;
     height: 100%;
   }
   .webresource__link {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 18px;
+    line-height: 18px;
     color: #000000;
     text-decoration: none;
     padding: 4px 6px;
