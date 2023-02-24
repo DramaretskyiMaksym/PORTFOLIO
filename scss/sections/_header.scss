@@ -23,13 +23,19 @@
   .header__menu{
     position: fixed;
     // display: none;
-    display: flex;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
     left: 0px;
     top: 0px;
     right: 0px;
     bottom: 0px;
     transform: translateY(-200%);
     transition: transform 0.5s;
+    box-shadow: 8px 10px 5px 2px rgba(0, 0, 255, .2);
   }
   
   .header__menu.active {
@@ -42,10 +48,10 @@
     transition: transform 0.5s;
     background: #FFFFFF;
   }
-  
-  hr {
-    position: fixed;
-    bottom: 50%;
+
+  hr{
+    display: flex;
+    bottom: 50px;
     background-color: #878A8F;
     width: 30%;
     height: 2px;
@@ -54,19 +60,18 @@
   .header__nav {
     display:flex;
     align-items: center;
-    position: fixed;
     flex-direction: column;
-    padding: 50px 0px;
-    width: 100%;
-    gap: 20px;
+    justify-content: center;
+    gap: 10px;
+    // align-items: center;
+    // position: fixed;
+    // flex-direction: column;
+    // padding: 50px 0px;
+    // width: 100%;
+    // gap: 20px;
     height: 100%;
-    left: 50%;
-    top: 50%;
-
-    transform: translate(-50%, -50%);
-    & {
-      box-shadow: 8px 10px 5px 2px rgba(0, 0, 255, .2);
-    }
+    // left: 50%;
+    // top: 50%;
     .header__link:nth-child(3) {
       display: none;
     }
@@ -95,18 +100,23 @@
   .webresource{
     display:flex;
     align-items: center;
-    position: fixed;
     flex-direction: column;
-    padding: 50px 0px;
-    width: 100%;
-    gap: 20px;
+    justify-content: center;
+    gap: 10px;
     height: 100%;
-    left: 50%;
-    top: 100%;
-    transform: translate(-50%, -50%);
-    & {
-      box-shadow: 8px 10px 5px 2px rgba(0, 0, 255, .2);
-    }
+    // align-items: center;
+    // position: fixed;
+    // flex-direction: column;
+    // padding: 50px 0px;
+    // width: 100%;
+    // gap: 20px;
+    // height: 100%;
+    // left: 50%;
+    // top: 100%;
+    // transform: translate(-50%, -50%);
+    // & {
+    //   box-shadow: 8px 10px 5px 2px rgba(0, 0, 255, .2);
+    // }
   }
   .webresource__link {
     font-weight: 500;
