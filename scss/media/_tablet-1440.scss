@@ -1,14 +1,28 @@
 @media  (min-width:1440px) {
-  .banner__title {
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 120%;
-    letter-spacing: 0.03em;
-    color: #000000;
-    margin-bottom: 56px;
-    span {
-      display: flex;
-      color: #B0B0B0;
-    }
+
+  .header__nav {
+    gap: 40px;
   }
+  hr {
+
+    margin: 0px 50px ;
+    
+  }
+  .webresource {
+    gap: 40px;
+  
+  }
+
+  // .banner__title {
+  //   font-weight: 700;
+  //   font-size: 64px;
+  //   line-height: 120%;
+  //   letter-spacing: 0.03em;
+  //   color: #000000;
+  //   margin-bottom: 56px;
+  //   span {
+  //     display: flex;
+  //     color: #B0B0B0;
+  //   }
+  // }
 }
