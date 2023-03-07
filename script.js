@@ -1,60 +1,110 @@
-// var myHeading = document.querySelector('.header__link');
-// myHeading.textContent = 'Hello world!';
 
-// alert('Hello')
+// alert ('Hello');
 
-// let userName = prompt('What is your name?');
+// let ToNumber = prompt('enter a number');
+// let ToNumberS = prompt ('enter the second');
+
+// let stringToNumber = Number(ToNumber);
+// let stringToNumberS = Number(ToNumberS);
+
+// let sum = (stringToNumber + stringToNumberS);
+// let diff = (stringToNumber - stringToNumberS);
+// let mult = (stringToNumber * stringToNumberS);
+// let div = (stringToNumber / stringToNumberS);
+// // console.log (sum,diff,mult,div);
+
+// alert ('Calculations are finished!\n'
+// + stringToNumber + ' ' + '+' + ' ' + stringToNumberS + ' ' + '=' + ' ' + sum + '\n'
+// + stringToNumber + ' ' + '-' + ' ' + stringToNumberS + ' ' + '=' + ' ' + diff + '\n'
+// + stringToNumber + ' ' + '*' + ' ' + stringToNumberS + ' ' + '=' + ' ' + mult + '\n'
+// + stringToNumber + ' ' + '/' + ' ' + stringToNumberS + ' ' + '=' + ' ' + div);
+
+// for (let char of "Hello 0 0 0 ") {
+//   alert(char); // H,e,l,l,o (char becomes "H", then "e", then "l" etc)
+// }
+
+
+
+// alert ('Hello My Friend');
+
+// let one = prompt("enter the first number");
+// let two = prompt("enter the second number");
+
+// let toOneNumber = Number (one);
+// let toTwoNumber = Number (two);
+
+// let sum = toOneNumber + toTwoNumber;
+// let diff = toOneNumber - toTwoNumber;
+// let mult = toOneNumber * toTwoNumber;
+// let div = toOneNumber / toTwoNumber ;
+
+// let allValues = ("Calculations are finished!" + "\n" 
+// + toOneNumber + " " + "+" + " " + toTwoNumber + " " + "=" + " " + sum + "\n"
+// + toOneNumber + " " + "-" + " " + toTwoNumber + " " + "=" + " " + diff + "\n"
+// + toOneNumber + " " + "*" + " " + toTwoNumber + " " + "=" + " " + mult + "\n"
+// + toOneNumber + " " + "/" + " " + toTwoNumber + " " + "=" + " " + div + "\n");
+// alert (allValues);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let name = prompt('What is your name?');
 // let userOld = prompt('How old are you?');
-// let userFrom = prompt('Where are you from');
+// let all = 2023 - userOld;
+// alert ("ты года рождения " + all);
+
+
+// let number = Boolean (1);
+// let srt = 'sove\n ka\'loe'
+// console.log (srt);
 
 // let userAll = 'Hello!' + ' ' + userName + '! ' + 'You are' + ' ' +  userOld + ' ' + 'years old!' + ' '  + 'You live in' + ' ' + userFrom ;
 // alert(userAll)
-let headerBurger = document.querySelector('.header__burger');
-let menu = document.querySelector('.header__menu');
-let close =document.querySelector('.banner');
-let closePortfolio = document.querySelector('.title__portfolio');
-
-
-headerBurger.addEventListener('click', function(){
-  headerBurger.classList.toggle('active');
-  menu.classList.toggle('active');
-  close.classList.toggle('close')
-  closePortfolio.classList.toggle('close')
-});
+// let templateString = `Hello! ${userName}, ${userOld} ${userFrom}`;
+// console.log(templateString);
 
 
 
-// var myImage = document.querySelector('.img');
 
-// myImage.onclick = function() {
-//     var mySrc = myImage.getAttribute('src');
-//     if(mySrc === 'images/firefox-icon.png') {
-//       myImage.setAttribute ('src','images/firefox2.png');
-//     } else {
-//       myImage.setAttribute ('src','images/firefox-icon.png');
-//     }
-// }
-// const para = document.querySelector('.q');
 
-// para.addEventListener('click', updateName);
 
-// function updateName() {
-//   let name = prompt('Enter a new name');
-//   para.textContent = 'Player 1: ' + name;
-// }
+
+
+
+
+
 
 
 document.addEventListener("DOMContentLoaded", function() {
-  function createParagraph() {
-    let para = document.createElement('p');
-    para.textContent = 'You clicked the button!';
-    document.body.appendChild(para);
-  }
+  document.getElementById("burger").addEventListener("click", function(){
+    document.querySelector("header").classList.toggle("open");
+    document.querySelector("body").classList.toggle("lock")
+  })
+})
 
-  const buttons = document.querySelectorAll('button');
 
-  for(let i = 0; i < buttons.length ; i++) {
-    buttons[i].addEventListener('click', createParagraph);
-  }
-});
 
+
+
+// let headerBurger = document.querySelector('.header__burger');
+// let menu = document.querySelector('.header__menu');
+// let close =document.querySelector('.banner');
+// let closePortfolio = document.querySelector('.title__portfolio');
+
+
+// headerBurger.addEventListener('click', function(){
+//   headerBurger.classList.toggle('active');
+//   menu.classList.toggle('active');
+//   close.classList.toggle('close')
+//   closePortfolio.classList.toggle('close')
+// });

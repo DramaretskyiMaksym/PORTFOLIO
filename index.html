@@ -5,92 +5,127 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/styles.css">
-  <link rel="icon" href="./images/logo-mob..svg" type="image/icon type">
-  <script src="./script.js" defer></script>
+  <link rel="icon" href="./images/Logo-Desktop.svg" type="image/icon type">
+  <script defer src="./script.js"></script>
   <title>PORTFOLIO</title>
 </head>
 <body>
-    <div class="wrapper">
-      <header class="header">
-        <a class="logo tran" href="./index.html">
-          <picture>
-           <source media="(min-width:769px )" width="218px" height="32px" srcset="./images/newLogo.svg">
-           <img class="header__logo"src="./images/logo-mob..svg" width="35px" height="35px" alt="logo">
-          </picture>
-        </a>
-       <div class="header__menu">
-          <nav class="header__nav ">
-            <a href="#" class="header__link">Skills</a>
-            <a href="#" class="header__link">Works</a>
-            <a href="#" class="header__link">Skills & Works</a>
-            <a href="#" class="header__link">About me</a>
-            <a href="#" class="header__link">Contact</a>
-          </nav>
-          <hr>
-          <div class="webresource">
-            <a class="webresource__link behance__hover" href="https://www.behance.net/maksymdramaretskyi" target="blank">Behance</a>
-            <a class="webresource__link linkedin__hover " href="">Linkedin</a>
-            <a class="webresource__link instagram__hover" href="">Instagram</a>
-            <a class="webresource__link github__hover" href="">GitHub</a>
-          </div>
-        </div>
-        <div class="header__burger">
-          <span></span>
-        </div>
-      </header>
-    </div>
-    <div class="wrapper">
-      <h3 class="title__portfolio">
-        Portfolio
-        <span></span>
-      </h3>
 
+  <header class="header">
+    <div class="container header__container">
+      <a class="logo" href="./index.html">
+        <picture>
+         <source media="(min-width:1024px )" width="100px" height="100px" srcset="./images/Logo-Desktop.svg">
+         <img class="logo__img"src="./images/Logo-mob.svg" width="40px" height="40px" alt="logo">
+        </picture>
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link" >Skills & Works</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">About me</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Contact</a>
+          </li>
+          <hr>
+          <li class="menu__item">
+            <a href="https://www.behance.net/maksymdramaretskyi" class="menu__link behance" target="_blank">Behance</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link linkedin">Linkedin</a>
+          </li>
+          <li class="menu__item">
+             <a href="https://www.instagram.com/maksym_dramaretskyi/" class="menu__link instagram" target="_blank">Instagram</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link github">GitHub</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__burger-btn" id = "burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+<section  class="wrapper">
+  <h3 class="title__portfolio">
+    Portfolio
+    <span></span>
+  </h3>
   <div class="banner">
-        <h1 class="banner__title">
-          <span>
-            Hey, I am
-          </span>
-            Maksym Dramaretskyi
-        </h1>
-        <h2 class="banner__subtitle">
-          <span>
-            Beginner
-          </span>
-          Front-end Developer
-        </h2>
-        <h2 class="banner__profession" >
-          <span class="ampersand">
-            &
-          </span>
-          UI/UX Designer
-        </h2>
-        <span class="scroll">
-          Scroll
+    <div class="background__img">
+      <img class="banner__img" src="./images/photo_bannerWebP.webp" alt="" width="300" height="300">
+    </div>
+    <div class="banner__block">
+      <h1 class="banner__title">
+        <span>
+          Hey, I'm
         </span>
-        <div class="banner__description">
-          <p>
-            This site is not a work of art at the highest level,
-            but simply a raft of my work, which in turn will only get better. 
-          </p>
-          <p>
-            I only did it because I like it.
-            I want to work in this direction and be successful
-          </p>
+        Maksym Dramaretskyi
+      </h1>
+      <h2 class="banner__subtitle">
+        <span>
+          Beginner
+        </span>
+        Front-end Developer
+      </h2>
+      <h2 class="banner__tertiary" >
+        <span class="ampersand">
+          &
+        </span>
+        UI/UX Designer
+      </h2>
+      <div class="banner__description">
+        <p>
+          This site is not a work of art at the highest level,
+          but simply a raft of my work, which in turn will only get better.
+        </p>
+        <p>
+          I only did it because I like it.
+          I want to work in this direction and be successful
+        </p>
       </div>
     </div>
+  </div>
+ </div>
+</section>
+
+<!-- <a  class="banner__button" href="">
+  Write me
+</a> -->
+<
+          <a class="button" href="https://t.me/Maksym_Dramaretskyi" target="_blank"  title="Write to me on telegram">
+            Write me
+          </a>
+          <a class="button__secondary" href="" title="other sources of communication" >
+            Contacts
+          </a>
 
 
-<!-- 
-  <main>
+
+<!-- <main>
+  <div class="main__section">
+    <h2 class="main__title">
+      Site 
+      implemented.
+    </h2>
+    <p>
+      Made in html and css using sass preprocessor
+      and of course where without version control. Javascript is used sparingly
+    </p>
+  </div>
   </main>
-  <footer>
+  <!<footer class="footer__background">
     <div class="wrapper">
       <div  id="contact" class="footer">
-
         <div class="footer__content">
           
-          <div class="footer__contact">
-            <h3 class="footer__information">
+          <div class="footer__contact"> -->
+            <!-- <h3 class="footer__information">
               Contact
               information
             </h3>
@@ -129,7 +164,7 @@
           </div>
         </div>
 
-        <div class="footer__secondary">
+       <div class="footer__secondary">
          <img  class="footer__logo" width="150px"  height="22px" src="./images/Logo-main.svg" alt="">
           <div class="footer__didjob">Designed and developed by <span class="footer__creatorname">Maksym Dramaretskyi</span></div>
           
@@ -140,6 +175,6 @@
         </div>
       </div>
     </div>
-</footer> -->
+</footer>  -->
 </body>
 </html>
