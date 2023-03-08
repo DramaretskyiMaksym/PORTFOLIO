@@ -9,14 +9,13 @@
   }
   .menu__link {
     color:#FDFEFE;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 22px;
-    display: block;
-    padding: 10px 0px;
+    line-height: 18px;
+    padding: 4px 10px;
   }
   .menu__list{
-    gap: 40px;
+    gap: 30px;
   }
   .menu__item{
     &:nth-child(3) {
