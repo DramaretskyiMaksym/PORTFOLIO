@@ -6,6 +6,8 @@
     margin-left: auto;
     margin-right: auto;
   }
+    
+
 // new header
 .header {
   z-index: 1;
@@ -284,15 +286,15 @@ body.lock {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 0px 100px;
+    padding: 100px 0px 200px;
     p {
       letter-spacing: 0.03em;
       font-size: 14px;
       font-weight: 500;
       line-height: 14px;
       color: $SecondaryColor;
-      max-width: 700px;
       text-align: center;
+      max-width: 700px;
     }
     .main__title {
       display: flex;
@@ -317,13 +319,15 @@ body.lock {
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
+    .description {
+      max-width: 700px;
+    }
   }
 .blocks{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 26px;
-  margin-bottom: 100px;
 }
 .block {
   position: relative;
@@ -335,7 +339,7 @@ body.lock {
   border-radius: 6px;
   width: 120px;
   height: 108px;
-  &::after {
+  &::before {
     content: "";
     border-radius: 6px;
     position: absolute;
@@ -363,10 +367,19 @@ body.lock {
 .block__aboutme {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.block__сard {
+  display: flex;
   position: relative;
+  flex-direction: column;
+  align-items: center ;
+  padding:14px 14px;
+  border-radius: 8px;
   background-color:#1D2430;
-  &::after {
+  &::before {
     content: "</>";
     position: absolute;
     left: 48%;
@@ -376,38 +389,83 @@ body.lock {
     font-weight: 600;
     line-height: 18px;
   }
-}
-
-.block__сard {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 10px;
-  &:nth-last-child(3) {
-    margin-bottom: 30px;
-  }
   p {
     margin-bottom: 10px;
+    letter-spacing: 0.03em;
+    max-width: 700px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: $SecondaryColor;
+    text-align: center;
+    &:nth-last-child(2) {
+      margin-bottom: 30px;
+    }
   }
 }
 .aboutme__title {
-  font-size: 18px;
+  position: relative;
+  display: flex;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 18px;
-  color: $BaseColor;
-  margin-bottom: 30px;
+  line-height: 20px;
+  color:#FFF;
+  margin-bottom: 40px;
   letter-spacing: 0.03em;
 }
-
 .aboutme__buttom {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
-  font-size: 18px;
+  padding: 8px 14px;
+  font-size: 16px;
+  font-weight: 500;
   color: white;
   margin:0px 80px;
-  border-radius: 8px;
+  border-radius: 4px;
   background-color: #3AB561;
+  &:hover {
+    color: black;
+    background-color: #FFF;
+  }
+}
+.blocks__me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 100px;
+
+}
+.block__story {
+  padding: 20px;
+  background-color: #1D2430;
+
+}
+.block__text{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+  gap: 10px;
+  p {
+    letter-spacing: 0.03em;
+    max-width: 600px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #B0B0B0;
+    text-align: center;
+}
+}
+.block__img {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 160px;
+    height: 200px;
+    border-radius: 4px;
+  }
 }
 
 
