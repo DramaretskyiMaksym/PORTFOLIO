@@ -839,8 +839,6 @@ body.lock {
   justify-content: center;
 }
 .block__img img {
-  width: 160px;
-  height: 200px;
   border-radius: 4px;
 }
 
