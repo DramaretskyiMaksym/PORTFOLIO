@@ -1,3 +1,4 @@
+
 .title__portfolio {
   display: flex;
   padding-top: 100px;
@@ -108,11 +109,16 @@
     text-align: center;
     font-weight: 600;
     font-size: 14px;
-    line-height: 14px;
+    line-height: 20px;
     letter-spacing: 0.03em;
     color: $TertiaryColor;
     margin-bottom: 40px;
     max-width: 560px;
+    p {
+      animation-duration: 3s;
+      animation-name: slidein;
+      animation-iteration-count:calc(1);
+    }
     p {
       margin-bottom: 10px;
     }
@@ -120,6 +126,19 @@
       margin: 0px;
     }
   }
+  
+  @keyframes slidein {
+    from {
+      margin-top: -100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
 .banner__button-block {
   display: flex;
   flex-direction: column;
