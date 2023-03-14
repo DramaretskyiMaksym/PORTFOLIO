@@ -28,15 +28,16 @@
     letter-spacing: 0.03em;
     font-weight: 500;
     border-radius: 4px;
+    border: 3px solid#1D2430;
     &:hover {
+      border: 3px dotted #3AB561;
+      color: #ffffff;
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
       transform: scale(1.1);
-      transition:0.4s;
-      color:rgb(0, 0, 0);
+      transition:0.2s;
       padding: 4px 10px;
       border-radius: 4px;
-      background-color: #ffffff;
     }
   }
 
@@ -55,18 +56,35 @@
     margin: 0px 10px;
     }
 
-  .behance:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    transition:0.1s;
-    color:$BaseColor;
+  .link__behance{
     padding: 6px 10px;
-    border-radius: 10px;
-    background-color: #053eff;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    border-radius: 4px;
+    color: #fff;
+   &:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+      transition:0.1s;
+      color:$BaseColor;
+      padding: 6px 10px;
+      border-radius: 10px;
+      background-color: #053eff;
+    }
   }
 
-  .linkedin:hover {
+  .link__linkedin{
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    border-radius: 4px;
+    color: #fff;
+    &:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
@@ -76,28 +94,47 @@
     border-radius: 10px;
     background-color:#0e76a8 ;
   }
+}
 
-  .instagram:hover {
+  .link__instagram{
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    border-radius: 4px;
+    color: #fff;
+    &:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+      transition:0.1s;
+      color:$BaseColor;
+      padding: 6px 10px;
+      border-radius: 10px;
+      background: radial-gradient(92.18% 99.11% at 26.56% 107.7%, #FFDD55 0%, #FFDD55 10%, #FF543E 50%, #C837AB 100%);;
+    }
+}
+
+  .link__github{
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    border-radius: 4px;
+    color: #fff;
+  &:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     transition:0.1s;
     color:$BaseColor;
-    padding: 6px 10px;
-    border-radius: 10px;
-    background: radial-gradient(92.18% 99.11% at 26.56% 107.7%, #FFDD55 0%, #FFDD55 10%, #FF543E 50%, #C837AB 100%);;
-  }
-
-  .github:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    transition:0.1s;
-    color:$BaseColor;
-    padding: 6px 10px;
+    padding:6px 10px;
     border-radius: 10px;
     background-color: #171515;
   }
+}
   .title__portfolio {
     display: none;
   }
@@ -124,48 +161,39 @@
     border-radius: 300px;
   }
 
-  //block About me 
-  .blocks__me {
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 200px;
-    &:nth-child(2) {
-      flex-direction: row-reverse;
-    }
-  }
-
   .banner__description {
-    max-width: 650px;
+    max-width: 600px;
   }
 
-  @media(min-width:1200px) {
-    .banner__title {
+  .text__noneMobile {
+    display:flex;
+    flex-direction: column;
+  }
+}
+@media(min-width:1200px) {
+  .banner__title {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 500;
+    span {
       font-size: 36px;
       line-height: 36px;
-      font-weight: 500;
-      span {
-        font-size: 36px;
-        line-height: 36px;
-        font-weight: 700;
-      }
+      font-weight: 700;
     }
-    .banner__subtitle {
+  }
+
+  .banner__subtitle {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 500;
+    span {
       font-size: 36px;
       line-height: 36px;
-      font-weight: 500;
-      span {
-        font-size: 36px;
-        line-height: 36px;
-        font-weight: 700;
-      }
+      font-weight: 700;
     }
-    .banner__tertiary {
-      margin-bottom: 30px;
-    }
-    .ampersand {
-    }
-    .banner__description {
-    }
+  }
+  .banner__tertiary {
+    margin-bottom: 30px;
   }
 }
 

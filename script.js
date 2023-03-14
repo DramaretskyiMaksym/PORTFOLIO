@@ -108,3 +108,114 @@ document.addEventListener("DOMContentLoaded", function() {
 //   close.classList.toggle('close')
 //   closePortfolio.classList.toggle('close')
 // });
+
+// let person = {
+//   name:'Maksym',
+//   surname: 'Dramaretsyi',
+//   age: 24,
+//   'hello word':'HELLO WORD'
+// };
+
+// person.name = 'Karina';
+// person.age = person.age + 1;
+
+// console.log(person);
+
+// let newPerson = person;
+
+// newPerson.name = 'Maksym';
+// person.age = person.age - 1;
+
+// console.log ('1й варинат', person);
+// console.log ('2й вариант',newPerson);
+
+
+
+
+// let array = [ 1,2,3,4,5, undefined,null,{ a:110}, ['a', 'b', 'c']];
+// console.log(array);
+// console.log(array[7]);
+// console.log(array[0]);
+// console.log(array[array.length -1]);
+
+// array[5] = 'New value';
+
+
+// let obj = array[array.length -2];
+// console.log('obj',obj)
+// obj.a = 'New VALUE';
+
+// array[array.length -1 ] [1] = 'CC';
+// console.log(array);
+
+// const a = 10, b = 122;
+// if (a > b) {
+//   console.log(' a lees than b');
+// }
+// else {
+//   console.log('a greater than b');
+// }
+
+// const a = 5, b = 0, c = -1;
+
+// if (a > 0 || b > 0 || c > 0) {
+//     console.log('one number is positive')
+// }
+
+// const a = 10;
+
+// if (a > 0) {
+//     console.log ('a > 0');
+// }  else if ( a < 0){
+//     console.log(a < 0);
+// } else {
+//     console.log('a = 0;');
+// }
+
+// let one = prompt("введите число");
+// let two = prompt("введите второе число");
+// let dat = prompt ('выберите математическою операцию:'+'\n + , - , * , / , pow ');
+
+// let a = Number(one);
+// let b = Number(two);
+
+
+// let person = {
+//   sum: a + b,
+//   diff: a - b,
+//   mult: a * b,
+//   div: a / b,
+//   pow: Math.pow(a,b),
+// };
+
+
+
+// if (dat == '+'){
+//   console.log(person.sum);
+// } else if (dat == '-') {
+//     console.log(person.diff);
+// } else if (dat == 'pow'){
+//   console.log(person.pow);
+// } else if (dat == '*') {
+//     console.log(person.mult);
+// } else if (dat == '/') {
+//   console.log(person.div);
+// }
+
+
+// let v = prompt ('Хотите ли определит cоs, sin или pow? yes or no ?');
+// if (v == 'yes'&&'y'){
+//   let numb = prompt ('Укажите число');
+//   let varible = prompt('выберите операцию:'+'\n cos, sin,');
+//   if (varible == 'cos'){
+//     console.log(Math.cos(numb));
+//   } else if (varible == 'sin') {
+//     console.log(Math.sin(numb));
+//   }
+// } else{
+//     console.log('чтож, тогда пока');
+// };
+// let on = {
+//   cos: Math.cos(numb),
+//   sin: Math.sin(numb),
+// };
