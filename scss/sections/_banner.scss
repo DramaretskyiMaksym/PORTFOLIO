@@ -59,7 +59,7 @@
     color:$BaseColor;
     margin-bottom: 20px;
     gap: 4px;
-    transform: translate(120%,0px );
+    transform: translate(0px,-120%);
     opacity: 0;
     transition:all 1s ease 0s;
     span {
@@ -86,7 +86,7 @@
     color:$BaseColor;
     margin-bottom: 8px;
     gap: 4px;
-    transform: translate(120%,0px );
+    transform: translate(0px,120%);
     opacity: 0;
     transition:all 1s ease 0s;
     span {
@@ -110,7 +110,7 @@
     line-height: 20px;
     color:$BaseColor;
     margin-bottom: 24px;
-    transform: translate(120%,0px );
+    transform: translate(0px,120%);
     opacity: 0;
     transition:all 1s ease 0s;
     span {
@@ -137,7 +137,7 @@
     color: $TertiaryColor;
     margin-bottom: 40px;
     max-width: 560px;
-    transform: translate(120%,0px );
+    transform: translate(0px,120%);
     opacity: 0;
     transition:all 2s ease 0s;
     p {
@@ -181,7 +181,7 @@
     padding:12px 60px;
     border-radius: 4px;
     border: 3px solid $AccentColor;
-    transform: translate(-120%,0px);
+    transform: translate(0px,120%);
     opacity: 0;
     transition:all 1s ease 0s;
     &:hover{
@@ -204,7 +204,7 @@
     color: #B0B0B0;
     border-radius: 4px;
     border: 3px solid $SecondaryColor;
-    transform: translate(120%,0px);
+    transform: translate(0px,120%);
     opacity: 0;
     transition:all 1s ease 0s;
     &:hover{

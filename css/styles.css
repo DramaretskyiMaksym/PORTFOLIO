@@ -1022,7 +1022,7 @@ body.lock {
   flex-direction: column;
   align-items: center;
   padding: 15px 15px 15px 15px;
-  transform: translate(0px, 120%);
+  transform: translate(0px, -120%);
   opacity: 0;
   transition: all 0.8s ease 0s;
 }
@@ -1219,7 +1219,7 @@ body.lock {
   color: white;
   margin-bottom: 20px;
   gap: 4px;
-  transform: translate(120%, 0px);
+  transform: translate(0px, -120%);
   opacity: 0;
   transition: all 1s ease 0s;
 }
@@ -1247,7 +1247,7 @@ body.lock {
   color: white;
   margin-bottom: 8px;
   gap: 4px;
-  transform: translate(120%, 0px);
+  transform: translate(0px, 120%);
   opacity: 0;
   transition: all 1s ease 0s;
 }
@@ -1272,7 +1272,7 @@ body.lock {
   line-height: 20px;
   color: white;
   margin-bottom: 24px;
-  transform: translate(120%, 0px);
+  transform: translate(0px, 120%);
   opacity: 0;
   transition: all 1s ease 0s;
 }
@@ -1300,7 +1300,7 @@ body.lock {
   color: #878A8F;
   margin-bottom: 40px;
   max-width: 560px;
-  transform: translate(120%, 0px);
+  transform: translate(0px, 120%);
   opacity: 0;
   transition: all 2s ease 0s;
 }
@@ -1334,7 +1334,7 @@ body.lock {
   padding: 12px 60px;
   border-radius: 4px;
   border: 3px solid #3AB561;
-  transform: translate(-120%, 0px);
+  transform: translate(0px, 120%);
   opacity: 0;
   transition: all 1s ease 0s;
 }
@@ -1358,7 +1358,7 @@ body.lock {
   color: #B0B0B0;
   border-radius: 4px;
   border: 3px solid #B0B0B0;
-  transform: translate(120%, 0px);
+  transform: translate(0px, 120%);
   opacity: 0;
   transition: all 1s ease 0s;
 }
