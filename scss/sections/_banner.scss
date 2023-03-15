@@ -21,14 +21,9 @@
     display: flex ;
     flex-direction: column;
     align-items: center;
-    transform: translate(0px,120% );
-    opacity: 0;
-    transition:all 0.8s ease 0s;
+  
   }
-  .banner__block._active {
-    transform: translate(0px,0px);
-    opacity: 1;
-  }
+
   .background__img {
     display: flex;
     position: relative;
@@ -64,12 +59,19 @@
     color:$BaseColor;
     margin-bottom: 20px;
     gap: 4px;
+    transform: translate(120%,0px );
+    opacity: 0;
+    transition:all 1s ease 0s;
     span {
       color:$AccentColor;
       font-size: 28px;
       line-height: 28px;
       font-weight: 700;
     }
+  }
+  .banner__title._active {
+    transform: translate(0px,0px);
+    opacity: 1;
   }
 
   .banner__subtitle {
@@ -84,12 +86,19 @@
     color:$BaseColor;
     margin-bottom: 8px;
     gap: 4px;
+    transform: translate(120%,0px );
+    opacity: 0;
+    transition:all 1s ease 0s;
     span {
       color:$AccentColor;
       font-size: 28px;
       line-height: 28px;
       font-weight: 700;
     }
+  }
+  .banner__subtitle._active {
+    transform: translate(0px,0px);
+    opacity: 1;
   }
 
   .banner__tertiary {
@@ -101,6 +110,9 @@
     line-height: 20px;
     color:$BaseColor;
     margin-bottom: 24px;
+    transform: translate(120%,0px );
+    opacity: 0;
+    transition:all 1s ease 0s;
     span {
       color:$AccentColor;
       font-size: 20px;
@@ -109,6 +121,10 @@
       margin-right: 10px;
       // margin-bottom: 10px;
     }
+  }
+  .banner__tertiary._active {
+    transform: translate(0px,0px);
+    opacity: 1;
   }
   .banner__description {
     display: flex;
@@ -121,11 +137,9 @@
     color: $TertiaryColor;
     margin-bottom: 40px;
     max-width: 560px;
-    // p {
-    //   animation-duration: 3s;
-    //   animation-name: slidein;
-    //   animation-iteration-count:calc(1);
-    // }
+    transform: translate(120%,0px );
+    opacity: 0;
+    transition:all 2s ease 0s;
     p {
       margin-bottom: 10px;
     }
@@ -134,6 +148,10 @@
     }
   }
 
+  .banner__description._active {
+    transform: translate(0px,0px);
+    opacity: 1;
+  }
   // @keyframes slidein {
   //   from {
   //     margin-top: -200%;
@@ -163,11 +181,19 @@
     padding:12px 60px;
     border-radius: 4px;
     border: 3px solid $AccentColor;
+    transform: translate(-120%,0px);
+    opacity: 0;
+    transition:all 1s ease 0s;
     &:hover{
       border: 3px dotted #3AB561;
       color: #3AB561;
       background: rgba(0,0,0,0);
   }
+  }
+
+  .button._active {
+    transform: translate(0px,0px);
+    opacity: 1;
   }
   .button__secondary {
     display: flex;
@@ -178,11 +204,17 @@
     color: #B0B0B0;
     border-radius: 4px;
     border: 3px solid $SecondaryColor;
+    transform: translate(120%,0px);
+    opacity: 0;
+    transition:all 1s ease 0s;
     &:hover{
       border: 3px dotted #3AB561;
       color: #3AB561;
-     
   }
+  }
+  .button__secondary._active {
+    transform: translate(0px,0px);
+    opacity: 1;
   }
   @media (min-width:540px) {
     .banner__button-block {
