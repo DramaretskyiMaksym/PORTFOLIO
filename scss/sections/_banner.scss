@@ -21,6 +21,13 @@
     display: flex ;
     flex-direction: column;
     align-items: center;
+    transform: translate(0px,120% );
+    opacity: 0;
+    transition:all 0.8s ease 0s;
+  }
+  .banner__block._active {
+    transform: translate(0px,0px);
+    opacity: 1;
   }
   .background__img {
     display: flex;
@@ -114,11 +121,11 @@
     color: $TertiaryColor;
     margin-bottom: 40px;
     max-width: 560px;
-    p {
-      animation-duration: 3s;
-      animation-name: slidein;
-      animation-iteration-count:calc(1);
-    }
+    // p {
+    //   animation-duration: 3s;
+    //   animation-name: slidein;
+    //   animation-iteration-count:calc(1);
+    // }
     p {
       margin-bottom: 10px;
     }
@@ -127,17 +134,17 @@
     }
   }
 
-  @keyframes slidein {
-    from {
-      margin-top: -100%;
-      width: 100%;
-    }
+  // @keyframes slidein {
+  //   from {
+  //     margin-top: -200%;
+  //     width: 100%;
+  //   }
   
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
+  //   to {
+  //     margin-left: 0%;
+  //     width: 100%;
+  //   }
+  // }
   
 .banner__button-block {
   display: flex;

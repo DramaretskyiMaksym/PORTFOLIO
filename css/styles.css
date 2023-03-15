@@ -1022,6 +1022,9 @@ body.lock {
   flex-direction: column;
   align-items: center;
   padding: 15px 15px 15px 15px;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
 }
 
 .about__description {
@@ -1037,6 +1040,11 @@ body.lock {
   line-height: 18px;
   color: #B0B0B0;
   text-align: center;
+}
+
+.text__MainPage._active {
+  transform: translate(0px, 0%);
+  opacity: 1;
 }
 
 .text__noneMobile {
@@ -1095,13 +1103,15 @@ body.lock {
 .certificates {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
+  gap: 60px;
+  padding: 50px 0px;
 }
 
 .block__certificate {
   display: flex;
   flex-direction: column;
-  padding: 40px 0px;
+  align-items: center;
   max-width: 300px;
 }
 .block__certificate:hover {
@@ -1114,15 +1124,17 @@ body.lock {
   display: flex;
   width: 100%;
   height: auto;
+  margin-bottom: 20px;
+  border-radius: 4px;
 }
 
 .link__check {
+  display: flex;
   letter-spacing: 0.03em;
   font-size: 18px;
   font-weight: 500;
-  line-height: 14px;
-  color: #B0B0B0;
-  text-align: center;
+  line-height: 26px;
+  color: #3AB561;
 }
 
 @media (min-width: 600px) {
@@ -1137,6 +1149,12 @@ body.lock {
   }
   .about__description {
     max-width: 550px;
+  }
+}
+@media (min-width: 700px) {
+  .certificates {
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 .title__portfolio {
@@ -1163,6 +1181,14 @@ body.lock {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.banner__block._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .background__img {
@@ -1260,27 +1286,12 @@ body.lock {
   max-width: 560px;
 }
 .banner__description p {
-  animation-duration: 3s;
-  animation-name: slidein;
-  animation-iteration-count: 1;
-}
-.banner__description p {
   margin-bottom: 10px;
 }
 .banner__description p:last-child {
   margin: 0px;
 }
 
-@keyframes slidein {
-  from {
-    margin-top: -100%;
-    width: 100%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
 .banner__button-block {
   display: flex;
   flex-direction: column;
