@@ -61,12 +61,13 @@
   transition:all 0.8s ease 0.3s;
 }
 
-.blocks{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-gap: 26px;
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 26px;
 }
+
 .block {
   position: relative;
   display: flex;
@@ -77,30 +78,72 @@ gap: 26px;
   border-radius: 6px;
   width: 120px;
   height: 108px;
-  &::before {
-    content: "";
-    border-radius: 6px;
-    position: absolute;
-    width: 120px;
-    height: 108px;
-    top: -10px;
-    left: 10px;
-    background-color: #7A828F;
-    z-index: -1;
-}
-p{
+  transform: translate(0px,-50%);
+  opacity: 0;
+  transition:all 0.3s ease 0s;
+  &:nth-child(2) {
+    transform: translate(0px,50%);
+    opacity: 0;
+    transition:all 0.3s ease 0s;
+  }
+  &:nth-child(4) {
+    transform: translate(0px,-50%);
+    opacity: 0;
+    transition:all 0.3s ease 0s;
+  }
+//   &::before {
+//     content: "";
+//     height: 108px;
+//     border-radius: 6px;
+//     position: absolute;
+//     width: 120px;
+//     height: 108px;
+//     top: -10px;
+//     left: 10px;
+//     z-index: -1;
+//     background-color: #7A828F;
+//     transform: translate(0px,-50%);
+//     opacity: 0;
+//     transition:all 0.3s ease 0s;
+// }
+
+p {
   align-items: center;
   display: flex;
   font-size: 14px;
   font-weight: 600;
   color: #3AB561;
 }
-img {
-  width: 64px;
-  height: 48px;
-  margin-bottom: 4px;
+
+  img {
+    width: 64px;
+    height: 48px;
+    margin-bottom: 4px;
+  }
 }
+
+.blocks._active .block {
+  transform: translate(0px,0px);
+  opacity: 1;
+  transition:all 0.8s ease 0.3s;
 }
+.blocks._active .block::before {
+  opacity: 1;
+  transform: translate(0px,0px);
+  transition:all 0.8s ease 0.6s;
+}
+.blocks._active .block:nth-child(2) {
+  opacity: 1;
+  transform: translate(0px,0px);
+  transition:all 0.8s ease 0.6s;
+}
+
+.blocks._active .block:nth-child(4) {
+  opacity: 1;
+  transform: translate(0px,0px);
+  transition:all 0.8s ease 0.6s;
+}
+
 
 
 .section__aboutme{
@@ -156,6 +199,7 @@ img {
   padding: 20px;
   background-color: #1D2430;
 }
+
 .block__text{
   display: flex;
   text-align: center;
@@ -233,6 +277,7 @@ p {
   transform: translate(0px,0px);
   transition:all 0.8s ease 0.6s;
 }
+
 ._anim-show {
   transform: translate(0px,120%);
   opacity: 0;
@@ -247,6 +292,14 @@ p {
 .text__noneMobile {
   display: none;
   overflow: hidden;
+  transform: translate(0px,-100%);
+  opacity: 0;
+  transition:all 0.3s ease 0s;
+}
+.about__block-text._active .text__noneMobile {
+  opacity: 1;
+  transform: translate(0px,0px);
+  transition:all 0.8s ease 0.6s;
 }
 
 .aboutme__buttom {
@@ -328,7 +381,7 @@ p {
 }
 .certificates._active .photo__certificate {
   transform: scale(1);
-  transition:all 0.8s ease 0s;
+  transition:all 0.8s ease 0.5s;
 }
 
 .link__check {
