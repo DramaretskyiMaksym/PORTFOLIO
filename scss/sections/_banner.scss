@@ -61,7 +61,7 @@
     gap: 4px;
     transform: translate(0px,-120%);
     opacity: 0;
-    transition:all 1s ease 0s;
+    transition:all 0.8s ease 0s;
     span {
       color:$AccentColor;
       font-size: 28px;
@@ -151,18 +151,10 @@
   .banner__description._active {
     transform: translate(0px,0px);
     opacity: 1;
+    transition:all 2s ease 0.4s;
   }
-  // @keyframes slidein {
-  //   from {
-  //     margin-top: -200%;
-  //     width: 100%;
-  //   }
-  
-  //   to {
-  //     margin-left: 0%;
-  //     width: 100%;
-  //   }
-  // }
+
+
   
 .banner__button-block {
   display: flex;
@@ -195,6 +187,7 @@
     transform: translate(0px,0px);
     opacity: 1;
   }
+
   .button__secondary {
     display: flex;
     font-size: 18px;
