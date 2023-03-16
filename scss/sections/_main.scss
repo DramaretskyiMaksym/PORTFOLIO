@@ -32,7 +32,17 @@
   color: $BaseColor;
   margin-bottom: 10px;
   letter-spacing: 0.03em;
+  transform: translate(0px,-50%);
+  opacity: 0;
+  transition:all 0.3s ease 0s;
 }
+
+.block__title._active .main__title {
+  transform: translate(0px,0px);
+  opacity: 1;
+  transition:all 0.8s ease 0.5s;
+}
+
 .block__title {
   display: flex;
   flex-direction: column;
@@ -41,7 +51,16 @@
 }
 .description {
   max-width: 600px;
+  transform: translate(0px,-50%);
+  opacity: 0;
+  transition:all 0.3s ease 0s;
 }
+.block__title._active .description{
+  transform: translate(0px,0px);
+  opacity: 1;
+  transition:all 0.8s ease 0.3s;
+}
+
 .blocks{
 display: flex;
 flex-wrap: wrap;
