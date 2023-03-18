@@ -159,6 +159,15 @@
       margin-right: 14px;
     }
   }
+  .rotate-shadows {
+    width: 470px;
+    height: 470px;
+    position: absolute;
+    top: -50px;
+    right: -40px;
+    z-index: -1;
+    overflow: hidden;
+  }
 
   .banner__img{
     width: 400px;
