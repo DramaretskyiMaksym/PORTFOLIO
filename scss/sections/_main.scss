@@ -424,20 +424,24 @@ p {
 }
 
 .block__worksite {
-  display: flex;
-  // transition:all 0.4s ease 0s;
-  // &:hover {
-  //   -webkit-transform: scale(1.4);
-  //   -ms-transform: scale(1.4);
-  //   transform: scale(1.4);
-  //   transition:0.4s;
-  // }
+  transition:all 0.4s ease 0s;
+  transform: scale(0);
+  transition:all 0.8s ease 0s;
+  &:hover {
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+    transition:0.4s;
+  }
+}
+.block__work._active .block__worksite{
+  transform: scale(1);
+  transition:all 0.8s ease 0.5s;
 }
 .work {
   display: flex;
   transition:all 0.4s ease 0s;
-  width: 400px;
-  height: 300px;
+  justify-content: center;
   &:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
