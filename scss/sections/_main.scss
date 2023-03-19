@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0px 200px;
+  padding: 100px 0px 150px;
   position: relative;
   &::after {
     content: "</>";
@@ -24,6 +24,7 @@
     text-align: center;
   }
 }
+
 .main__title {
   display: flex;
   font-size: 22px;
@@ -98,21 +99,6 @@
     opacity: 0;
     transition:all 0.3s ease 0s;
   }
-//   &::before {
-//     content: "";
-//     height: 108px;
-//     border-radius: 6px;
-//     position: absolute;
-//     width: 120px;
-//     height: 108px;
-//     top: -10px;
-//     left: 10px;
-//     z-index: -1;
-//     background-color: #7A828F;
-//     transform: translate(0px,-50%);
-//     opacity: 0;
-//     transition:all 0.3s ease 0s;
-// }
 
 p {
   align-items: center;
@@ -134,11 +120,6 @@ p {
   opacity: 1;
   transition:all 0.8s ease 1s;
 }
-// .blocks._active .block::before {
-//   opacity: 1;
-//   transform: translate(0px,0px);
-//   transition:all 0.8s ease 0.6s;
-// }
 .blocks._active .block:nth-child(2) {
   opacity: 1;
   transform: translate(0px,0px);
@@ -334,7 +315,7 @@ p {
 .about__block-text._active .aboutme__buttom {
   opacity: 1;
   transform: translate(0px,0px);
-  transition:all 0.8s ease 0.6s;
+  transition:all 0.8s ease 0s;
 }
 
 .section__skills {
@@ -342,7 +323,7 @@ p {
   position: relative;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0px 50px;
+  padding: 100px 0px 0px;
   &::before {
     content: "</>";
     position: absolute;
@@ -512,7 +493,7 @@ p {
     font-weight: 300;
   }
 }
-.buttom__link {
+.button__link,.button__link-skills {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -538,12 +519,16 @@ p {
   transition:all 0.8s ease 0.5s;
 }
 
-.section__works._active .buttom__link {
+.section__works._active .button__link-skills {
   opacity: 1;
   transform: translate(0px,0px);
-  transition:all 0.8s ease 0.6s;
+  transition:all 0.4s ease 0s;
 }
-
+.section__works._active .button__link {
+  opacity: 1;
+  transform: translate(0px,0px);
+  transition:all 0.4s ease 0s;
+}
 @media (min-width:600px){
   .block__about{
     flex-direction: row;
@@ -572,7 +557,9 @@ p {
 }
 
 @media (min-width:800px) {
-
+  .block__work {
+    flex-direction: row;
+  }
   .certificates{
     flex-direction: row;
     justify-content:space-around;

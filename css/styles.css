@@ -427,8 +427,9 @@ hr {
 
 .menu__link.active-link {
   color: #3AB561;
-  border: 3px solid #1D2430;
-  font-size: 16px;
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: 600;
 }
 .menu__link.active-link:hover {
   border: 3px dotted #1D2430;
@@ -850,7 +851,7 @@ body.lock {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0px 200px;
+  padding: 100px 0px 150px;
   position: relative;
 }
 .section__aboutSite::after {
@@ -1165,7 +1166,7 @@ body.lock {
 .about__block-text._active .aboutme__buttom {
   opacity: 1;
   transform: translate(0px, 0px);
-  transition: all 0.8s ease 0.6s;
+  transition: all 0.8s ease 0s;
 }
 
 .section__skills {
@@ -1173,7 +1174,7 @@ body.lock {
   position: relative;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0px 50px;
+  padding: 100px 0px 0px;
 }
 .section__skills::before {
   content: "</>";
@@ -1344,7 +1345,7 @@ body.lock {
   font-weight: 300;
 }
 
-.buttom__link {
+.button__link, .button__link-skills {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1360,7 +1361,7 @@ body.lock {
   opacity: 0;
   transition: all 0.3s ease 0s;
 }
-.buttom__link:hover {
+.button__link:hover, .button__link-skills:hover {
   border: 3px dotted #3AB561;
   color: #3AB561;
   background: rgba(0, 0, 0, 0);
@@ -1371,10 +1372,16 @@ body.lock {
   transition: all 0.8s ease 0.5s;
 }
 
-.section__works._active .buttom__link {
+.section__works._active .button__link-skills {
   opacity: 1;
   transform: translate(0px, 0px);
-  transition: all 0.8s ease 0.6s;
+  transition: all 0.4s ease 0s;
+}
+
+.section__works._active .button__link {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.4s ease 0s;
 }
 
 @media (min-width: 600px) {
@@ -1402,6 +1409,9 @@ body.lock {
   }
 }
 @media (min-width: 800px) {
+  .block__work {
+    flex-direction: row;
+  }
   .certificates {
     flex-direction: row;
     justify-content: space-around;
@@ -1646,7 +1656,7 @@ body.lock {
   border: 3px solid #3AB561;
   transform: translate(0px, 120%);
   opacity: 0;
-  transition: all 1s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 .button:hover {
   border: 3px dotted #3AB561;

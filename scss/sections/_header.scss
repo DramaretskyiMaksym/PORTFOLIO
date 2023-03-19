@@ -67,8 +67,9 @@ hr {
 
 .menu__link.active-link {
   color: #3AB561;
-  border: 3px solid#1D2430;
-  font-size: 16px;
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: 600;
   &:hover {
     border: 3px dotted #1D2430;
     color: #3AB561;
