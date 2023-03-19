@@ -56,7 +56,7 @@
   transition:all 0.3s ease 0s;
 }
 .block__title._active .description{
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   transform: translate(0px,0px);
   opacity: 1;
@@ -176,7 +176,7 @@ p {
   align-items: center ;
   padding:22px 24px 40px;
   border-radius: 8px;
-  background-color:#1D2430;
+  // background-color:#1D2430;
 }
 
 .title__aboutme {
@@ -241,18 +241,16 @@ p {
   align-items: center;
   width: 280px;
   height:340px;
-  opacity: 0;
-  transform: translate(0px,120%);
-  transition:all 0.8s ease 0.6s;
+  transform: scale(0);
+  transition:all 0.8s ease 0s;
   img {
     border-radius: 4px;
   }
 }
 
 .block__about._active .about__img {
-  opacity: 1;
-  transform: translate(0px,0px);
-  transition:all 0.8s ease 0.6s;
+  transform: scale(1);
+  transition:all 0.8s ease 0s;
 }
 
 .about__block-text{
@@ -313,7 +311,6 @@ p {
 }
 
 .aboutme__buttom {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -325,11 +322,19 @@ p {
   border-radius: 4px;
   background-color: #3AB561;
   border: 3px solid $AccentColor;
+  transform: translate(0px,-100%);
+  opacity: 0;
+  transition:all 0.3s ease 0s;
   &:hover{
     border: 3px dotted #3AB561;
     color: #3AB561;
     background: rgba(0,0,0,0);
 }
+}
+.about__block-text._active .aboutme__buttom {
+  opacity: 1;
+  transform: translate(0px,0px);
+  transition:all 0.8s ease 0.6s;
 }
 
 .section__skills {
@@ -337,8 +342,8 @@ p {
   position: relative;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0px;
-  &::after {
+  padding: 100px 0px 50px;
+  &::before {
     content: "</>";
     position: absolute;
     left: auto;
@@ -422,21 +427,21 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 100px 0px 50px;
 }
 
 .works__title {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   font-size: 18px;
   line-height: 24px;
   color: #FFF;
-  
 }
 
 .block__work {
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
-  gap: 20px;
+  gap: 60px;
 }
 
 .block__worksite {
@@ -453,9 +458,10 @@ p {
     transition:0.4s;
   }
   h4 {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
     color: #FFF;
+    font-weight: 600;
   }
 }
 
@@ -477,17 +483,22 @@ p {
   img {
     display: flex ;
     align-items: center;
+    justify-content: center;
     border-radius: 4px;
-    width: 100%;
-    height: auto;
+    min-width: 300px;
+    height: 200px;
     margin-bottom: 20px;
   }
 }
 
 .block__designer {
   display: flex;
-  gap: 30px;
+  gap: 60px;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .block__design {
@@ -495,17 +506,43 @@ p {
   flex-direction: column;
   justify-content: center;
   h4 {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
     color: #FFF;
+    font-weight: 300;
   }
 }
-
+.buttom__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 270px;
+  color: white;
+  border-radius: 4px;
+  background-color: #3AB561;
+  border: 3px solid $AccentColor;
+  transform: translate(0px,-100%);
+  opacity: 0;
+  transition:all 0.3s ease 0s;
+  &:hover{
+    border: 3px dotted #3AB561;
+    color: #3AB561;
+    background: rgba(0,0,0,0);
+}
+}
 .block__designer._active .block__design{
   transform: scale(1);
   transition:all 0.8s ease 0.5s;
 }
 
+.section__works._active .buttom__link {
+  opacity: 1;
+  transform: translate(0px,0px);
+  transition:all 0.8s ease 0.6s;
+}
 
 @media (min-width:600px){
   .block__about{
@@ -524,20 +561,25 @@ p {
       text-align: start;
     }
   }
+  .block__designer,.block__worksite {
+    h4{
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFF;
+      font-weight: 500;
+    }
+  }
 }
 
 @media (min-width:800px) {
+
   .certificates{
     flex-direction: row;
     justify-content:space-around;
   }
-  .block__work {
-    flex-direction: row;
-    gap: 20px;
-  }
   .block__designer {
     gap: 70px;
     flex-direction: row;
+    justify-content: space-around;
   }
-
 }

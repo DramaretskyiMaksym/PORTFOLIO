@@ -187,14 +187,12 @@
     }
   }
 
-  .banner__description._active {
-    transform: translate(0px,0px);
-    opacity: 1;
-    transition:all 2s ease 0.4s;
-  }
+.banner__description._active {
+  transform: translate(0px,0px);
+  opacity: 1;
+  transition:all 2s ease 0.4s;
+}
 
-
-  
 .banner__button-block {
   display: flex;
   flex-direction: column;
@@ -202,25 +200,26 @@
   gap: 20px;
   margin-bottom: 50px;
 }
-  .button {
-    display: flex;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 500;
-    color: #FDFEFE;
-    background-color: #3AB561;
-    padding:12px 60px;
-    border-radius: 4px;
-    border: 3px solid $AccentColor;
-    transform: translate(0px,120%);
-    opacity: 0;
-    transition:all 1s ease 0s;
-    &:hover{
-      border: 3px dotted #3AB561;
-      color: #3AB561;
-      background: rgba(0,0,0,0);
-  }
-  }
+
+.button {
+  display: flex;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #FDFEFE;
+  background-color: #3AB561;
+  padding:12px 60px;
+  border-radius: 4px;
+  border: 3px solid $AccentColor;
+  transform: translate(0px,120%);
+  opacity: 0;
+  transition:all 1s ease 0s;
+  &:hover{
+    border: 3px dotted #3AB561;
+    color: #3AB561;
+    background: rgba(0,0,0,0);
+}
+}
 
   .button._active {
     transform: translate(0px,0px);
