@@ -39,7 +39,7 @@
   height:40px;
   img {
     svg rect{
-      fill: #3AB561
+      fill:$AccentColor
     }
   }
 }
@@ -66,17 +66,17 @@ hr {
 }
 
 .menu__link.active-link {
-  color: #3AB561;
-  font-size: 22px;
+  color:$AccentColor;
+  font-size: 18px;
   line-height: 20px;
   font-weight: 600;
   &:hover {
     border: 3px dotted #1D2430;
-    color: #3AB561;
+    color: $AccentColor;
     border-radius: 4px;
-    -webkit-transform: scale();
-    -ms-transform: scale();
-    transform: scale();
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
     transition:0s;
   }
 }
@@ -99,7 +99,7 @@ hr {
     background-color: #FDFEFE;
     transition: transform .3s, opacity .3s;
     &:nth-child(2) {
-      background-color: #3AB561;
+      background-color:$AccentColor;
       width: 50%;
       margin-left: 10px;
     }
