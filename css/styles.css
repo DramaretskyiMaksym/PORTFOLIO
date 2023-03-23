@@ -1023,20 +1023,23 @@ body.lock {
   font-weight: 600;
 }
 .block__animation marquee:nth-child(8) {
-  color: white;
-}
-.block__animation marquee:nth-child(8) span {
-  color: #4285F4;
+  color: #817d7d;
+  font-size: 30px;
+  font-weight: 600;
 }
 .block__animation marquee:nth-child(9) {
   color: white;
 }
 .block__animation marquee:nth-child(9) span {
   color: #4285F4;
-  margin: 0px;
 }
 .block__animation marquee:nth-child(10) {
   color: white;
+}
+.block__animation marquee:nth-child(10) span {
+  color: #4285F4;
+}
+.block__animation marquee:nth-child(11) {
   color: #4285F4;
   font-size: 26px;
   line-height: 32px;
@@ -1151,15 +1154,15 @@ marquee span:last-child {
   width: 280px;
   height: 340px;
   transform: scale(0);
-  transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0.4s;
 }
 .about__img img {
   border-radius: 4px;
 }
 
-.block__about._active .about__img {
+.section__aboutme._active .about__img {
   transform: scale(1);
-  transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0.4s;
 }
 
 .about__block-text {
@@ -1176,7 +1179,7 @@ marquee span:last-child {
   overflow: hidden;
   transform: translate(0px, 50%);
   opacity: 0;
-  transition: all 0.4s ease 0.2s;
+  transition: all 0.4s ease 0.4s;
 }
 .about__description p {
   margin-bottom: 10px;
@@ -1188,10 +1191,10 @@ marquee span:last-child {
   text-align: center;
 }
 
-.block__about._active .about__description {
+.section__aboutme._active .about__description {
   opacity: 1;
   transform: translate(0px, 0px);
-  transition: all 0.4s ease 0.2s;
+  transition: all 0.4s ease 0.4s;
 }
 
 ._anim-show {
@@ -1225,10 +1228,10 @@ marquee span:last-child {
   overflow: hidden;
   transform: translate(0px, -100%);
   opacity: 0;
-  transition: all 0.3s ease 0s;
+  transition: all 0.4s ease 0.4s;
 }
 
-.block__about._active .text__noneMobile {
+.section__aboutme._active .text__noneMobile {
   opacity: 1;
   transform: translate(0px, 0px);
   transition: all 0.8s ease 0.6s;
