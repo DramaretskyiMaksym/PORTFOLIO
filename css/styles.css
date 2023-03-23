@@ -992,7 +992,7 @@ body.lock {
 .block__animation {
   display: block;
   z-index: -1;
-  min-height: 400px;
+  min-height: 200px;
   width: 100%;
   color: white;
   font-size: 18px;
@@ -1000,28 +1000,42 @@ body.lock {
   font-weight: 600;
   color: rgb(255, 255, 255);
 }
-
-.string__google {
+.block__animation marquee {
+  font-size: 18px;
+}
+.block__animation marquee:nth-child(2) {
+  font-size: 16px;
+  line-height: 24px;
+}
+.block__animation marquee:nth-child(3) {
+  font-size: 12px;
+  line-height: 18px;
+}
+.block__animation marquee:nth-child(10) {
+  font-size: 20px;
+  line-height: 28px;
+}
+.block__animation .string__google {
   font-size: 26px;
   line-height: 32px;
   font-weight: 600;
 }
-.string__google span:first-child {
+.block__animation .string__google span:first-child {
   color: #4285F4;
 }
-.string__google span:nth-child(2) {
+.block__animation .string__google span:nth-child(2) {
   color: #DB4437;
 }
-.string__google span:nth-child(3) {
+.block__animation .string__google span:nth-child(3) {
   color: #F4B400;
 }
-.string__google span:nth-child(4) {
+.block__animation .string__google span:nth-child(4) {
   color: #4285F4;
 }
-.string__google span:nth-child(5) {
+.block__animation .string__google span:nth-child(5) {
   color: #0F9D58;
 }
-.string__google span:last-child {
+.block__animation .string__google span:last-child {
   color: #DB4437;
   margin-right: 4px;
 }
@@ -1030,7 +1044,7 @@ body.lock {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 200px 0px 100px;
+  padding: 50px 0px;
   position: relative;
 }
 .section__aboutme::before {
@@ -1038,7 +1052,7 @@ body.lock {
   position: absolute;
   left: auto;
   right: auto;
-  top: 140px;
+  top: 0px;
   color: #878A8F;
   font-size: 18px;
   font-weight: 600;
@@ -1240,7 +1254,7 @@ body.lock {
   position: absolute;
   left: auto;
   right: auto;
-  top: 40px;
+  top: 50px;
   color: #878A8F;
   font-size: 18px;
   font-weight: 600;
