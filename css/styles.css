@@ -985,82 +985,43 @@ body.lock {
 
 .section__animation {
   display: flex;
-  position: relative;
   text-align: center;
-  height: 400px;
+  padding: 50px 0px;
 }
 
 .block__animation {
-  position: absolute;
   display: block;
   z-index: -1;
-  left: 0px;
+  min-height: 400px;
   width: 100%;
-  top: 100px;
+  color: white;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
   color: rgb(255, 255, 255);
 }
-.block__animation marquee {
-  z-index: -1;
-  gap: 30px;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-}
-.block__animation marquee:first-child {
-  color: #B547F5;
-}
-.block__animation marquee:last-child {
-  color: white;
-  font-size: 26px;
-}
-.block__animation marquee:nth-child(6) {
-  color: #FFEF5C;
-  font-size: 30px;
-  font-weight: 600;
-}
-.block__animation marquee:nth-child(7) {
-  color: white;
-  font-size: 30px;
-  font-weight: 600;
-}
-.block__animation marquee:nth-child(8) {
-  color: #817d7d;
-  font-size: 30px;
-  font-weight: 600;
-}
-.block__animation marquee:nth-child(9) {
-  color: white;
-}
-.block__animation marquee:nth-child(9) span {
-  color: #4285F4;
-}
-.block__animation marquee:nth-child(10) {
-  color: white;
-}
-.block__animation marquee:nth-child(10) span {
-  color: #4285F4;
-}
-.block__animation marquee:nth-child(11) {
-  color: #4285F4;
+
+.string__google {
   font-size: 26px;
   line-height: 32px;
+  font-weight: 600;
 }
-
-marquee span:first-child {
+.string__google span:first-child {
   color: #4285F4;
 }
-marquee span:nth-child(2) {
+.string__google span:nth-child(2) {
   color: #DB4437;
 }
-marquee span:nth-child(3) {
+.string__google span:nth-child(3) {
   color: #F4B400;
 }
-marquee span:nth-child(4) {
+.string__google span:nth-child(4) {
   color: #4285F4;
 }
-marquee span:nth-child(5) {
+.string__google span:nth-child(5) {
   color: #0F9D58;
 }
-marquee span:last-child {
+.string__google span:last-child {
   color: #DB4437;
   margin-right: 4px;
 }
@@ -1069,7 +1030,7 @@ marquee span:last-child {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 200px 0px;
+  padding: 200px 0px 100px;
   position: relative;
 }
 .section__aboutme::before {
@@ -1150,17 +1111,17 @@ marquee span:last-child {
 .about__img {
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   width: 280px;
   height: 340px;
   transform: scale(0);
-  transition: all 0.6s ease 0.4s;
+  transition: all 0.6s ease 1s;
 }
 .about__img img {
   border-radius: 4px;
 }
 
-.section__aboutme._active .about__img {
+.block__сard._active .about__img {
   transform: scale(1);
   transition: all 0.6s ease 0.4s;
 }
@@ -1173,13 +1134,13 @@ marquee span:last-child {
 }
 
 .about__description {
-  margin-bottom: 20px;
   max-width: 340px;
+  margin-bottom: 30px;
   text-align: center;
   overflow: hidden;
   transform: translate(0px, 50%);
   opacity: 0;
-  transition: all 0.4s ease 0.4s;
+  transition: all 0.8s ease 0.4s;
 }
 .about__description p {
   margin-bottom: 10px;
@@ -1191,10 +1152,10 @@ marquee span:last-child {
   text-align: center;
 }
 
-.section__aboutme._active .about__description {
+.block__сard._active .about__description {
   opacity: 1;
   transform: translate(0px, 0px);
-  transition: all 0.4s ease 0.4s;
+  transition: all 0.8s ease 0.4s;
 }
 
 ._anim-show {
@@ -1211,6 +1172,7 @@ marquee span:last-child {
 
 .about__description-desktop {
   max-width: 340px;
+  margin-bottom: 30px;
   text-align: start;
 }
 .about__description-desktop p {
@@ -1228,13 +1190,13 @@ marquee span:last-child {
   overflow: hidden;
   transform: translate(0px, -100%);
   opacity: 0;
-  transition: all 0.4s ease 0.4s;
+  transition: all 0.8s ease 0.4s;
 }
 
-.section__aboutme._active .text__noneMobile {
+.block__сard._active .text__noneMobile {
   opacity: 1;
   transform: translate(0px, 0px);
-  transition: all 0.8s ease 0.6s;
+  transition: all 0.8s ease 0.4s;
 }
 
 .aboutme__buttom {
@@ -1252,7 +1214,7 @@ marquee span:last-child {
   border: 3px solid #009AFE;
   transform: translate(0px, -100%);
   opacity: 0;
-  transition: all 0.3s ease 0s;
+  transition: all 0.8s ease 0.4s;
 }
 .aboutme__buttom:hover {
   border: 3px dotted #009AFE;
@@ -1260,10 +1222,10 @@ marquee span:last-child {
   background: rgba(0, 0, 0, 0);
 }
 
-.about__block-text._active .aboutme__buttom {
+.block__сard._active .aboutme__buttom {
   opacity: 1;
   transform: translate(0px, 0px);
-  transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0.4s;
 }
 
 .section__skills {
@@ -2024,6 +1986,12 @@ marquee span:last-child {
     max-width: 600px;
     font-size: 18px;
     line-height: 22px;
+  }
+  .about__block-text {
+    padding-top: 0px;
+  }
+  .about__description {
+    margin-bottom: 0px;
   }
   .text__noneMobile {
     display: flex;

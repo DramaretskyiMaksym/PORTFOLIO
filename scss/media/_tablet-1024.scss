@@ -180,6 +180,12 @@
     font-size: 18px;
     line-height: 22px;
   }
+  .about__block-text {
+    padding-top: 0px;
+  }
+  .about__description {
+    margin-bottom: 0px;
+  }
   .text__noneMobile {
     display:flex;
     flex-direction: column;
