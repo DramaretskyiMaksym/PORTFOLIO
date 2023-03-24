@@ -222,6 +222,14 @@
   margin-bottom: 50px;
 }
 
+.block__button {
+  display: flex;
+
+  transform: translate(0px,120%);
+  opacity: 0;
+  transition:all 1s ease 0.5s;
+}
+
 .button {
   display: flex;
   font-size: 18px;
@@ -232,22 +240,25 @@
   padding:12px 60px;
   border-radius: 4px;
   border: 3px solid $AccentColor;
-  transform: translate(0px,120%);
-  opacity: 0;
-  transition:all 0.3s ease 0s;
   &:hover{
-    border: 3px dotted $AccentColor;
+    border: 3px dashed $AccentColor;
     color:$AccentColor;
     background: rgba(0,0,0,0);
-  }
+    transition:all 0s ease 0s;
+}
 }
 
-.button._active {
+.block__button._active {
   transform: translate(0px,0px);
   opacity: 1;
 }
 
-.button__secondary {
+.block__button-secondary{
+  transform: translate(0px,-120%);
+  opacity: 0;
+  transition:all 1s ease 1s;
+}
+.button__secondary{
   display: flex;
   font-size: 18px;
   line-height: 18px;
@@ -256,16 +267,12 @@
   color: #B0B0B0;
   border-radius: 4px;
   border: 3px solid $SecondaryColor;
-  transform: translate(0px,120%);
-  opacity: 0;
-  transition:all 0.3s ease 0s;
   &:hover{
-    border: 3px dotted $AccentColor;
+    border: 3px dashed $AccentColor;
     color:$AccentColor;
   }
 }
-
-.button__secondary._active {
+.block__button-secondary._active {
   transform: translate(0px,0px);
   opacity: 1;
 }

@@ -377,9 +377,9 @@ p {
   border: 3px solid $AccentColor;
   transform: translate(0px,-100%);
   opacity: 0;
-  transition:all 0.8s ease 0.4s;
+  transition:all 0.8s ease 0s;
   &:hover{
-    border: 3px dotted $AccentColor;
+    border: 3px dashed $AccentColor;
     color: $AccentColor;
     background: rgba(0,0,0,0);
   }
@@ -388,7 +388,7 @@ p {
 .block__сard._active .aboutme__buttom {
   opacity: 1;
   transform: translate(0px,0px);
-  transition:all 0.8s ease 0.4s;
+  transition:all 0.8s ease 0s;
 }
 
 .section__skills {
