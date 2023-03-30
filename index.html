@@ -6,11 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="icon" href="./images/Logo-Desktop.svg" type="image/icon type">
-  <script defer src="./script.js"></script>
   <title>PORTFOLIO</title>
 </head>
 <body>
-
   <header class="header">
     <div class="container header__container">
       <a class="logo" href="./index.html">
@@ -71,13 +69,13 @@
         </span>
         Front-end Developer
       </h2>
-      <h2 class="banner__tertiary _anim-items _anim-no-hide" >
+      <h2 class="banner__tertiary _anim-items">
         <span class="ampersand">
           &
         </span>
         UI/UX Designer
       </h2>
-      <div class="banner__description _anim-items _anim-no-hide">
+      <div class="banner__description _anim-items ">
         <p>
           This site is not a work of art at the highest level,
           but simply a raft of my work, which in turn will only get better.
@@ -88,13 +86,13 @@
         </p>
       </div>
       <div class="banner__button-block">
-        <div  class="block__button _anim-items _anim-no-hide">
+        <div  class="block__button _anim-items ">
           <a  class="button" href="https://t.me/Maksym_Dramaretskyi" target="_blank"  title="Write to me on telegram">
             Write Me
           </a>
         </div>
-        <div class="block__button-secondary _anim-items _anim-no-hide">
-          <a class="button__secondary" href="#contact" title="other sources of communication" >
+        <div class="block__button-secondary _anim-items ">
+          <a class="button__secondary scroll smooth-scroll" href="#footer" title="other sources of communication" >
             Contacts
           </a>
         </div>
@@ -102,18 +100,18 @@
     </div>
   </div>
  </div>
- <div class="banner__animation-post">
+ <!-- <div class="banner__animation-post">
   <marquee  class="banner__post"width="70%" direction="left" height="100px" scrollamount="10">I Am Applying For An Internship Or Junior Specialist Position</marquee>
- </div>
+ </div> -->
 </section>
 
 <main class="wrapper">
   <section class="section__aboutSite">
     <div class="block__title _anim-items">
-      <h2 class="main__title _anim-items _anim-no-hide">
+      <h2 class="main__title _anim-items">
         Site Implemented.
       </h2>
-      <p class="description _anim-items _anim-no-hide">
+      <p class="description _anim-items">
         Made in html and css using sass preprocessor
         and of course where without version control.
         Javascript is used sparingly
@@ -169,7 +167,16 @@
       </marquee>
       <marquee behavior="scroll" direction="right" scrollamount="10">IT</marquee>
       <marquee behavior="scroll" direction="left" scrollamount="8">I Want To Be A Web Developer</marquee>
-      <marquee behavior="scroll" direction="right" scrollamount="8">I Want To IT</marquee>
+      <marquee class="styles__span" behavior="scroll" direction="right" scrollamount="8">
+        <span>
+          I
+        </span>
+          Want
+          To
+        <span>
+          IT Company
+        </span>
+      </marquee>
       <marquee behavior="scroll" direction="left" scrollamount="10">My Next Target</marquee>
       <marquee behavior="scroll" direction="left" scrollamount="16">I like to go where the going gets tough </marquee>
       <marquee behavior="scroll" direction="right" scrollamount="30">My Dream</marquee>
@@ -211,9 +218,11 @@
               and that was to be part of this amazing world...
             </p>
           </div>
-          <a class="aboutme__buttom" href="./about.html">
-            Read More
-          </a>
+          <div class="aboutme__buttom ">
+            <a class="button__link-page _anim-items" href="./about.html">
+              Read More
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -321,9 +330,9 @@
 </main>
 
 
-  <footer class="footer__background">
+  <footer class="footer__background" id="footer">
     <div class="wrapper">
-      <div  id="contact" class="footer">
+      <div class="footer">
         <div class="footer__content">
 
           <div class="footer__contact">
@@ -387,5 +396,6 @@
       </div>
     </div>
 </footer>
+<script defer src="./script.js"></script>
 </body>
 </html>

@@ -139,7 +139,18 @@ p {
   text-align: center;
   padding: 50px 0px;
 }
+.styles__span {
 
+  span:first-child {
+    color:#ff1702;
+    margin-right: 10px;
+  }
+
+  span:last-child{
+    color:#ff1702;
+    margin-right: 0px;
+  }
+}
 .block__animation {
   display: block;
   z-index: -1;
@@ -151,6 +162,10 @@ p {
   font-weight: 600;
   color: rgb(255, 255, 255);
   marquee {
+    &:first-child {
+      letter-spacing: 0.235em;
+      color: rgba(190, 190, 190, 0.6);
+    }
     font-size: 18px;
     &:nth-child(2) {
       font-size: 16px;
@@ -160,14 +175,18 @@ p {
       font-size: 12px;
       line-height: 18px;
     }
+    
     &:nth-child(10) {
       font-size: 20px;
       line-height: 28px;
+      letter-spacing: 0.12em;
+      color: #DEDBDB;
     }
+
   }
   .string__google{
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 26px;
     font-weight: 600;
     span:first-child {
       color:#4285F4;
