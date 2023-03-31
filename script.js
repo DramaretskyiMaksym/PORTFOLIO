@@ -35,29 +35,10 @@ if (animItems.length > 0) {
       scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     return { top: rect.top + scrollTop, left: rect.left + scrollLeft}
   }
-
   setTimeout(() => {
     animOnScroll();
   },200);
 }
-
-
-// let anchors = document.querySelectorAll('.banner a[href*="#"]');
-
-// for (anchor of anchors) {
-//   if (anchor){
-//     anchor.addEventListener('click', function(e){
-//       e.preventDefault();
-//       anchorId = this.getAttribute('href');
-//       document.querySelector(anchorId).scrollIntoView({
-//         behavior: 'smooth', block:'start'
-//       })
-//     })
-//   }
-// }
-
-
-
 
 document.addEventListener('DOMContentLoaded', function () {
   const links = document.querySelectorAll(".smooth-scroll")
@@ -74,37 +55,4 @@ document.addEventListener('DOMContentLoaded', function () {
       })
     })
   }
-
 })
-
-
-
-
-// function scrollTo(element){
-//   window.scroll({
-//     left:0,
-//     top: element.offsetTop,
-//     behavior: 'smooth'
-//   })
-// }
-
-// var scroll = document.querySelector('scroll');
-// var footer = document.querySelector('footer');
-
-// scroll.addEventListener('click, () => {
-//   scrollTo(footer);
-// })
-
-
-// let headerBurger = document.querySelector('.header__burger');
-// let menu = document.querySelector('.header__menu');
-// let close =document.querySelector('.banner');
-// let closePortfolio = document.querySelector('.title__portfolio');
-
-
-// headerBurger.addEventListener('click', function(){
-//   headerBurger.classList.toggle('active');
-//   menu.classList.toggle('active');
-//   close.classList.toggle('close')
-//   closePortfolio.classList.toggle('close')
-// });
