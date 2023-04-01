@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import 'animate.css';
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -727,19 +726,21 @@ hr {
 }
 
 .menu__link.active-link {
-  color: #009AFE;
-  font-size: 22px;
-  line-height: 26px;
-  font-weight: 700;
+  display: block;
+  color: #FC490B;
+  border: none;
+  font-size: 18px;
+  line-height: 22px;
 }
 .menu__link.active-link:hover {
   border: none;
-  color: #009AFE;
+  color: #FC490B;
   border-radius: 4px;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
   transition: 0s;
+  border: 3px solid #1D2430;
 }
 
 .header__burger-btn {
@@ -777,6 +778,7 @@ hr {
 
 .header.open .header__burger-btn span:nth-child(1) {
   transform: translateY(0) rotate(45deg);
+  background-color: #FC490B;
 }
 
 .header.open .header__burger-btn span:nth-child(2) {
@@ -785,6 +787,7 @@ hr {
 
 .header.open .header__burger-btn span:nth-child(3) {
   transform: translateY(0) rotate(-45deg);
+  background-color: #FC490B;
 }
 
 body.lock {
@@ -817,11 +820,11 @@ body.lock {
   }
   .menu__link {
     color: #FDFEFE;
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 18px;
     line-height: 22px;
+    font-weight: 600;
     display: block;
-    padding: 10px 0px;
+    padding: 10px 10px;
   }
   .link__behance,
   .link__linkedin,
@@ -991,9 +994,7 @@ body.lock {
 
 .block__animation {
   display: block;
-  z-index: -1;
   min-height: 200px;
-  width: 100%;
   color: white;
   font-size: 18px;
   line-height: 26px;
@@ -1284,9 +1285,10 @@ body.lock {
   font-weight: 500;
   color: #FDFEFE;
   background-color: #009AFE;
-  padding: 12px 60px;
+  padding: 12px 40px;
   border-radius: 4px;
   border: 3px solid #009AFE;
+  max-width: 250px;
 }
 .button:hover {
   border: 3px dashed #009AFE;
@@ -1311,9 +1313,10 @@ body.lock {
   font-size: 18px;
   line-height: 18px;
   font-weight: 500;
-  padding: 12px 60px;
+  padding: 12px 50px;
   color: #B0B0B0;
   border-radius: 4px;
+  max-width: 250px;
   border: 3px solid #B0B0B0;
 }
 .button__secondary:hover {
@@ -1721,10 +1724,6 @@ body.lock {
   margin-bottom: 20px;
 }
 
-.st {
-  color: #fff;
-}
-
 .block__designer {
   display: flex;
   gap: 60px;
@@ -1812,27 +1811,9 @@ body.lock {
 }
 .img__about-page {
   display: flex;
-  justify-content: center;
   padding: 100px 0px;
   flex-direction: column;
   align-items: center;
-}
-.img__about-page h2 {
-  display: flex;
-  color: white;
-  font-size: 56px;
-  line-height: 66px;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.img__about-page h3 {
-  display: flex;
-  color: white;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 600;
-  text-align: center;
 }
 .img__about-page img {
   display: flex;
@@ -1840,11 +1821,31 @@ body.lock {
   margin-bottom: 20px;
 }
 
-.animation__block-about {
-  width: 200px;
-  height: 100px;
-  padding-top: 100px;
-  margin: 0 auto;
+.about__page-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+}
+.about__page-title h2 {
+  color: white;
+  font-size: 56px;
+  line-height: 66px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about__page-title h3 {
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.container__blocks-ball {
+  display: flex;
+  flex-direction: column;
 }
 
 .ball {
@@ -1907,7 +1908,7 @@ body.lock {
   0% {
     -webkit-transform: translate(-15px);
   }
-  50% {
+  0% {
     -webkit-transform: translate(15px);
   }
   100% {
@@ -2009,14 +2010,21 @@ body.lock {
   border-radius: 4px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .img__about-page {
     flex-direction: row;
-    padding: 150px 0px;
     justify-content: space-around;
+    padding: 150px 0px 100px;
   }
   .img__about-page img {
-    margin: 0px 0px 0px 0px;
+    margin-bottom: 0px;
+  }
+  .about__page-title {
+    max-width: 300px;
+  }
+  .about__page-title h2 {
+    font-size: 80px;
+    line-height: 86px;
   }
 }
 @media (min-width: 1024px) {
@@ -2046,6 +2054,7 @@ body.lock {
     letter-spacing: 0.03em;
     font-size: 18px;
     font-weight: 500;
+    line-height: 22px;
     border-radius: 4px;
     border: 3px solid #1D2430;
   }
@@ -2061,7 +2070,11 @@ body.lock {
   }
   .menu__link.active-link {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
+    line-height: 22px;
+    border-radius: 4px;
+    border: 3px solid #1D2430;
+    padding: 4px 10px;
   }
   .menu__item {
     display: flex;
@@ -2239,13 +2252,6 @@ body.lock {
   .container {
     padding-left: 60px;
     padding-right: 60px;
-  }
-  .menu__link {
-    color: #FDFEFE;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 18px;
-    padding: 4px 10px;
   }
   .menu__list {
     gap: 30px;

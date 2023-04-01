@@ -153,15 +153,14 @@ p {
 }
 .block__animation {
   display: block;
-  z-index: -1;
   min-height: 200px;
-  width: 100%;
   color:$BaseColor;;
   font-size: 18px;
   line-height: 26px;
   font-weight: 600;
   color: rgb(255, 255, 255);
   marquee {
+    
     &:first-child {
       letter-spacing: 0.235em;
       color: rgba(190, 190, 190, 0.6);

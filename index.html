@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="icon" href="./images/Logo-Desktop.svg" type="image/icon type">
+  <script defer src="./script.js"></script>
   <title>PORTFOLIO</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header" >
     <div class="container header__container">
       <a class="logo" href="./index.html">
         <picture>
@@ -20,7 +21,10 @@
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="./skillswork.html" class="menu__link" >Skills & Works</a>
+            <a href="./skills.html" class="menu__link" >Skills</a>
+          </li>
+          <li class="menu__item">
+            <a href="./works.html" class="menu__link" >Works</a>
           </li>
           <li class="menu__item">
             <a href="./about.html" class="menu__link">About Me</a>
@@ -46,382 +50,272 @@
     </div>
   </header>
 
-<section  class="wrapper">
-  <h3 class="title__portfolio">
-    Portfolio
-    <span></span>
-  </h3>
-  <div class="banner">
-    <div class="background__img">
-      <img class="banner__img" src="./images/IMG_Banner_Im.webp" alt="" width="300" height="300">
-      <div class="rotate-shadows"></div>
-    </div>
-    <div class="banner__block">
-      <h1 class="banner__title _anim-items _anim-no-hide">
-        <span>
-          Hey, I'm
-        </span>
-        Maksym Dramaretskyi
-      </h1>
-      <h2 class="banner__subtitle _anim-items _anim-no-hide">
-        <span>
-          Beginner
-        </span>
-        Front-end Developer
-      </h2>
-      <h2 class="banner__tertiary _anim-items">
-        <span class="ampersand">
-          &
-        </span>
-        UI/UX Designer
-      </h2>
-      <div class="banner__description _anim-items ">
-        <p>
-          This site is not a work of art at the highest level,
-          but simply a raft of my work, which in turn will only get better.
-        </p>
-        <p>
-          I only did it because I like it.
-          I want to work in this direction and be successful.
-        </p>
+  <section  class="wrapper">
+    <h3 class="title__portfolio">
+      Portfolio
+      <span></span>
+    </h3>
+    <div class="banner">
+      <div class="background__img">
+        <img class="banner__img" src="./images/IMG_Banner_Im.webp" alt="" width="300" height="300">
+        <div class="rotate-shadows"></div>
       </div>
-      <div class="banner__button-block">
-        <div  class="block__button _anim-items ">
-          <a  class="button" href="https://t.me/Maksym_Dramaretskyi" target="_blank"  title="Write to me on telegram">
-            Write Me
-          </a>
+      <div class="banner__block">
+        <h1 class="banner__title _anim-items _anim-no-hide">
+          <span>
+            Hey, I'm
+          </span>
+          Maksym Dramaretskyi
+        </h1>
+        <h2 class="banner__subtitle _anim-items _anim-no-hide">
+          <span>
+            Beginner
+          </span>
+          Front-end Developer
+        </h2>
+        <h2 class="banner__tertiary _anim-items">
+          <span class="ampersand">
+            &
+          </span>
+          UI/UX Designer
+        </h2>
+        <div class="banner__description _anim-items ">
+          <p>
+            This site is not a work of art at the highest level,
+            but simply a raft of my work, which in turn will only get better.
+          </p>
+          <p>
+            I only did it because I like it.
+            I want to work in this direction and be successful.
+          </p>
         </div>
-        <div class="block__button-secondary _anim-items ">
-          <a class="button__secondary scroll smooth-scroll" href="#footer" title="other sources of communication" >
-            Contacts
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
- </div>
- <!-- <div class="banner__animation-post">
-  <marquee  class="banner__post"width="70%" direction="left" height="100px" scrollamount="10">I Am Applying For An Internship Or Junior Specialist Position</marquee>
- </div> -->
-</section>
-
-<main class="wrapper">
-  <section class="section__aboutSite">
-    <div class="block__title _anim-items">
-      <h2 class="main__title _anim-items">
-        Site Implemented.
-      </h2>
-      <p class="description _anim-items">
-        Made in html and css using sass preprocessor
-        and of course where without version control.
-        Javascript is used sparingly
-      </p>
-    </div>
-    <div class="blocks _anim-items _anim-no-hide">
-      <div class="block _anim-items _anim-no-hide">
-        <img src="./images/html-5.svg" alt="" width="64" height="48">
-        <p>
-          HTML
-        </p>
-      </div>
-      <div class="block _anim-items _anim-no-hide">
-        <img src="./images/css3.svg" alt="" width="64" height="48">
-        <p>
-          CSS
-        </p>
-      </div>
-      <div class="block _anim-items _anim-no-hide">
-        <img src="./images/sass.svg" alt="" width="64" height="48">
-        <p>
-          SASS
-        </p>
-      </div>
-      <div class="block _anim-items _anim-no-hide">
-        <img src="./images/github.svg" alt="" width="64" height="48">
-        <p>
-          GIT
-        </p>
-      </div>
-      <div class="block _anim-items _anim-no-hide">
-        <img src="./images/javascript.svg" alt="" width="64" height="48">
-        <p>
-          JAVA SCRIPT
-        </p>
-      </div>
-    </div>
-  </section>
-  <section class="section__animation">
-    <div class="block__animation">
-      <marquee behavior="scroll" direction="right" scrollamount="19">Adaptive Layout</marquee>
-      <marquee behavior="scroll" direction="left" scrollamount="13">I Want To IT</marquee>
-      <marquee behavior="scroll" direction="right" scrollamount="12">My Dream</marquee>
-      <marquee behavior="scroll" direction="left" scrollamount="16">My Next Goal </marquee>
-      <marquee class="string__google" behavior="scroll" direction="left" scrollamount="10">
-        <span>G</span>
-        <span>o</span>
-        <span>o</span>
-        <span>g</span>
-        <span>l</span>
-        <span>e</span>
-        Is My Best Friend
-      </marquee>
-      <marquee behavior="scroll" direction="right" scrollamount="10">IT</marquee>
-      <marquee behavior="scroll" direction="left" scrollamount="8">I Want To Be A Web Developer</marquee>
-      <marquee class="styles__span" behavior="scroll" direction="right" scrollamount="8">
-        <span>
-          I
-        </span>
-          Want
-          To
-        <span>
-          IT Company
-        </span>
-      </marquee>
-      <marquee behavior="scroll" direction="left" scrollamount="10">My Next Target</marquee>
-      <marquee behavior="scroll" direction="left" scrollamount="16">I like to go where the going gets tough </marquee>
-      <marquee behavior="scroll" direction="right" scrollamount="30">My Dream</marquee>
-    </div>
-  </section>
-  <section class="section__aboutme">
-
-    <div class="block__сard _anim-items _anim-no-hide">
-
-      <h2 class="title__aboutme">
-        About Me
-      </h2>
-
-      <div class="block__about">
-
-        <div class="about__img">
-          <img src="./images/imgAboutme.webp" alt=" " width="240" height="300">
-        </div>
-
-        <div class="about__block-text">
-          <div class="about__description _anim-items _anim-no-hide">
-            <p >
-              My name is Maksym Dramaretskyi! I live in Odessa, Ukraine.
-              I used to work as a real estate broker, and I had a lot of success there.
-            </p>
-            <p >
-              However, after working there for a while, I realized that it wasn't my calling,
-              and I didn't feel like I belonged there.
-            </p>
+        <div class="banner__button-block">
+          <div  class="block__button _anim-items ">
+            <a  class="button" href="https://t.me/Maksym_Dramaretskyi" target="_blank"  title="Write to me on telegram">
+              Telegram
+            </a>
           </div>
-          <div class="about__description-desktop text__noneMobile  _anim-items _anim-no-hide">
-            <p>
-              So, I decided to leave the real
-              estate industry and attend IT courses.
-            </p>
-            <p>
-              After completing the courses,
-              I discovered what I truly wanted to do,
-              and that was to be part of this amazing world...
-            </p>
-          </div>
-          <div class="aboutme__buttom ">
-            <a class="button__link-page _anim-items" href="./about.html">
-              Read More
+          <div class="block__button-secondary _anim-items ">
+            <a class="button__secondary smooth-scroll" href="https://github.com/DramaretskyiMaksym" target="_blank"> 
+              GitHub
             </a>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </section>
 
-  <!-- <div class="section__skills">
-    <h2 class="certificate__title">
-      Skills & Works
-    </h2>
+  <main class="wrapper">
+    <section class="section__aboutSite">
+      <div class="block__title _anim-items">
+        <h2 class="main__title _anim-items">
+          Site Implemented.
+        </h2>
+        <p class="description _anim-items">
+          Made in html and css using sass preprocessor
+          and of course where without version control.
+          Javascript is used sparingly
+        </p>
+      </div>
+      <div class="blocks _anim-items _anim-no-hide">
+        <div class="block _anim-items _anim-no-hide">
+          <img src="./images/html-5.svg" alt="" width="64" height="48">
+          <p>
+            HTML
+          </p>
+        </div>
+        <div class="block _anim-items _anim-no-hide">
+          <img src="./images/css3.svg" alt="" width="64" height="48">
+          <p>
+            CSS
+          </p>
+        </div>
+        <div class="block _anim-items _anim-no-hide">
+          <img src="./images/sass.svg" alt="" width="64" height="48">
+          <p>
+            SASS
+          </p>
+        </div>
+        <div class="block _anim-items _anim-no-hide">
+          <img src="./images/github.svg" alt="" width="64" height="48">
+          <p>
+            GIT
+          </p>
+        </div>
+        <div class="block _anim-items _anim-no-hide">
+          <img src="./images/javascript.svg" alt="" width="64" height="48">
+          <p>
+            JAVA SCRIPT
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section__animation">
+      <div class="block__animation">
+        <marquee behavior="scroll" direction="right" scrollamount="19">Adaptive Layout</marquee>
+        <marquee behavior="scroll" direction="left" scrollamount="13">I Want To IT</marquee>
+        <marquee behavior="scroll" direction="right" scrollamount="12">My Dream</marquee>
+        <marquee behavior="scroll" direction="left" scrollamount="16">My Next Goal </marquee>
+        <marquee class="string__google" behavior="scroll" direction="left" scrollamount="10">
+          <span>G</span>
+          <span>o</span>
+          <span>o</span>
+          <span>g</span>
+          <span>l</span>
+          <span>e</span>
+          Is My Best Friend
+        </marquee>
+        <marquee behavior="scroll" direction="right" scrollamount="10">IT</marquee>
+        <marquee behavior="scroll" direction="left" scrollamount="8">I Want To Be A Web Developer</marquee>
+        <marquee class="styles__span" behavior="scroll" direction="right" scrollamount="8">
+          <span>
+            I
+          </span>
+            Want
+            To
+          <span>
+            IT Company
+          </span>
+        </marquee>
+        <marquee behavior="scroll" direction="left" scrollamount="10">My Next Target</marquee>
+        <marquee behavior="scroll" direction="left" scrollamount="16">I like to go where the going gets tough </marquee>
+        <marquee behavior="scroll" direction="right" scrollamount="30">My Dream</marquee>
+      </div>
+    </section>
+    <section class="section__aboutme">
 
-    <div class="certificates _anim-items _anim-no-hide">
+      <div class="block__сard _anim-items _anim-no-hide">
 
-      <div class="block__certificate">
-        <a class="photo__certificate " href="https://certificate.ithillel.ua/view/21485919" target="_blank">
-            <img src="./images//certificate_UiUxDesign.webp" alt="">
-          <a class="link__check" href="https://certificate.ithillel.ua/view/21485919" target="_blank">
-            Сheck Link Click Here
+        <h2 class="title__aboutme">
+          About Me
+        </h2>
+
+        <div class="block__about">
+
+          <div class="about__img">
+            <img src="./images/imgAboutme.webp" alt=" " width="240" height="300">
+          </div>
+
+          <div class="about__block-text">
+            <div class="about__description _anim-items _anim-no-hide">
+              <p >
+                My name is Maksym Dramaretskyi! I live in Odessa, Ukraine.
+                I used to work as a real estate broker, and I had a lot of success there.
+              </p>
+              <p >
+                However, after working there for a while, I realized that it wasn't my calling,
+                and I didn't feel like I belonged there.
+              </p>
+            </div>
+            <div class="about__description-desktop text__noneMobile  _anim-items _anim-no-hide">
+              <p>
+                So, I decided to leave the real
+                estate industry and attend IT courses.
+              </p>
+              <p>
+                After completing the courses,
+                I discovered what I truly wanted to do,
+                and that was to be part of this amazing world...
+              </p>
+            </div>
+            <div class="aboutme__buttom ">
+              <a class="button__link-page _anim-items" href="./about.html">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section__skills">
+      <h2 class="certificate__title">
+        Skills & Works
+      </h2>
+
+      <div class="certificates _anim-items _anim-no-hide">
+
+        <div class="block__certificate">
+          <a class="photo__certificate " href="https://certificate.ithillel.ua/view/21485919" target="_blank">
+              <img src="./images//certificate_UiUxDesign.webp" alt="">
+            <a class="link__check" href="https://certificate.ithillel.ua/view/21485919" target="_blank">
+              Сheck Link Click Here
+            </a>
           </a>
-        </a>
-      </div>
+        </div>
 
 
-      <div class="block__certificate ">
-        <a class="photo__certificate"href="https://certificate.ithillel.ua/view/56913144" target="_blank">
-            <img src="./images/certificate_FrontendBasic.webp" alt="" target="_blank">
-          <a class="link__check" href="https://certificate.ithillel.ua/view/56913144" target="_blank">
-            Сheck Link Click Here
+        <div class="block__certificate ">
+          <a class="photo__certificate"href="https://certificate.ithillel.ua/view/56913144" target="_blank">
+              <img src="./images/certificate_FrontendBasic.webp" alt="" target="_blank">
+            <a class="link__check" href="https://certificate.ithillel.ua/view/56913144" target="_blank">
+              Сheck Link Click Here
+            </a>
           </a>
-        </a>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="summary">
-
-  </div>
-
-  <div class="section__works  _anim-items _anim-no-hide">
-    <h2 class="works__title">
-      Site Development
-    </h2>
-
-
-    <div class="block__work _anim-items _anim-no-hide">
-      
-      <div class="block__worksite">
-        <a class="work" href="https://dramaretskyimaksym.github.io/FinalWork/" target="_blank">
-          <img src="./images/final project.webp" alt="" width="300" height="200">
-        </a>
-        <h4>
-          Adaptive Development
-        </h4>
-      </div>
-
-      <div class="block__worksite">
-        <a  class="work" href="https://dramaretskyimaksym.github.io/one-of-the-first-works/" target="_blank">
-          <img src="./images/ready_mix.webp" alt="" width="300" height="200">
-        </a>
-        <h4>
-          Catalog Development
-        </h4>
-      </div>
-    </div>
-
-    <a  class="button__link-skills" href="/skillswork.html">
-      See More
-    </a>
-  </div>
-
-  <div class="section__works _anim-items _anim-no-hide">
-    <h2 class="works__title">
-      Ui/Ux Design
-    </h2>
-
-
-    <div class="block__designer _anim-items _anim-no-hide">
-      
-      <div class="block__design">
-
-        <a class="work" href="https://www.behance.net/maksymdramaretskyi" target="_blank">
-          <img src="./images/phone_14_food.webp" alt="">
-        </a>
-        <h4>
-          Nutrition Is The Main Value Of Health
-        </h4>
-      
-      </div>
-
-      <div class="block__design">
-
-        <a  class="work"  href="https://dramaretskyimaksym.github.io/FinalWork/" target="_blank">
-          <img src="./images/phone_14_pro_max_mockup_4.webp" alt="">
-        </a>
-        <h4>
-          Ui/Ux Design, App For Latin America
-        </h4>
+        </div>
 
       </div>
     </div>
-    <a class="button__link" href="https://www.behance.net/maksymdramaretskyi" target="_blank">
-      More Work On Behance
-    </a>
-  </div>
-</main> -->
-<section class="st">
-  
-  Magnam at consequatur provident, beatae quas non velit? Sint, temporibus dolorem. Expedita, ea vitae vero saepe ullam doloribus quasi at consequatur, quaerat amet, impedit inventore quos nihil? Expedita, atque illum.
-  Ab asperiores enim et beatae minus laboriosam reiciendis nisi earum corporis, autem iste fugiat! Et optio ad deserunt autem a? Tempore ducimus ipsum voluptatibus veniam in earum ipsam molestiae laudantium?
-  Consequatur laudantium ratione officia harum, neque aperiam consectetur magni voluptas nisi id maiores dolorum, molestiae vero explicabo tempora est eum unde beatae ex odit? Consequuntur corporis aliquam fuga cum eligendi.
-  Rem earum repudiandae accusamus eveniet voluptatum omnis molestiae quasi labore deleniti dignissimos ipsam, reiciendis, neque temporibus quod. Cupiditate adipisci facilis, quod, nam quibusdam amet doloribus iste sint ut quos non.
-  Enim quod aspernatur fuga optio unde, asperiores doloribus eius facilis, adipisci voluptate maiores commodi! Perferendis atque natus sint debitis eos unde ab, voluptatibus sed, deleniti eaque neque nisi corporis? Ipsa.
-  Dolorem, blanditiis eum rerum nihil recusandae incidunt sapiente, nobis odit voluptates laboriosam iusto! Natus quis iure itaque assumenda placeat exercitationem laborum quo aperiam. Laboriosam, velit. Consequuntur sapiente at vitae harum.
-  Eveniet a quidem molestiae, tempora saepe adipisci, voluptas doloribus cum maiores assumenda enim eos quas modi et nisi qui? Earum repellendus sapiente delectus. Nihil, a deserunt autem distinctio alias eos.
-  Ab culpa sint consectetur voluptatum, dolorum voluptate beatae maiores magnam optio fugiat commodi aperiam. Vitae recusandae neque suscipit repellat consectetur officiis eos quas distinctio ipsa. Non quidem minima rerum vitae!
-  Voluptates, nulla, rerum, beatae obcaecati itaque ipsum repellendus nostrum maiores libero iste at porro. Ex culpa, provident facere dolor beatae, deserunt recusandae dicta quos dolorem nesciunt excepturi consequatur iure id!
-  Ab, accusamus quaerat! Unde provident consectetur nesciunt ex consequuntur dolor non ducimus, tenetur soluta nulla fugit. Voluptates fugit, quia id quos praesentium ipsa. Modi deleniti suscipit fuga voluptas numquam illum.
-  Non ratione recusandae dolore placeat quaerat laudantium sapiente consequatur. Assumenda alias accusantium voluptatum, sint esse dolore ex unde facere nemo tempora cumque optio magni ullam inventore, totam earum rem iusto!
-  Officia obcaecati cum suscipit sunt voluptas quibusdam maiores error eaque commodi assumenda accusantium, doloribus mollitia? Ad tempore laboriosam aliquid eius. Consequatur ut recusandae tempore provident sapiente, suscipit quibusdam veniam neque.
-  Error, cumque cupiditate. Soluta sequi vel esse est dolorem officiis inventore minima consectetur totam iure repudiandae sunt ab nisi deleniti in beatae voluptate eius sapiente, ducimus recusandae voluptates! Sequi, minima!
-  Velit repudiandae, deserunt culpa, error quo ea delectus impedit voluptas, saepe ab excepturi perspiciatis commodi consequatur aliquid a sit. Ea quasi veniam earum tempore quas, possimus architecto sed debitis doloremque!
-  Itaque dolorum in aspernatur recusandae aliquam magni est incidunt pariatur sequi porro, enim eos dolorem aliquid fugiat sint, unde temporibus deserunt voluptas ullam inventore! Iure vitae provident accusamus nihil incidunt!
-  Nam quos, minus exercitationem aut, consectetur commodi quaerat, sunt quo voluptatibus labore illo? Et, quasi. Officia distinctio neque voluptas ipsam vero, tempora ipsum, quam magni error quidem repellat perferendis. Dolore.
-  Illo a consectetur neque impedit? Neque quam velit earum. Et odit impedit facilis autem vel natus aliquam maiores, vero laborum aspernatur deserunt error facere minus veritatis eius voluptatem. Veritatis, pariatur.
-  Sapiente ipsam nihil veritatis in, sint mollitia voluptas amet libero ut reprehenderit iusto quis! Laudantium cumque cum, veritatis, nisi nobis officiis inventore repellat velit expedita molestias, dignissimos ad excepturi error!
-  Illum rem, dolorum quos maxime sunt autem! Est et aspernatur, ipsa odit eaque recusandae ipsam repellat repudiandae aut distinctio numquam consequuntur quasi officiis odio eum. Doloribus, quae error? Dolorem, ab.
-  Rem fuga porro nostrum dolore saepe quam sed vel perferendis, quo vitae, ipsum explicabo repellat necessitatibus non minima consectetur tempora, neque corporis. Ab, fugit? Illo vitae id eos ratione! Doloremque!
-  Mollitia eos quaerat velit porro aliquid nemo dolorum tempore rem sunt beatae vitae dicta, quia ex, impedit vero fugit suscipit praesentium. Dignissimos vel mollitia esse, facere et nam nisi dolorum.
-  Necessitatibus, sapiente corrupti. Laudantium temporibus vel, unde doloremque ea eius quia voluptatum minus reprehenderit, modi quae, placeat harum saepe. Culpa, optio pariatur tenetur illo molestias maiores qui earum cumque temporibus!
-  Reprehenderit numquam ex similique tempore esse nulla, in laudantium, delectus culpa ullam sint incidunt quae perspiciatis quis necessitatibus itaque? Laboriosam rem unde, deleniti maiores iure ipsam architecto libero cumque omnis?
-  Sit facilis consequatur quaerat, explicabo modi iste. Commodi suscipit veritatis reprehenderit debitis molestias possimus totam vitae reiciendis minus similique earum ipsam, odio quo. Temporibus consequatur velit a cumque ratione id?
-  Similique, a quae possimus distinctio tempore temporibus error enim sunt atque voluptates voluptatum? Sunt illum porro maiores reprehenderit nesciunt iste. Laudantium magnam perferendis corporis aspernatur aliquid, numquam odit? Deleniti, itaque?
-  Fuga, delectus omnis iste odit laudantium nesciunt molestias id non! Eius et earum fugit, atque recusandae ea sint corrupti eum fuga quo odit, voluptatem provident qui eos incidunt nihil illum.
-  Illum quidem quaerat officia quae. Aliquid modi reprehenderit minus excepturi, delectus ut? Labore blanditiis praesentium recusandae? Officia tenetur soluta, qui animi rerum architecto, amet quas vitae eos esse aspernatur! Porro.
-  Hic perspiciatis quis harum culpa voluptas provident officia vel? Dignissimos, eum. Ab dolorum tempora quia quisquam? Officia animi, cumque dignissimos tempora, sint ipsum corrupti, excepturi provident quod esse repellat culpa?
-  Amet exercitationem pariatur sint deleniti blanditiis debitis corrupti porro odit, at placeat, quis temporibus qui perspiciatis voluptatibus! Iste nobis earum voluptatibus molestias? Unde quod inventore temporibus eius at illum quo.
-  Harum, rem quia, quo facilis vero commodi laborum quasi perspiciatis id totam qui! Iusto cumque dignissimos quos molestiae aliquid voluptatem? Eligendi veniam asperiores similique consequatur officiis maiores commodi reprehenderit laudantium.
-  Vel cumque nemo reprehenderit eius eveniet commodi ea rem sequi nesciunt! Aliquid, soluta earum non sit delectus, velit dicta quaerat fugit voluptatibus vero omnis, tempore quo natus. Illum, cum debitis.
-  Explicabo tempora itaque saepe expedita est. Aliquid consectetur eveniet dignissimos repudiandae perferendis, reiciendis quis asperiores nihil voluptatum, laudantium corporis omnis non quam optio excepturi. Vero enim voluptates magni maiores earum!
-  Qui illum maxime cupiditate ab delectus facere labore fuga laborum quaerat praesentium reprehenderit provident sed doloremque, iusto ipsum alias nam quae soluta amet! Illo ad pariatur consequatur. Totam, distinctio ipsum!
-  Earum iste ducimus ut, quae voluptate quos, cupiditate facere delectus molestiae fuga repudiandae ab officiis consequatur voluptas dolor. Asperiores ullam dolorum deserunt libero quo optio, hic ea blanditiis maiores veniam.
-  Eos, commodi veniam! Velit, accusantium quis laudantium ea deleniti at beatae magnam. Adipisci, libero nobis non aliquam id, est fuga placeat quasi voluptatum excepturi sapiente cupiditate assumenda mollitia eum hic.
-  Nisi quo omnis ea eaque laborum non tempora doloribus incidunt molestias, deleniti architecto facere consectetur vitae error officiis. Magni debitis enim quidem ex minus, in qui consequuntur dolor porro aperiam.
-  Saepe asperiores dolorem fuga sapiente quisquam tempora excepturi cumque? Aperiam blanditiis, sapiente praesentium amet animi natus beatae, architecto eius laborum qui cumque. Deserunt quae impedit harum dignissimos reprehenderit error aut.
-rit omnis dolores quasi cupiditate pariatur, quisquam quis, magni necessitatibus odio excepturi inventore aspernatur sequi enim quaerat iusto rerum cumque nemo. Adipisci!
-  Optio, non dignissimos necessitatibus fugit consequatur, veniam sit dolorum ut commodi eos architecto, labore magni quidem repellendus quae. Voluptate neque blanditiis cupiditate ullam eos aut laudantium repellendus quod numquam expedita.
-  Earum reiciendis, consequuntur ut nemo dolorem corrupti fugit error maiores nihil voluptas, natus at perferendis nobis placeat eligendi perspiciatis adipisci! Velit nesciunt odit, tenetur voluptas illo doloribus atque minus repellat?
-  Accusantium, minima ipsum, aut esse debitis aliquid consequuntur placeat in inventore aperiam ut dolore impedit itaque? In quaerat itaque numquam expedita, dolor doloribus at, quisquam ea eos hic, aperiam veritatis?
-  Maxime libero quos quisquam iste quo iusto animi impedit praesentium quis aut minima, voluptatem velit eveniet laboriosam illo saepe perferendis corrupti obcaecati? Doloribus animi, voluptatibus ullam fugiat autem blanditiis in?
-  Aperiam, totam numquam odit labore saepe voluptate nobis a? Iure non facere quisquam ea veritatis velit, illo expedita necessitatibus nulla architecto? Deserunt provident obcaecati voluptate nostrum expedita magnam sapiente delectus!
-  Dolor deleniti eligendi voluptatibus animi, sunt nobis minus natus expedita nostrum vitae tempore numquam ipsum nihil, vero repellendus non eius incidunt iure id itaque, odio possimus cumque. Rerum, iusto eaque?
-  Expedita maxime, corrupti repellendus facere saepe fugiat, temporibus eaque ullam ad asperiores at id modi voluptatum corporis, magni quam rem et ipsam ea! Autem soluta facere ratione tempora quasi id!
-  Excepturi tempore consectetur sint doloribus? Ratione eius quas rerum corporis. Hic ducimus ullam exercitationem, nesciunt tenetur labore iure reiciendis quia quasi? Aliquam quaerat id omnis velit cum sapiente! Commodi, incidunt.
-  Mollitia dolores numquam voluptates voluptatem iste cum, est rem. Vitae, assumenda nam. Atque dolorem earum maiores, voluptatum recusandae expedita vitae unde reprehenderit provident iste laboriosam aut consequuntur ullam repudiandae accusantium.
-  Placeat libero eaque ea officia rerum facere deserunt assumenda, eius at adipisci unde et nostrum fugiat blanditiis tempore molestiae commodi quos magnam beatae excepturi! Quo, cumque. Beatae repellat dicta vel.
-  Animi magnam ullam dignissimos tempore consectetur commodi fugit. Numquam fugit laborum dolore inventore. Beatae, aspernatur modi similique, excepturi odit perspiciatis distinctio dolor nostrum error vel sint quidem laborum, mollitia totam.
-  Vero perspiciatis aut nesciunt fugit accusantium perferendis suscipit harum eos. Omnis, eius corporis deleniti quia magni, sunt fuga vero ipsa, aliquid excepturi dolores adipisci dolore. Aspernatur amet nemo alias animi.
-  Eum, voluptatem magni natus laboriosam reiciendis praesentium deleniti fugiat aspernatur. Earum molestias eligendi corporis sit asperiores libero voluptatum, laborum officia maxime odio atque odit mollitia quo ipsa vero dolores deserunt.
-  Modi nemo officiis consequatur suscipit, aspernatur sequi magni illo expedita voluptatum magnam cupiditate in optio dignissimos hic. Atque ut, inventore vitae, nostrum placeat modi debitis beatae mollitia dolor facilis possimus!
-  Molestias nulla necessitatibus sunt. Blanditiis praesentium, molestiae dignissimos ut consequuntur, cumque repudiandae totam mollitia placeat optio unde, eum obcaecati nisi maxime reiciendis error est aperiam? Vero sequi nostrum ducimus officiis!
-  Magnam aliquid doloribus fuga commodi, magni earum dolorum mollitia ipsam temporibus delectus tenetur quaerat voluptatem qui laboriosam repudiandae a praesentium eius beatae modi nisi molestiae? Assumenda magni nemo itaque ducimus?
-  Odit earum, fuga excepturi assumenda eligendi voluptatibus obcaecati ipsum velit sapiente sint voluptatum magnam corrupti omnis. Consequatur accusantium earum omnis iusto ab doloribus veniam? Laborum, reprehenderit. Saepe rem fuga voluptates!
-  Rerum, iure eligendi aspernatur aliquid natus doloremque cum ea dolorem corrupti porro ad laborum labore minima similique vitae maxime est aliquam nemo omnis facilis nobis. Blanditiis odit at qui reiciendis.
-  Eaque explicabo similique maxime obcaecati unde, quibusdam commodi atque a deserunt. Non velit libero ipsa magni debitis adipisci sed quisquam expedita voluptatem laboriosam? Nam totam aperiam consequuntur exercitationem iste eius.
-  Possimus dolores repellendus culpa corporis eos deleniti qui quia doloribus optio eveniet dicta atque nemo veniam officiis omnis, et laborum inventore eius. Cupiditate eligendi nihil officiis, repudiandae nam eius ad?
-  Ullam inventore aspernatur non nemo consequuntur obcaecati dolor fugit error, corporis ea modi molestiae suscipit beatae reiciendis autem quo officiis itaque tempora. Voluptas voluptatem earum vero, autem molestias consequuntur placeat.
-  Eos, modi esse. Corrupti soluta est possimus omnis nemo dignissimos, iusto eos molestias accusantium laudantium officiis repellendus et enim amet, nam sint ipsum provident nulla vel rem placeat? Ducimus, veritatis!
-  Doloribus adipisci sunt quam sit explicabo reiciendis veniam amet omnis, quo corporis repellat at error est possimus odit fugiat quae vero molestias consectetur praesentium quos. Dolore quas veniam debitis possimus.
-  Aliquam ad autem maiores ullam, repellendus beatae vitae enim praesentium quas corrupti non provident. Quam maiores cupiditate possimus debitis, nam vel facere aperiam quod voluptatibus dolor asperiores culpa magnam mollitia?
-  Nobis accusamus, architecto deleniti cumque eos, harum magnam ullam laborum earum iusto quia? Soluta amet sed sunt, totam hic enim quidem minima voluptate harum ad corrupti illum atque tempora labore.
-  Repellendus eos temporibus sapiente maiores suscipit unde optio blanditiis eum ex, debitis non, ea incidunt, labore velit sed. Est facere reprehenderit qui dicta doloribus, saepe facilis delectus nostrum veritatis ipsum!
-  Voluptate neque veniam at, optio est doloribus provident maxime sint dolorem voluptas quis molestiae dolores. Nihil laborum, accusamus labore officiis odio, tempora quae voluptas praesentium facere eum at totam! Iure?
-  Quaerat perferendis voluptatum praesentium fugit ipsam pariatur voluptate. Sequi unde eos aperiam, delectus rerum labore alias dignissimos cum impedit asperiores reprehenderit doloribus nihil error eaque harum obcaecati molestias qui exercitationem!
-  Culpa quas praesentium saepe blanditiis exercitationem recusandae omnis, nulla quisquam quos optio error? Veritatis delectus ratione magni voluptate dolorum quod aut labore. Nesciunt architecto soluta facilis porro officia modi libero.
-  Praesentium quia deleniti repellendus ex consequuntur. Laudantium magnam natus facere temporibus, sint quae vero quos deserunt nesciunt atque praesentium fugiat veritatis ipsa blanditiis optio excepturi ipsam voluptatum, minima modi obcaecati.
-  Reprehenderit cum illum, ipsum inventore deserunt libero incidunt fugiat nemo, repellat delectus harum voluptatum, et nostrum expedita culpa animi similique quasi porro veritatis vitae iste? Distinctio enim quibusdam delectus saepe?
-  Quo placeat eos delectus consectetur, sequi facere eveniet laborum esse omnis dolorum voluptatum est eligendi, aliquam ratione nulla tenetur error! Recusandae aspernatur non consectetur eveniet odit vitae pariatur quasi. Vel.
-  Est eos beatae reprehenderit perspiciatis consequatur enim, modi exercitationem tempore neque nisi excepturi voluptatibus officia sequi ullam quidem, nemo dolores quam? Consectetur quod ullam minus harum maiores temporibus, deleniti saepe.
-  Nostrum deserunt rem distinctio laborum voluptatum fuga ratione fugit ipsa. Impedit, voluptatibus libero voluptate reiciendis molestiae est consequatur placeat quasi, nesciunt rem perspiciatis soluta? Ex repellendus eligendi eveniet ad magni!
-  Necessitatibus sit deserunt nulla porro, eveniet officia asperiores laudantium ea, numquam eius qui laborum mollitia, accusantium iusto culpa autem eligendi a architecto natus corrupti blanditiis voluptates ex voluptate? Doloremque, hic.
-  Earum facilis architecto, possimus ipsum deserunt quibusdam alias autem voluptate iure, provident atque hic eos vero dolor, ad sunt quod dicta magnam consequuntur impedit. Deserunt consequuntur dolorum vero sunt iure?
-  Non, a labore. Facilis, perspiciatis, numquam aspernatur dolorum esse accusantium sequi repellendus quibusdam assumenda recusandae ducimus debitis? Eum vitae consectetur, mollitia cupiditate, qui repudiandae corrupti perferendis deserunt molestias inventore rerum?
-  Eius excepturi placeat delectus aspernatur deleniti porro natus ut quaerat, at dicta illo accusantium perspiciatis et molestias aut itaque, tempore magni illum, rem ab culpa neque aliquam esse. Eius, dignissimos.
-  Sequi fuga illum quisquam excepturi esse exercitationem consequatur maiores expedita. Ipsam quo ex id iusto laboriosam doloremque dolor saepe deserunt minus esse? Dolorum reprehenderit quo atque eum accusantium! Maiores, architecto.
-  Magni repellat nostrum et nulla, atque minus reprehenderit nemo at adipisci nihil ut. Saepe vero nulla earum. Consectetur reiciendis, voluptatem, soluta sit, voluptas incidunt quam debitis vitae possimus aut modi?
-  Sint neque eaque molestias accusamus cum. Quo aliquam ut nemo aliquid, quasi qui facere quas repudiandae assumenda esse magnam excepturi accusamus expedita, consectetur eaque recusandae ullam, culpa accusantium dolor dolore?
-  Ad libero autem inventore tempore eveniet laudantium provident recusandae, consequuntur sunt voluptate exercitationem delectus blanditiis ex. Enim incidunt harum repellendus deleniti illum sint aliquid voluptates. Quasi aspernatur laudantium repudiandae aliquam!
-  At tempora ut velit harum sequi maiores ducimus fuga provident, pariatur veniam vero quo praesentium cum veritatis sed maxime enim corporis odit perspiciatis dolorum eius inventore possimus fugiat similique. Repellendus?
-  Obcaecati et doloribus odit officia possimus aliquid officiis qui doloremque nam, libero excepturi, eos molestias. Amet aperiam ratione voluptate? Temporibus in consequuntur ipsum eaque fugit nulla nesciunt molestias sit. Officia!
-  Maiores minima magnam totam, mollitia officia quasi amet repellat quibusdam doloribus fugit fugiat eum itaque! Accusantium magni modi excepturi ratione nesciunt aliquid iure enim at totam, iusto perspiciatis itaque atque.
-  Pariatur possimus consequuntur modi error quaerat totam, repellendus tempore velit. Doloribus enim nulla hic voluptatum quibusdam molestiae impedit, deleniti asperiores soluta ipsum! Dicta nesciunt dolores quaerat tenetur eum reprehenderit debitis.
-  Earum pariatur delectus error qui sequi nesciunt ipsam maiores eum facere! Soluta, libero amet. Dolorem inventore cumque recusandae quae, numquam nam velit temporibus, neque distinctio vitae nulla quidem, perferendis corrupti.
-  Atque quaerat officiis magnam totam accusamus quae. Deleniti eveniet doloribus nobis dolor laboriosam porro rerum voluptate accusantium molestiae minima doloremque libero sunt inventore maxime, vel consequuntur blanditiis, obcaecati a exercitationem.
-  Nesciunt, molestias odit suscipit corporis mollitia fuga illo laboriosam dolor officiis in aperiam impedit iusto itaque doloremque quibusdam? Illo aliquam incidunt nisi error, sunt corporis iure recusandae aspernatur similique vel.
-  Porro incidunt nostrum dolorum aspernatur repellendus magnam assumenda, sapiente laborum ratione deleniti nihil quis velit temporibus eligendi possimus provident reprehenderit doloribus libero iusto labore deserunt voluptate sunt pariatur? Suscipit, ipsum!
-  Possimus magni exercitationem earum sequi nostrum quia! Quo accusamus amet aliquam earum natus eos sapiente, eaque optio dignissimos exercitationem velit incidunt! Tenetur vel repellat placeat? Quos non quia neque ipsum.
-</section>
 
-  <footer class="footer__background" id="footer">
+
+
+    <div class="section__works _anim-items _anim-no-hide">
+      <h2 class="works__title">
+        Site Development
+      </h2>
+      <div class="block__work _anim-items _anim-no-hide">
+        <div class="block__worksite">
+          <a class="work" href="https://dramaretskyimaksym.github.io/FinalWork/" target="_blank">
+            <img src="./images/final project.webp" alt="" width="300" height="200">
+          </a>
+          <h4>
+            Adaptive Development
+          </h4>
+        </div>
+
+        <div class="block__worksite">
+          <a  class="work" href="https://dramaretskyimaksym.github.io/one-of-the-first-works/" target="_blank">
+            <img src="./images/ready_mix.webp" alt="" width="300" height="200">
+          </a>
+          <h4>
+            Catalog Development
+          </h4>
+        </div>
+      </div>
+      <a  class="button__link-skills" href="/skillswork.html">
+        See More
+      </a>
+    </div>
+
+    <div class="section__works _anim-items _anim-no-hide">
+      <h2 class="works__title">
+        Ui/Ux Design
+      </h2>
+      <div class="block__designer _anim-items _anim-no-hide">
+        <div class="block__design">
+          <a class="work" href="https://www.behance.net/maksymdramaretskyi" target="_blank">
+            <img src="./images/phone_14_food.webp" alt="">
+          </a>
+          <h4>
+            Nutrition Is The Main Value Of Health
+          </h4>
+        </div>
+        <div class="block__design">
+          <a  class="work"  href="https://dramaretskyimaksym.github.io/FinalWork/" target="_blank">
+            <img src="./images/phone_14_pro_max_mockup_4.webp" alt="">
+          </a>
+          <h4>
+            Ui/Ux Design, App For Latin America
+          </h4>
+        </div>
+      </div>
+      <a class="button__link" href="https://www.behance.net/maksymdramaretskyi" target="_blank">
+        More Work On Behance
+      </a>
+    </div>
+  </main>
+  <footer class="footer__background">
     <div class="wrapper">
       <div class="footer">
         <div class="footer__content">
@@ -485,8 +379,7 @@ rit omnis dolores quasi cupiditate pariatur, quisquam quis, magni necessitatibus
           </div>
         </div>
       </div>
-    </div>
+  </div>
   </footer>
-<script defer src="./script.js"></script>
 </body>
 </html>

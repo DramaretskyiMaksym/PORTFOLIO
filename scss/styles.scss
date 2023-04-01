@@ -1,7 +1,7 @@
 @use "./variables/variables" as *;
 @use "./special/mixins" as *;
 
-@import 'animate.css';
+
 @import "./normalize";
 @import "./special/fonts";
 @import "./special/setting";
@@ -10,7 +10,7 @@
 @import "./sections/header";
 @import "./sections/main";  
 @import "./sections/banner";
-@import "./sections/about_me";
+@import "./sections/about";
 @import "./sections/skills_work";
 
 @import "./pages/about_me";
