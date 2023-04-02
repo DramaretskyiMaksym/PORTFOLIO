@@ -40,6 +40,7 @@ if (animItems.length > 0) {
   },200);
 }
 
+
 // document.addEventListener('DOMContentLoaded', function () {
 //   const links = document.querySelectorAll(".smooth-scroll")
   

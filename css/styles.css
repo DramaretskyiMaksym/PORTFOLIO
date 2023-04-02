@@ -1974,8 +1974,9 @@ body.lock {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 150px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 30px;
 }
 
 .block__story {
@@ -1990,13 +1991,14 @@ body.lock {
   flex-direction: column;
   margin-bottom: 30px;
   gap: 10px;
+  max-width: 650px;
 }
 .block__text p {
   letter-spacing: 0.03em;
   font-size: 16px;
   font-weight: 500;
-  line-height: 22px;
-  color: #B0B0B0;
+  line-height: 24px;
+  color: #fcfcfc;
   text-align: center;
 }
 
@@ -2005,9 +2007,24 @@ body.lock {
   justify-content: center;
 }
 .block__img img {
-  width: 200px;
-  height: 240px;
+  width: 220px;
+  height: 300px;
   border-radius: 4px;
+}
+
+.block__text-confident {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px;
+}
+.block__text-confident p {
+  max-width: 600px;
+  letter-spacing: 0.08em;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #fcfcfc;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -2025,6 +2042,33 @@ body.lock {
   .about__page-title h2 {
     font-size: 80px;
     line-height: 86px;
+  }
+  .blocks__me {
+    gap: 60px;
+  }
+  .blocks__me .block__story:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  .block__story:nth-child(4) {
+    flex-direction: row-reverse;
+  }
+  .block__story {
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+  }
+  .block__text {
+    margin: 0px;
+  }
+  .block__text p {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: start;
+  }
+  .block__img img {
+    width: 300px;
+    height: 400px;
+    border-radius: 4px;
   }
 }
 @media (min-width: 1024px) {
@@ -2222,6 +2266,14 @@ body.lock {
     height: 300px;
   }
 }
+.blocks__me {
+  gap: 100px;
+}
+
+.block__story {
+  gap: 100px;
+}
+
 @media (min-width: 1200px) {
   .banner__title {
     font-size: 36px;

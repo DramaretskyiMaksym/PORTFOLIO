@@ -215,7 +215,12 @@
     }
   }
 }
-
+.blocks__me{
+  gap: 100px;
+}
+.block__story {
+  gap: 100px;
+}
 
 @media(min-width:1200px) {
   .banner__title {
