@@ -1,0 +1,11 @@
+@media ( min-width:768px) {
+  .block__cv {
+    gap: 100px;
+  }
+  .block__trainee-cv{
+    flex-direction: row;
+  }
+  .blocks__social-link{
+    gap: 10px;
+  }
+}

@@ -2095,7 +2095,7 @@ body.lock {
   flex-direction: column;
   border-radius: 10px;
   padding: 20px;
-  max-width: 270px;
+  max-width: 400px;
 }
 .block__trainee-title p {
   font-size: 20px;
@@ -2118,18 +2118,21 @@ body.lock {
 
 .blocks__social-link {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
 .block__git-hub {
   display: flex;
   background-color: #E0EBFE;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   padding: 20px;
   border-radius: 10px;
   gap: 50px;
+  max-width: 400px;
+  width: 100%;
 }
 
 .git__hub-title {
@@ -2139,21 +2142,21 @@ body.lock {
   gap: 30px;
 }
 .git__hub-title span {
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 18px;
   font-weight: 600;
 }
 .git__hub-title h3 {
-  max-width: 120px;
-  font-size: 18px;
-  line-height: 24px;
+  max-width: 110px;
+  font-size: 16px;
+  line-height: 18px;
   font-weight: 500;
 }
 .git__hub-title h2 {
   display: flex;
   position: relative;
-  font-size: 34px;
-  line-height: 42px;
+  font-size: 24px;
+  line-height: 26px;
   font-weight: 700;
   color: #009AFE;
 }
@@ -2162,43 +2165,50 @@ body.lock {
   position: absolute;
   left: -1px;
   bottom: -6px;
-  width: 140px;
+  width: 100px;
   background-color: #009AFE;
   height: 3px;
+}
+
+.block__change {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 .block__behance {
   display: flex;
   background-color: #E0EBFE;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   padding: 20px;
   border-radius: 10px;
-  gap: 10px;
+  max-width: 400px;
+  width: 100%;
 }
 
 .behance-title {
   display: flex;
   flex-direction: column;
   color: #878A8F;
-  gap: 30px;
+  gap: 20px;
+  max-width: 150px;
 }
-.behance-title span {
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 600;
+.behance-title img {
+  display: flex;
 }
 .behance-title h3 {
   max-width: 150px;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 18px;
   font-weight: 500;
 }
 .behance-title h2 {
   display: flex;
   position: relative;
-  font-size: 34px;
-  line-height: 42px;
+  font-size: 24px;
+  line-height: 26px;
   font-weight: 700;
   color: #009AFE;
 }
@@ -2207,7 +2217,7 @@ body.lock {
   position: absolute;
   left: -1px;
   bottom: -6px;
-  width: 180px;
+  width: 128px;
   background-color: #009AFE;
   height: 3px;
 }
@@ -2215,17 +2225,24 @@ body.lock {
 .block__instagram {
   display: flex;
   background-color: #E0EBFE;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
   padding: 20px;
   border-radius: 10px;
-  gap: 10px;
+  max-width: 400px;
+  width: 100%;
 }
 
 .instagram__title {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   color: #878A8F;
   gap: 30px;
+  max-width: 150px;
+}
+.instagram__title img {
+  display: flex;
 }
 .instagram__title span {
   font-size: 20px;
@@ -2234,15 +2251,15 @@ body.lock {
 }
 .instagram__title h3 {
   max-width: 150px;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 18px;
   font-weight: 500;
 }
 .instagram__title h2 {
   display: flex;
   position: relative;
-  font-size: 34px;
-  line-height: 42px;
+  font-size: 24px;
+  line-height: 26px;
   font-weight: 700;
   color: #009AFE;
 }
@@ -2251,11 +2268,22 @@ body.lock {
   position: absolute;
   left: -1px;
   bottom: -6px;
-  width: 190px;
+  width: 154px;
   background-color: #009AFE;
   height: 3px;
 }
 
+@media (min-width: 768px) {
+  .block__cv {
+    gap: 100px;
+  }
+  .block__trainee-cv {
+    flex-direction: row;
+  }
+  .blocks__social-link {
+    gap: 10px;
+  }
+}
 @media (min-width: 1024px) {
   .header {
     background-color: #1D2430;
@@ -2479,6 +2507,57 @@ body.lock {
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
+  }
+  .block__cv {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+  .block__trainee-title {
+    max-width: 500px;
+  }
+  .blocks__social-link {
+    max-width: 550px;
+    flex-direction: row;
+  }
+  .block__git-hub {
+    width: 100%;
+    max-width: 550px;
+    gap: 60px;
+  }
+  .git__hub-title {
+    gap: 10px;
+  }
+  .git__hub-title span {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  .git__hub-title h3 {
+    max-width: 120px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  .git__hub-title h2 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #009AFE;
+  }
+  .git__hub-title h2::after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    bottom: -6px;
+    width: 140px;
+    background-color: #009AFE;
+    height: 3px;
+  }
+  .block__change {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
   }
 }
 @media (min-width: 1440px) {
