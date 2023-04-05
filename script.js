@@ -5,6 +5,14 @@ document.addEventListener("DOMContentLoaded", function() {
   })
 })
 
+// document.addEventListener("DOMContentLoaded", function() {
+//   document.getElementById("fab").addEventListener("click", function(){
+//     document.getElementById("fab").addEventListener("close");
+//   })
+
+// })
+
+
 let animItems = document.querySelectorAll('._anim-items');
 
 if (animItems.length > 0) {

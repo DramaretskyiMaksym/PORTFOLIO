@@ -1,11 +1,12 @@
 @use "./variables/variables" as *;
 @use "./special/mixins" as *;
 
-
 @import "./normalize";
 @import "./special/fonts";
 @import "./special/setting";
 @import "./special/icon-fons-setting";
+@import "./animation/animation";
+
 @import "./sections/footer";
 @import "./sections/header";
 @import "./sections/main";  
@@ -14,7 +15,7 @@
 @import "./sections/skills_work";
 
 @import "./pages/about_me";
-@import "./pages/skills";
+@import "./pages/skills_page";
 @import "./pages/works";
 
 @import "./media/tablet-768.scss";
