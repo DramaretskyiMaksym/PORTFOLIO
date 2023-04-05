@@ -2449,7 +2449,7 @@ body.lock {
 .img__desing-certificate {
   height: 100px;
   width: 200px;
-  background-image: url("../../images/certificate_UiUxDesign.webp");
+  background-image: url("../images/certificate_UiUxDesign.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -2458,7 +2458,7 @@ body.lock {
 .img__frontend-certificate {
   height: 100px;
   width: 200px;
-  background-image: url("../../images/certificate_FrontendBasic.webp");
+  background-image: url("../images/certificate_FrontendBasic.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
