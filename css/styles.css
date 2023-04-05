@@ -515,25 +515,25 @@ body a {
     height: 40px;
   }
   .icon-material_linkedin {
-    background: url("../../images/icons8-lonkedin.svg");
+    background: url("../images/icons8-lonkedin.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
   }
   .icon-material_teleg {
-    background: url("../../images/icons8-телеграмма-app.svg");
+    background: url("../images/icons8-телеграмма-app.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
   }
   .icon-material_inst {
-    background: url("../../images/skill-icons_instagram.svg");
+    background: url("../images/skill-icons_instagram.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
   }
   .icon-material_li {
-    background: url("../../images/icons8-behance.svg");
+    background: url("../images/icons8-behance.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
