@@ -139,18 +139,7 @@ p {
   text-align: center;
   padding: 50px 0px;
 }
-.styles__span {
 
-  span:first-child {
-    color:#ff1702;
-    margin-right: 10px;
-  }
-
-  span:last-child{
-    color:#ff1702;
-    margin-right: 0px;
-  }
-}
 .block__animation {
   display: block;
   min-height: 200px;
@@ -174,7 +163,19 @@ p {
       font-size: 12px;
       line-height: 18px;
     }
-    
+    &:nth-child(4) {
+      img{
+        border-radius: 100%;
+        width: 70px;
+        height: 70px;
+      }
+    }
+    &:nth-child(8) {
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 0.12em;
+      color: #DEDBDB;
+    }
     &:nth-child(10) {
       font-size: 20px;
       line-height: 28px;
