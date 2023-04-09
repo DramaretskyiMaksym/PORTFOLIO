@@ -43,6 +43,7 @@
       border-radius: 4px;
     }
   }
+
   .menu__link.active-link {
     font-size: 18px;
     font-weight: 500;
@@ -65,9 +66,7 @@
     border-radius: 10px;
     background-color:$AccentColor;
     margin: 0px 10px;
-    }
-
-
+  }
 
   .link__linkedin{
     padding: 6px 10px;
@@ -88,7 +87,7 @@
     border-radius: 10px;
     background-color:#0e76a8;
     }
-}
+  }
 
   .link__instagram {
     font-size: 18px;
@@ -109,10 +108,7 @@
       border-radius: 10px;
       background: radial-gradient(92.18% 99.11% at 26.56% 107.7%, #FFDD55 0%, #FFDD55 10%, #FF543E 50%, #C837AB 100%);
     }
-}
-
-
-
+  }
 
   .link__behance{
     padding: 6px 10px;
@@ -144,17 +140,18 @@
     font-weight: 500;
     border-radius: 4px;
     color: #fff;
-  &:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    transition:0.1s;
-    color:$BaseColor;
-    padding:6px 10px;
-    border-radius: 10px;
-    background-color: #171515;
+    &:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+      transition:0.1s;
+      color:$BaseColor;
+      padding:6px 10px;
+      border-radius: 10px;
+      background-color: #171515;
+    }
   }
-}
+
   .title__portfolio {
     display: none;
   }
@@ -162,10 +159,12 @@
   .banner {
     padding-top: 160px;
   }
+
   .banner__block {
     min-width: 300px;
     margin-right: 42px;
   }
+
   .background__img {
     &::before {
       padding: 208px;
@@ -174,6 +173,7 @@
       margin-right: 14px;
     }
   }
+
   .rotate-shadows {
     width: 450px;
     height: 450px;
@@ -194,32 +194,39 @@
     font-size: 18px;
     line-height: 22px;
   }
+
   .about__block-text {
     padding-top: 0px;
   }
+
   .about__description {
     margin-bottom: 0px;
   }
+
   .text__noneMobile {
     display:flex;
     flex-direction: column;
   }
+
   .block__work {
     gap: 60px;
     flex-direction: row;
-  } 
+  }
+
   .work {
     img {
       width: 400px;
       height: 300px;
     }
   }
-}
-.blocks__me{
-  gap: 100px;
-}
-.block__story {
-  gap: 100px;
+
+  .blocks__me{
+    gap: 100px;
+  }
+
+  .block__story {
+    gap: 100px;
+  }
 }
 
 @media(min-width:1200px) {
@@ -244,63 +251,66 @@
       font-weight: 700;
     }
   }
-    //pages skills
-    .block__cv {
-      flex-direction: row;
-      align-items: center;
-      gap: 30px;
-    }
-    .block__trainee-title {
-      max-width: 500px;
-    }
-    .title__trainee{
+
+  .block__cv {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .block__trainee-title {
+    max-width: 500px;
+  }
+
+  .title__trainee{
       font-size: 28px;
       line-height: 36px;
       font-weight: 36px;
     }
-    .blocks__social-link{
+
+  .blocks__social-link{
       max-width: 550px;
       flex-direction: row;
+  }
+
+  .block__git-hub {
+    width: 100%;
+    max-width: 550px;
+    gap:60px;
+  }
+  .git__hub-title{
+    gap: 10px;
+    span{
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 700;
     }
-    .block__git-hub {
-      width: 100%;
-      max-width: 550px;
-      gap:60px;
+    h3 {
+      max-width: 120px;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 500;
     }
-    .git__hub-title{
-      gap: 10px;
-      span{
-        font-size: 18px;
-        line-height: 24px;
-        font-weight: 700;
-      }
-      h3 {
-        max-width: 120px;
-        font-size: 18px;
-        line-height: 24px;
-        font-weight: 500;
-      }
-      h2 {
-        font-size: 24px;
-        line-height: 28px;
-        font-weight: 700;
-        color:$AccentColor ;
-        &::after {
-          content: "";
-          position: absolute;
-          left: -1px;
-          bottom: -6px;
-          width: 140px;
-          background-color:$AccentColor ;
-          height: 3px;
-        }
+    h2 {
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 700;
+      color:$AccentColor ;
+      &::after {
+        content: "";
+        position: absolute;
+        left: -1px;
+        bottom: -6px;
+        width: 140px;
+        background-color:$AccentColor ;
+        height: 3px;
       }
     }
+  }
     .block__change {
       display: flex;
       gap: 10px;
       width: 100%;
       flex-wrap: nowrap;
     }
-
 }

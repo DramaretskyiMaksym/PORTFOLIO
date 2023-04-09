@@ -44,7 +44,7 @@
   line-height: 20px;
   font-weight:$TretiryFontWeight;
   color:$TertiaryColor;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .footer__icons {
@@ -154,7 +154,8 @@
   display: flex;
   justify-content: center;
   font-weight:$SecondaryFontWeight;
-  @include font (12px,12px);
+  font-size: 12px;
+  line-height: 12px;
   color:$TertiaryColor;
   font-style: normal;
 }

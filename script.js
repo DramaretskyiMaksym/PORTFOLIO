@@ -5,14 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
   })
 })
 
-// document.addEventListener("DOMContentLoaded", function() {
-//   document.getElementById("fab").addEventListener("click", function(){
-//     document.getElementById("fab").addEventListener("close");
-//   })
-
-// })
-
-
 let animItems = document.querySelectorAll('._anim-items');
 
 if (animItems.length > 0) {
@@ -47,21 +39,3 @@ if (animItems.length > 0) {
     animOnScroll();
   },200);
 }
-
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   const links = document.querySelectorAll(".smooth-scroll")
-  
-//   for(let i = 0; i<links.length; i++){
-//     links[i].addEventListener("click", function(event){
-//       event.preventDefault();
-
-//       const blockID = event.target.getAttribute("href").substr(1);
-      
-//       document.getElementById(blockID).scrollIntoView({
-//         behavior: 'smooth',
-//         block: 'start',
-//       })
-//     })
-//   }
-// })
