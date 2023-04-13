@@ -1,6 +1,5 @@
 .img__about-page {
   display: flex;
-
   padding: 100px 0px;
   flex-direction: column;
   align-items: center;
@@ -10,6 +9,7 @@
     margin-bottom: 20px;
   }
 }
+
 .about__page-title {
   display: flex;
   flex-direction: column;
@@ -32,11 +32,11 @@
   }
 }
 
-
 .container__blocks-ball{
   display: flex;
   flex-direction: column;
 }
+
 .ball {
   width: 10px;
   height: 10px;
@@ -106,7 +106,7 @@
 }
 
 @-webkit-keyframes left {
-  
+
   0% {
     -webkit-transform: translate(15px);
   }
@@ -166,36 +166,6 @@
   }
 }
 
-
-
-////f df d
-
-
-// .animation__block-about {
-//   marquee {
-//     color: $BaseColor;
-//     &:first-child {
-//       color: red;
-//       font-weight: 700;
-//       font-size: 16px;
-//       line-height: 22px;
-//     }
-//     &:nth-child(2){
-//       font-weight: 500;
-//       font-size: 18px;
-//       color: #e4dcdc33;
-//     }
-//     &:nth-child(4){
-//       font-weight: 500;
-//       font-size: 12px;
-//     }
-//     &:last-child {
-//       font-weight: 700;
-//       color: $AccentColor;
-//     }
-//   }
-// }
-
 .blocks__me {
   display: flex;
   flex-direction: column;
@@ -237,6 +207,7 @@ p {
     border-radius: 4px;
   }
 }
+
 .block__text-confident{
   display: flex;
   justify-content: center;
@@ -251,6 +222,7 @@ p {
     text-align: center;
   }
 }
+
 @media ( min-width:768px) {
   .img__about-page{
     flex-direction: row;
@@ -260,6 +232,7 @@ p {
       margin-bottom: 0px;
     }
   }
+
   .about__page-title {
     max-width: 300px;
     h2{
@@ -274,15 +247,17 @@ p {
         flex-direction: row-reverse;
       }
     }
-    .block__story:nth-child(4){
-      flex-direction: row-reverse;
-    }
+
+  .block__story:nth-child(4){
+    flex-direction: row-reverse;
+  }
 
   .block__story {
     flex-direction: row;
     align-items: center;
     gap:80px;
   }
+
   .block__text{
     margin:0px;
     p{
@@ -291,13 +266,14 @@ p {
       text-align: start;
     }
   }
-    .block__img {
-      img {
-        width: 300px;
-        height: 400px;
-        border-radius: 4px;
-      }
+
+  .block__img {
+    img {
+      width: 300px;
+      height: 400px;
+      border-radius: 4px;
     }
+  }
 }
 
 
