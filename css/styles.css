@@ -2745,7 +2745,7 @@ body.lock {
 .block__education {
   display: flex;
   flex-direction: column;
-  background-color: #FFFFFF;
+  background-color: #E0EBFE;
   padding: 20px;
   border-radius: 10px;
   max-width: 660px;
@@ -2793,7 +2793,7 @@ body.lock {
 .block__experience {
   display: flex;
   flex-direction: column;
-  background-color: #FFFFFF;
+  background-color: #E0EBFE;
   padding: 20px;
   border-radius: 10px;
   width: 100%;
