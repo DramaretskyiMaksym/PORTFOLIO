@@ -3101,6 +3101,10 @@ body.lock {
     width: 400px;
     height: 300px;
   }
+  .work__design-app img {
+    width: auto;
+    height: 300px;
+  }
   .blocks__me {
     gap: 100px;
   }
