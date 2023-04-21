@@ -38,6 +38,7 @@
 .block__certificate {
   display: flex;
   flex-direction: column;
+  align-items: center;
   max-width: 300px;
   transition:all 0.4s ease 0s;
   &:hover {
@@ -67,7 +68,8 @@
 }
 
 .link__check {
-  display: flex;
+  max-width: 230px;
+  text-align: center;
   letter-spacing: 0.03em;
   font-size: 16px;
   font-weight: 500;
