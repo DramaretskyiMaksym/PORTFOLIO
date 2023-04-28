@@ -244,7 +244,7 @@
     color:$AccentColor;
     background: rgba(0,0,0,0);
     transition:all 0s ease 0s;
-}
+  }
 }
 
 .block__button._active {
@@ -257,6 +257,7 @@
   opacity: 0;
   transition:all 1s ease 1s;
 }
+
 .button__secondary{
   display: flex;
   font-size: 18px;
@@ -308,6 +309,7 @@
     }
   }
 }
+
 @media (min-width:840px){
   .wrapper {
     max-width: 1600px;
