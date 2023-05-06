@@ -98,14 +98,12 @@ hr {
   }
 }
 
-
 .header__burger-btn span:nth-child(1) {
   transform: translateY(-10px);
 }
 .header__burger-btn span:nth-child(3) {
   transform: translateY(10px);
 }
-
 
 .header.open .header__burger-btn span:nth-child(1) {
   transform: translateY(0) rotate(45deg);
