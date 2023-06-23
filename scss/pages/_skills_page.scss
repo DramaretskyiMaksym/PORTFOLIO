@@ -606,6 +606,10 @@
   }
 }
 @media(min-width:1024px){
+  .courses{
+    flex-direction: row;
+    gap: 50px;
+  }
   .block__general-skills{
     flex-direction: row;
   }

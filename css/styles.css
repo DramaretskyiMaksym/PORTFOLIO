@@ -1925,6 +1925,12 @@ body.lock {
   transform: translate(0px, 0px);
 }
 
+.other__courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media (min-width: 600px) {
   .block__about {
     flex-direction: row;
@@ -2046,6 +2052,7 @@ body.lock {
 .block__work {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-bottom: 50px;
   gap: 60px;
   flex-wrap: wrap;
@@ -3051,6 +3058,10 @@ body.lock {
   }
 }
 @media (min-width: 1024px) {
+  .courses {
+    flex-direction: row;
+    gap: 50px;
+  }
   .block__general-skills {
     flex-direction: row;
   }

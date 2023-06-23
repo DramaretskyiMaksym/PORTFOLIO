@@ -101,6 +101,7 @@
 .block__work {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-bottom: 50px;
   gap: 60px;
   flex-wrap: wrap;
@@ -219,8 +220,6 @@
 }
 
 @media (min-width:600px){
-
-
   .block__designer,.block__worksite {
     h4{
       font-size: 16px;
