@@ -152,15 +152,18 @@ p {
       letter-spacing: 0.235em;
       color: rgba(190, 190, 190, 0.6);
     }
+
     font-size: 18px;
     &:nth-child(2) {
       font-size: 16px;
       line-height: 24px;
     }
+
     &:nth-child(3) {
       font-size: 12px;
       line-height: 18px;
     }
+
     &:nth-child(4) {
       img{
         border-radius: 100%;
@@ -168,12 +171,14 @@ p {
         height: 70px;
       }
     }
+
     &:nth-child(8) {
       font-size: 20px;
       line-height: 28px;
       letter-spacing: 0.12em;
       color: #DEDBDB;
     }
+
     &:nth-child(10) {
       font-size: 20px;
       line-height: 28px;
