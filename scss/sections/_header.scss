@@ -31,6 +31,7 @@
 
 .logo {
   display: flex;
+  z-index: 1;
 }
 
 .logo__img {
@@ -146,7 +147,7 @@ body.lock {
     transition: transform 0.6s ;
     background-color:$BaseColor;
     height: 100vh;
-    display: flex;
+    display: block;
     padding: 0;
     margin: 0;
     // justify-content: center;
@@ -158,16 +159,16 @@ body.lock {
     align-items: flex-start;
     flex-direction: column;
     gap: 10px;
-    margin-top: 152px;
+    margin-top: 124px;
+    padding: 0px 20px;
   }
   .menu__item {
     position: relative;
     margin-top: 0px;
-    margin-left: 20px;
     text-decoration: none;
     color: black;
-    padding: 18px 0px;
     min-width: 100px;
+    width: 100%;
   }
 
 
@@ -179,20 +180,22 @@ body.lock {
     // height: 24px;
     font-weight: 600;
     display: block;
-    padding: 10px 0px;
+    padding: 28px 0px;
   }
-  .menu__link::after {
+  .menu__item::after {
+    display: inline;
     content: "";
     position: absolute;
-    left: 30px;
+    left: 24px;
     bottom: 0;
-    height: 2px; /* Толщина линии */
+    height: 1px; /* Толщина линии */
     // width: 100%;
     width: 100vw; /* Растягиваем на всю ширину окна */
     background-color:#B4B4B4;
-    max-width: calc(100% + 200px); /* Делаем линию на всю ширину родителя */
-    margin-left: -20px; /* Подгоняем, чтобы выйти за границы текста */
-}
+    max-width: calc(100% + 260px); /* Делаем линию на всю ширину родителя */
+      margin-left: -20px; /* Подгоняем, чтобы выйти за границы текста */
+    width: 100%;
+  }
 
   .link__behance,
   .link__linkedin,

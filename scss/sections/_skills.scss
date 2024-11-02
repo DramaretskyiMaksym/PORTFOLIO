@@ -4,17 +4,17 @@
   flex-direction: column;
   align-items: center;
   padding: 100px 0px 0px;
-  &::before {
-    content: "</>";
-    position: absolute;
-    left: auto;
-    right: auto;
-    top: 50px;
-    color:$TertiaryColor;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 18px;
-  }
+  // &::before {
+  //   content: "</>";
+  //   position: absolute;
+  //   left: auto;
+  //   right: auto;
+  //   top: 50px;
+  //   color:$TertiaryColor;
+  //   font-size: 18px;
+  //   font-weight: 600;
+  //   line-height: 18px;
+  // }
 }
 
 .certificate__title {

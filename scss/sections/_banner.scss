@@ -218,7 +218,7 @@
   flex-direction: column-reverse;
   align-items: center;
   justify-content: space-between;
-  gap: 288px;
+  gap: 24px;
   margin-bottom: 100px;
 }
 
@@ -245,6 +245,7 @@
   font-size: 18px;
   font-weight: 500;
   color: $SecondaryColor;
+  line-height: 140%;
 }
 .button_mer_om_meg{
   display: flex;
