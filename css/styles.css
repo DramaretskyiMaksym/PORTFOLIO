@@ -1069,7 +1069,7 @@ hr {
 
 .menu__link.active-link {
   display: block;
-  color: #FD9103;
+  color: black;
   border: none;
   font-size: 18px;
   line-height: 22px;
@@ -1503,10 +1503,10 @@ body.lock {
   flex-direction: column;
   text-align: center;
   flex-wrap: wrap;
-  font-size: 26px;
-  line-height: 26px;
-  font-weight: 500;
-  color: white;
+  font-size: 88px;
+  line-height: 90px;
+  font-weight: 800;
+  color: #FD9103;
   margin-bottom: 10px;
   gap: 4px;
   transform: translate(0px, -120%);
@@ -1514,10 +1514,10 @@ body.lock {
   transition: all 0.8s ease 0s;
 }
 .banner__title span {
-  color: #009AFE;
-  font-size: 28px;
-  line-height: 28px;
-  font-weight: 700;
+  color: black;
+  font-size: 88px;
+  line-height: 90px;
+  font-weight: 800;
 }
 
 .banner__title._active {
@@ -1531,10 +1531,10 @@ body.lock {
   flex-direction: column;
   text-align: center;
   flex-wrap: wrap;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 28px;
-  color: white;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 66px;
+  color: black;
   margin-bottom: 10px;
   gap: 4px;
   transform: translate(0px, 120%);
@@ -1542,10 +1542,13 @@ body.lock {
   transition: all 1s ease 0s;
 }
 .banner__subtitle span {
-  color: #009AFE;
+  color: black;
   font-size: 28px;
   line-height: 28px;
   font-weight: 700;
+}
+.banner__subtitle span span {
+  color: #FD9103;
 }
 
 .banner__subtitle._active {
@@ -3138,7 +3141,7 @@ body.lock {
 }
 @media (min-width: 1024px) {
   .header {
-    background-color: #1D2430;
+    background-color: #ffffff;
   }
   .logo__img {
     display: flex;
@@ -3147,43 +3150,51 @@ body.lock {
   }
   .container {
     justify-content: space-between;
-    padding: 20px 40px;
+    padding: 40px 100px;
   }
   .menu__list {
     display: flex;
     min-width: 100%;
-    gap: 14px;
+    gap: 20px;
     flex-wrap: wrap;
   }
   .menu__link {
-    color: #FDFEFE;
-    padding: 4px 10px;
+    position: relative;
+    color: black;
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22px;
-    border-radius: 4px;
-    border: 3px solid #1D2430;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
   }
   .menu__link:hover {
-    border: 3px dotted #009AFE;
-    color: #ffffff;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    transition: 0.2s;
-    padding: 4px 10px;
-    border-radius: 4px;
+    color: #FD9103;
+    font-weight: 600;
+  }
+  .menu__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* толщина подчеркивания */
+    background-color: #FD9103; /* цвет подчеркивания */
+    transform: scaleX(0); /* начальная трансформация, подчеркивание скрыто */
+    transform-origin: left; /* начинаем анимацию с левого края */
+    transition: transform 0.3s ease; /* плавный переход */
+  }
+  .menu__link:hover::after {
+    transform: scaleX(1); /* подчеркивание растягивается до полной ширины */
   }
   .menu__link.active-link {
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
     border-radius: 4px;
-    border: 3px solid #1D2430;
-    padding: 4px 10px;
+    padding: 4px 20px;
   }
   .menu__item {
     display: flex;
@@ -3343,14 +3354,14 @@ body.lock {
 }
 @media (min-width: 1200px) {
   .banner__title {
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 500;
+    font-size: 88px;
+    line-height: 90px;
+    font-weight: 800;
   }
   .banner__title span {
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 700;
+    font-size: 88px;
+    line-height: 90px;
+    font-weight: 800;
   }
   .banner__subtitle {
     font-size: 36px;
@@ -3437,19 +3448,23 @@ body.lock {
     left: 130px;
   }
   .banner__title {
-    font-size: 56px;
-    line-height: 56px;
+    font-weight: 800;
+    font-size: 88px;
+    line-height: 90px;
   }
   .banner__title span {
-    font-size: 56px;
-    line-height: 56px;
+    font-weight: 800;
+    font-size: 88px;
+    line-height: 90px;
   }
   .banner__subtitle {
-    font-size: 46px;
-    line-height: 46px;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 66px;
   }
   .banner__subtitle span {
-    font-size: 46px;
-    line-height: 46px;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 66px;
   }
 }

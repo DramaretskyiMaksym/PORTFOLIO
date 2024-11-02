@@ -90,20 +90,20 @@
   flex-direction: column;
   text-align: center;
   flex-wrap: wrap;
-  font-size: 26px;
-  line-height: 26px;
-  font-weight: 500;
-  color:$BaseColor;
+  font-size: 88px;
+  line-height: 90px;
+  font-weight: 800;
+  color:$Accenlor;
   margin-bottom: 10px;
   gap: 4px;
   transform: translate(0px,-120%);
   opacity: 0;
   transition:all 0.8s ease 0s;
   span {
-    color:$AccentColor;
-    font-size: 28px;
-    line-height: 28px;
-    font-weight: 700;
+    color:$BlackColor;
+    font-size: 88px;
+    line-height: 90px;
+    font-weight: 800;
   }
 }
 
@@ -118,20 +118,23 @@
   flex-direction: column;
   text-align: center;
   flex-wrap: wrap;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 28px;
-  color:$BaseColor;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 66px;
+  color:$BlackColor;
   margin-bottom:10px;
   gap: 4px;
   transform: translate(0px,120%);
   opacity: 0;
   transition:all 1s ease 0s;
   span {
-    color:$AccentColor;
+    color:$BlackColor;
     font-size: 28px;
     line-height: 28px;
     font-weight: 700;
+    span{
+      color: $Accenlor;
+    }
   }
 }
 
