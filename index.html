@@ -13,29 +13,36 @@
   <header class="header">
     <div class="container header__container">
       <a class="logo" href="./index.html">
-        <picture>
+        <picture class="logo__img">
           <source media="(min-width:1024px )" width="100px" height="100px" srcset="./images/MD.svg">
-          <img class="logo__img"src="./images/MD.svg" width="40px" height="40px" alt="image_logo">
+          <svg  xmlns="http://www.w3.org/2000/svg" width="60" height="48" viewBox="0 0 54 23" fill="none">
+            <path d="M0.24 23V0.599998H5.456L14.736 15.832H11.984L21.008 0.599998H26.224L26.288 23H20.464L20.4 9.464H21.392L14.64 20.792H11.824L4.88 9.464H6.096V23H0.24ZM30.7713 23V0.599998H41.3633C43.8379 0.599998 46.0139 1.05867 47.8913 1.976C49.7686 2.89333 51.2299 4.184 52.2753 5.848C53.3419 7.512 53.8753 9.496 53.8753 11.8C53.8753 14.0827 53.3419 16.0667 52.2753 17.752C51.2299 19.416 49.7686 20.7067 47.8913 21.624C46.0139 22.5413 43.8379 23 41.3633 23H30.7713ZM37.1073 17.944H41.1073C42.3873 17.944 43.4966 17.7093 44.4353 17.24C45.3953 16.7493 46.1419 16.0453 46.6753 15.128C47.2086 14.1893 47.4753 13.08 47.4753 11.8C47.4753 10.4987 47.2086 9.38933 46.6753 8.472C46.1419 7.55467 45.3953 6.86133 44.4353 6.392C43.4966 5.90133 42.3873 5.656 41.1073 5.656H37.1073V17.944Z" fill="black"/>
+          </svg>
         </picture>
       </a>
       <nav class="menu">
         <ul class="menu__list">
-          <li class="menu__item link-hover-solid">
-            <a href="./skills.html" class="menu__link">
-              Prosjekter
-            </a>
-          </li>
+
           <li class="menu__item">
             <a href="./about.html" class="menu__link">
               Om meg
             </a>
           </li>
+
+
+          <li class="menu__item link-hover-solid">
+            <a href="./skills.html" class="menu__link">
+              Prosjekter
+            </a>
+          </li>
+  
         </li>
         <li class="menu__item">
           <a href="./about.html" class="menu__link">
             Utdanning
           </a>
         </li>
+
           <!-- <hr> -->
           <!-- <li class="menu__item  ">
             <a href="https://www.behance.net/maksymdramaretskyi" target="_blank"  class="link__behance">
@@ -67,17 +74,17 @@
     </div>
   </header>
   <section class="wrapper">
-    <h3 class="title__portfolio">
+    <!-- <h3 class="title__portfolio">
       Portfolio
       <span></span>
-    </h3>
+    </h3> -->
     <div class="banner">
       <h3 class="title__portfolio"></h3>
       <!-- <div class="background__img">
         <img class="banner__img" src="./images/IMG_Banner_Im.webp" alt="image_banner" width="300" height="300">
         <div class="rotate-shadows">
-        </div> -->
-      </div>
+        </div>
+      </div> -->
       <div class="banner__block">
         <h1 class="banner__title _anim-items _anim-no-hide smoke ">
           <span>
@@ -87,16 +94,15 @@
         </h1>
         <h2 class="banner__subtitle _anim-items _anim-no-hide">
           <span>
-            Jeg søker <span>språktrening</span> innen
+            Jeg søker <span class="språktrening">språktrening</span> innen motion design
           </span>
-          motion design
         </h2>
         <h2 class="title__internship _anim-items">
           Jeg er åpen for forslag fra ulike selskaper
         </h2>
         <div class="banner__description _anim-items cont-banner">
           <div class="flex_banner">
-            <div class="block-left-banner">
+            <div class="block-left-banner text_Banner ">
               Mitt navn er Maksym, og jeg kommer fra Ukraina. Jeg er en motion designer som søker språktrening i et informasjonsteknologiselskap for å forbedre mine ferdigheter i norsk. Jeg går på norskkurs i Knarvik, Alver kommune, og jeg bor for tiden på Frekhaug.
             </div>
           </div>
@@ -107,7 +113,14 @@
             <!-- <a class="button smoke" href="./about.html" target="_blank" title="Write to me on telegram">
               Mer om meg
             </a> -->
-            <a href="" class="button_mer_om_meg"><img src="./images/Buttom MerOmMeg.svg" alt="Buttom" title="Mer om meg"></a>
+            <!-- <a href="" class="button_mer_om_meg"><img src="./images/Buttom MerOmMeg.svg" alt="Buttom" title="Mer om meg"></a> -->
+            <a class="button_mer_om_meg" href="">
+              <svg width="109" height="109" viewBox="0 0 109 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect class="background" width="106" height="106" fill="white"/>
+                <circle cx="53" cy="53" r="52" stroke="black" stroke-width="2"/>
+                <path class="arrow" d="M44.6666 64.0002L42.3333 61.6668L58.3333 45.6668H43.9999V42.3335H63.9999V62.3335H60.6666V48.0002L44.6666 64.0002Z" fill="black"/>
+              </svg>
+            </a>
           </div>
 
           <div class="_anim-items block-right-banner animated-text ">
@@ -133,51 +146,7 @@
     </div>
   </section>
   <main class="wrapper">
-    <section class="section__aboutSite">
-      <div class="block__title _anim-items">
-        <h2 class="main__title _anim-items">
-          Site Implemented.
-        </h2>
-        <p class="description _anim-items">
-          Made in html and css using sass preprocessor
-          and of course where without version control.
-          Javascript is used sparingly
-        </p>
-      </div>
-      <div class="blocks _anim-items _anim-no-hide">
-        <div class="block _anim-items _anim-no-hide swing">
-          <img src="./images/html-5.svg" alt="" width="64" height="48">
-          <p>
-            HTML
-          </p>
-        </div>
-        <div class="block _anim-items _anim-no-hide swing">
-          <img src="./images/css3.svg" alt="image_icon-css" width="64" height="48">
-          <p>
-            CSS
-          </p>
-        </div>
-        <div class="block _anim-items _anim-no-hide swing">
-          <img src="./images/sass.svg" alt="image_icon-sass" width="64" height="48">
-          <p>
-            SASS
-          </p>
-        </div>
-        <div class="block _anim-items _anim-no-hide swing">
-          <img src="./images/github.svg" alt="image_icon-github" width="64" height="48">
-          <p>
-            GIT
-          </p>
-        </div>
-        <div class="block _anim-items _anim-no-hide swing">
-          <img src="./images/javascript.svg" alt="image_icon-javascript" width="64" height="48">
-          <p>
-            JAVA SCRIPT
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="section__animation">
+    <!-- <section class="section__animation">
       <div class="block__animation">
         <marquee behavior="scroll" direction="right" scrollamount="19">
           Adaptive Layout
@@ -215,11 +184,10 @@
         <marquee behavior="scroll" direction="left" scrollamount="16">
           I like to go where the going gets tough
         </marquee>
-        <marquee behavior="scroll" direction="right" scrollamount="30">
-          <img src="./images/icons8-sass.svg" width="70" height="70" alt="image_icon-sass">
-        </marquee>
+        <div behavior="scroll" direction="right" scrollamount="30">
+        </div>
       </div>
-    </section>
+    </section> -->
     <section class="section__aboutme">
       <div class="block__сard _anim-items _anim-no-hide">
         <h2 class="title__aboutme">
@@ -369,6 +337,50 @@
         More-Behance
       </a>
     </div>
+    <section class="section__aboutSite">
+      <div class="block__title _anim-items">
+        <h2 class="main__title _anim-items">
+          Programmer som jeg behersker
+        </h2>
+        <!-- <p class="description _anim-items">
+          Made in html and css using sass preprocessor
+          and of course where without version control.
+          Javascript is used sparingly
+        </p> -->
+      </div>
+      <div class="blocks _anim-items _anim-no-hide">
+        <div class="block _anim-items _anim-no-hide swing">
+          <img src="./images/AeSVG.svg" alt="" width="136" height="136">
+          <p>
+            After Effects
+          </p>
+        </div>
+        <div class="block _anim-items _anim-no-hide swing">
+          <img src="./images/Photoshop.svg" alt="" width="136" height="136">
+          <p>
+            Photoshop
+          </p>
+        </div>
+        <div class="block _anim-items _anim-no-hide swing">
+          <img src="./images/Illustratorsvg.svg" alt="" width="136" height="136">
+          <p>
+            Illustrator
+          </p>
+        </div>
+        <div class="block _anim-items _anim-no-hide swing">
+          <img src="./images/Figma.svg" alt="" width="136" height="136">
+          <p>
+            Figma
+          </p>
+        </div>
+        <div class="block _anim-items _anim-no-hide swing">
+          <img src="./images/Trello.svg" alt="" width="136" height="136">
+          <p>
+            Trello
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer__background">
     <div class="wrapper">

@@ -343,6 +343,132 @@ template {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Montserrat Alternates ExLight";
+  src: url("../fonts/MontserratAlternates-ExtraLight.woff2") format("woff2"), url("../font/MontserratAlternates-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../fonts/MontserratAlternates-LightItalic.woff2") format("woff2"), url("../fonts/MontserratAlternates-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../fonts/MontserratAlternates-Light.woff2") format("woff2"), url("../fonts/MontserratAlternates-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../fonts/MontserratAlternates-Black.woff2") format("woff2"), url("../fonts/MontserratAlternates-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../fonts/MontserratAlternates-Bold.woff2") format("woff2"), url("../fonts/MontserratAlternates-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../fonts/MontserratAlternates-Medium.woff2") format("woff2"), url("../fonts/MontserratAlternates-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../fonts/MontserratAlternates-ExtraBold.woff2") format("woff2"), url("../fonts/MontserratAlternates-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../fonts/MontserratAlternates-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/MontserratAlternates-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../fonts/MontserratAlternates-Italic.woff2") format("woff2"), url("..fonts/MontserratAlternates-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates ExLight";
+  src: url("../fonts/MontserratAlternates-ExtraLightItalic.woff2") format("woff2"), url("../fonts/MontserratAlternates-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../fonts/MontserratAlternates-BlackItalic.woff2") format("woff2"), url("../fonts/MontserratAlternates-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../fonts/MontserratAlternates-SemiBoldItalic.woff2") format("woff2"), url("../fonts/MontserratAlternates-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../fonts/MontserratAlternates-ThinItalic.woff2") format("woff2"), url("..fonts/MontserratAlternates-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../fonts/MontserratAlternates-Regular.woff2") format("woff2"), url("../fonts/MontserratAlternates-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../fonts/MontserratAlternates-SemiBold.woff2") format("woff2"), url("../fonts/MontserratAlternates-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../fonts/MontserratAlternates-MediumItalic.woff2") format("woff2"), url("../fonts/MontserratAlternates-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../fonts/MontserratAlternates-Thin.woff2") format("woff2"), url("../fonts/MontserratAlternates-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -783,7 +909,7 @@ html {
   position: relative;
   max-width: 150px;
   margin-bottom: 10px;
-  color: white;
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
@@ -795,7 +921,7 @@ html {
   width: 20px;
   bottom: 12px;
   right: 0px;
-  background-color: white;
+  background-color: #FFFFFF;
 }
 
 .footer__description {
@@ -828,7 +954,7 @@ html {
   max-width: 82px;
   position: relative;
   display: flex;
-  color: white;
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
@@ -841,7 +967,7 @@ html {
   width: 20px;
   bottom: 12px;
   right: -12px;
-  background-color: white;
+  background-color: #FFFFFF;
 }
 
 .footer__creatorname {
@@ -1014,8 +1140,8 @@ html {
 }
 .wrapper {
   max-width: 1600px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1024,6 +1150,7 @@ html {
   z-index: 1;
   width: 100%;
   position: fixed;
+  margin-bottom: 24px;
 }
 
 .container {
@@ -1031,7 +1158,7 @@ html {
   display: flex;
   align-items: center;
   margin: 0px auto;
-  padding: 10px 15px;
+  padding: 40px 20px;
 }
 
 .header__containe {
@@ -1048,11 +1175,13 @@ html {
 
 .logo__img {
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 48px;
+  transition: fill 0.3s;
 }
-.logo__img img svg rect {
-  fill: #009AFE;
+.logo__img svg:hover path {
+  transition: fill 0.3s;
+  fill: #FD9103;
 }
 
 .menu__list {
@@ -1071,8 +1200,9 @@ hr {
   display: block;
   color: black;
   border: none;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 600;
 }
 .menu__link.active-link:hover {
   border: none;
@@ -1083,6 +1213,9 @@ hr {
   transform: scale(1);
   transition: 0s;
   border: 3px solid #1D2430;
+}
+.menu__link.active-link a {
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 .header__burger-btn {
@@ -1098,29 +1231,31 @@ hr {
 .header__burger-btn span {
   position: absolute;
   border-radius: 10px;
-  width: 30px;
-  height: 3px;
-  left: 5px;
-  background-color: #FDFEFE;
+  width: 40px;
+  height: 2px;
+  left: 0px;
+  background-color: black;
   transition: transform 0.3s, opacity 0.3s;
 }
 .header__burger-btn span:nth-child(2) {
-  background-color: #009AFE;
+  background-color: black;
   width: 50%;
-  margin-left: 10px;
+  margin-left: 20px;
+  width: 18px;
 }
 
 .header__burger-btn span:nth-child(1) {
   transform: translateY(-10px);
 }
 
-.header__burger-btn span:nth-child(3) {
+.header__burger-btn span:nth-child(2) {
   transform: translateY(10px);
 }
 
 .header.open .header__burger-btn span:nth-child(1) {
   transform: translateY(0) rotate(45deg);
-  background-color: #FD9103;
+  background-color: black;
+  height: 2px;
 }
 
 .header.open .header__burger-btn span:nth-child(2) {
@@ -1129,7 +1264,8 @@ hr {
 
 .header.open .header__burger-btn span:nth-child(3) {
   transform: translateY(0) rotate(-45deg);
-  background-color: #FD9103;
+  background-color: black;
+  height: 2px;
 }
 
 body.lock {
@@ -1148,25 +1284,46 @@ body.lock {
     background-color: transparent;
     width: 100vw;
     transition: transform 0.6s;
-    background-color: #121723;
+    background-color: #FFFFFF;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0;
+    margin: 0;
   }
   .menu__list {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     gap: 10px;
+    margin-top: 152px;
+  }
+  .menu__item {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    padding: 18px 0px;
+    min-width: 100px;
   }
   .menu__link {
-    color: #FDFEFE;
-    font-size: 18px;
-    line-height: 22px;
+    color: black;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 22px;
     font-weight: 600;
     display: block;
-    padding: 10px 10px;
+    padding: 10px 0px;
+  }
+  .menu__link::after {
+    content: "";
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    height: 2px; /* Толщина линии */
+    width: 100vw; /* Растягиваем на всю ширину окна */
+    background-color: #B4B4B4;
+    max-width: calc(100% + 200px); /* Делаем линию на всю ширину родителя */
+    margin-left: -20px; /* Подгоняем, чтобы выйти за границы текста */
   }
   .link__behance,
   .link__linkedin,
@@ -1186,7 +1343,7 @@ body.lock {
 .section__aboutSite {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   padding: 150px 0px 50px;
   position: relative;
 }
@@ -1206,16 +1363,17 @@ body.lock {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
-  color: #B0B0B0;
+  color: #808080;
   text-align: center;
 }
 
 .main__title {
+  font-family: "Montserrat Alternates", sans-serif;
   display: flex;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 28px;
-  color: white;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 50px;
+  color: black;
   margin-bottom: 10px;
   letter-spacing: 0.03em;
   transform: translate(0px, -50%);
@@ -1232,6 +1390,7 @@ body.lock {
 .block__title {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-bottom: 60px;
 }
@@ -1254,8 +1413,9 @@ body.lock {
 .blocks {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-around;
-  gap: 26px;
+  gap: 8 0px;
   position: relative;
 }
 
@@ -1283,7 +1443,7 @@ body.lock {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #1D2430;
+  background-color: #FFFFFF;
   border-radius: 6px;
   padding: 20px 40px;
   transform: translate(0px, -50%);
@@ -1306,16 +1466,17 @@ body.lock {
   transition: all 0.3s ease 0s;
 }
 .block p {
-  align-items: center;
+  font-family: "Montserrat Alternates", sans-serif;
   display: flex;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  color: #009AFE;
+  align-items: center;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: bold;
+  color: black;
 }
 .block img {
-  width: 64px;
-  height: 48px;
+  width: 136px;
+  height: 136px;
   margin-bottom: 8px;
 }
 
@@ -1328,7 +1489,7 @@ body.lock {
 .block__animation {
   display: block;
   min-height: 200px;
-  color: white;
+  color: #FFFFFF;
   font-size: 18px;
   line-height: 26px;
   font-weight: 600;
@@ -1403,24 +1564,12 @@ body.lock {
   transform: translate(0px, 0px);
 }
 
-.title__portfolio {
-  display: flex;
-  padding-top: 100px;
-  justify-content: center;
-  align-items: center;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 32px;
-  letter-spacing: 0.43em;
-  color: #FDFEFE;
-  margin-bottom: 80px;
-}
-
 .banner {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  padding-top: 112px;
 }
 
 .banner__block {
@@ -1500,14 +1649,12 @@ body.lock {
 .banner__title {
   display: flex;
   margin: 0px;
-  flex-direction: column;
-  text-align: center;
   flex-wrap: wrap;
-  font-size: 88px;
-  line-height: 90px;
-  font-weight: 800;
   color: #FD9103;
-  margin-bottom: 10px;
+  margin-bottom: 28px;
+  font-size: 66px;
+  line-height: 68px;
+  font-weight: 800;
   gap: 4px;
   transform: translate(0px, -120%);
   opacity: 0;
@@ -1515,9 +1662,10 @@ body.lock {
 }
 .banner__title span {
   color: black;
-  font-size: 88px;
-  line-height: 90px;
+  font-size: 66px;
+  line-height: 68px;
   font-weight: 800;
+  line-height: 110%;
 }
 
 .banner__title._active {
@@ -1528,26 +1676,20 @@ body.lock {
 .banner__subtitle {
   display: flex;
   margin: 0px;
-  flex-direction: column;
-  text-align: center;
   flex-wrap: wrap;
   font-weight: 800;
-  font-size: 64px;
-  line-height: 66px;
+  font-size: 52px;
+  line-height: 54px;
+  line-height: 120%;
   color: black;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   gap: 4px;
   transform: translate(0px, 120%);
   opacity: 0;
   transition: all 1s ease 0s;
 }
-.banner__subtitle span {
-  color: black;
-  font-size: 28px;
-  line-height: 28px;
-  font-weight: 700;
-}
-.banner__subtitle span span {
+
+.språktrening {
   color: #FD9103;
 }
 
@@ -1563,7 +1705,7 @@ body.lock {
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  color: white;
+  color: #FFFFFF;
   margin-bottom: 34px;
   transform: translate(0px, 120%);
   opacity: 0;
@@ -1583,12 +1725,12 @@ body.lock {
 }
 
 .title__internship {
-  color: #878A8F;
-  text-align: center;
-  font-size: 22px;
-  line-height: 28px;
+  color: #FD9103;
+  font-size: 24px;
+  line-height: 26px;
   font-weight: 700;
   margin-bottom: 20px;
+  line-height: 130%;
   margin-left: auto;
   transform: translate(0px, 200%);
   opacity: 0;
@@ -1633,6 +1775,8 @@ body.lock {
 
 .banner__button-block {
   display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
   justify-content: space-between;
   gap: 288px;
   margin-bottom: 100px;
@@ -1656,9 +1800,53 @@ body.lock {
   font-weight: 600;
 }
 
+.text_Banner {
+  text-align: start;
+  font-size: 18px;
+  font-weight: 500;
+  color: #808080;
+}
+
 .button_mer_om_meg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 106px;
   height: 106px;
+  transition: fill 0.3s;
+  transition: transform 0.3s ease; /* Плавный переход */
+}
+.button_mer_om_meg:hover {
+  transform: scale(0.8); /* Уменьшаем SVG на 20% при ховере */
+}
+.button_mer_om_meg svg {
+  cursor: pointer; /* Меняет курсор на указатель */
+  transition: background 0.3s, border-radius 0.3s; /* Плавный переход */
+}
+
+.arrow {
+  transition: transform 0.3s ease; /* Плавный переход для стрелки */
+  transform-origin: center; /* Задаем точку масштабирования внизу */
+}
+
+.button_mer_om_meg:hover .arrow {
+  transform: scale(1.5); /* Увеличиваем стрелку на 20% при ховере */
+}
+.button_mer_om_meg:hover rect {
+  transition: fill 0.3s;
+  fill: #FD9103;
+}
+
+.background {
+  rx: 50; /* Радиус скругления */
+  ry: 50; /* Радиус скругления */
+  transition: fill 0.3s, rx 0.3s, ry 0.3s; /* Плавный переход для fill и радиусов */
+}
+
+svg:hover .background {
+  fill: #FD9103; /* Цвет фона при ховере */
+  rx: 50; /* Радиус скругления */
+  ry: 50; /* Радиус скругления */
 }
 
 .button {
@@ -1720,7 +1908,7 @@ body.lock {
   border-radius: 4px;
   background-color: #121723 !important;
   max-width: 250px;
-  border: 3px solid #B0B0B0;
+  border: 3px solid #808080;
 }
 .button__secondary:hover {
   border: 3px dashed #009AFE;
@@ -1765,8 +1953,8 @@ body.lock {
 @media (min-width: 840px) {
   .wrapper {
     max-width: 1600px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1889,7 +2077,7 @@ body.lock {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
-  color: #B0B0B0;
+  color: #808080;
   text-align: center;
 }
 
@@ -1910,7 +2098,7 @@ body.lock {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
-  color: #B0B0B0;
+  color: #808080;
   text-align: center;
 }
 
@@ -2008,7 +2196,7 @@ body.lock {
   font-size: 20px;
   font-weight: 600;
   line-height: 26px;
-  color: white;
+  color: #FFFFFF;
   margin-bottom: 10px;
   letter-spacing: 0.03em;
 }
@@ -2246,7 +2434,7 @@ body.lock {
   max-width: 400px;
 }
 .about__page-title h2 {
-  color: white;
+  color: #FFFFFF;
   font-size: 56px;
   line-height: 66px;
   font-weight: 600;
@@ -2254,7 +2442,7 @@ body.lock {
   margin-bottom: 20px;
 }
 .about__page-title h3 {
-  color: white;
+  color: #FFFFFF;
   font-size: 18px;
   line-height: 24px;
   font-weight: 600;
@@ -3256,7 +3444,7 @@ body.lock {
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     transition: 0.1s;
-    color: white;
+    color: #FFFFFF;
     padding: 6px 10px;
     border-radius: 10px;
     background-color: #0e76a8;
@@ -3276,7 +3464,7 @@ body.lock {
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     transition: 0.1s;
-    color: white;
+    color: #FFFFFF;
     padding: 6px 10px;
     border-radius: 10px;
     background: radial-gradient(92.18% 99.11% at 26.56% 107.7%, #FFDD55 0%, #FFDD55 10%, #FF543E 50%, #C837AB 100%);
@@ -3296,7 +3484,7 @@ body.lock {
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     transition: 0.1s;
-    color: white;
+    color: #FFFFFF;
     padding: 6px 10px;
     border-radius: 10px;
     background-color: #053eff;
@@ -3316,7 +3504,7 @@ body.lock {
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     transition: 0.1s;
-    color: white;
+    color: #FFFFFF;
     padding: 6px 10px;
     border-radius: 10px;
     background-color: #171515;
@@ -3496,12 +3684,12 @@ body.lock {
 }
 @media (min-width: 1440px) {
   .wrapper {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
   .container {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
   .menu__list {
     gap: 30px;

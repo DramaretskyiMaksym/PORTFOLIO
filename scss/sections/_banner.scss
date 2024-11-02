@@ -1,22 +1,22 @@
-.title__portfolio {
-  display: flex;
-  padding-top: 100px;
-  justify-content: center;
-  align-items:center;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 32px;
-  letter-spacing: 0.43em;
-  color: #FDFEFE;
-  margin-bottom: 80px;
-}
+// .title__portfolio {
+//   display: flex;
+//   padding-top: 100px;
+//   justify-content: center;
+//   align-items:center;
+//   font-weight: 500;
+//   font-size: 32px;
+//   line-height: 32px;
+//   letter-spacing: 0.43em;
+//   color: #000000;
+//   margin-bottom: 80px;
+// }
 
 .banner{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-
+  padding-top: 112px;
 }
 
 .banner__block {
@@ -87,23 +87,24 @@
 .banner__title {
   display: flex;
   margin: 0px;
-  flex-direction: column;
-  text-align: center;
+  // flex-direction: column;
+  // text-align: center;
   flex-wrap: wrap;
-  font-size: 88px;
-  line-height: 90px;
-  font-weight: 800;
   color:$Accenlor;
-  margin-bottom: 10px;
+  margin-bottom: 28px;
+  font-size: 66px;
+  line-height: 68px;
+  font-weight: 800;
   gap: 4px;
   transform: translate(0px,-120%);
   opacity: 0;
   transition:all 0.8s ease 0s;
   span {
     color:$BlackColor;
-    font-size: 88px;
-    line-height: 90px;
+    font-size: 66px;
+    line-height: 68px;
     font-weight: 800;
+    line-height: 110%;
   }
 }
 
@@ -115,27 +116,22 @@
 .banner__subtitle {
   display: flex;
   margin: 0px;
-  flex-direction: column;
-  text-align: center;
+  // flex-direction: column;
+  // text-align: center;
   flex-wrap: wrap;
   font-weight: 800;
-  font-size: 64px;
-  line-height: 66px;
+  font-size: 52px;
+  line-height: 54px;
+  line-height: 120%;
   color:$BlackColor;
-  margin-bottom:10px;
+  margin-bottom:20px;
   gap: 4px;
   transform: translate(0px,120%);
   opacity: 0;
   transition:all 1s ease 0s;
-  span {
-    color:$BlackColor;
-    font-size: 28px;
-    line-height: 28px;
-    font-weight: 700;
-    span{
-      color: $Accenlor;
-    }
-  }
+}
+.språktrening{
+  color: $Accenlor;
 }
 
 .banner__subtitle._active {
@@ -169,12 +165,13 @@
   opacity: 1;
 }
 .title__internship{
-  color:$TertiaryColor;
-  text-align:center;
-  font-size: 22px;
-  line-height: 28px;
+  color:$Accenlor;
+  // text-align:center;
+  font-size: 24px;
+  line-height: 26px;
   font-weight: 700;
   margin-bottom: 20px;
+  line-height: 130%;
   margin-left: auto;
   // max-width: 800px;
   transform: translate(0px,200%);
@@ -218,8 +215,8 @@
 
 .banner__button-block {
   display: flex;
-  // flex-direction: column;
-  // align-items: center;
+  flex-direction: column-reverse;
+  align-items: center;
   justify-content: space-between;
   gap: 288px;
   margin-bottom: 100px;
@@ -243,11 +240,70 @@
     font-weight: 600;
   }
 }
-
+.text_Banner{
+  text-align: start;
+  font-size: 18px;
+  font-weight: 500;
+  color: $SecondaryColor;
+}
 .button_mer_om_meg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 106px;
   height: 106px;
+  transition: fill 0.3s;
+  // display: inline-block; /* Чтобы правильно отображать SVG */
+  transition: transform 0.3s ease; /* Плавный переход */
+  // svg{
+  //   // &:hover path{
+  //   //   background-color: $Accenlor;
+  //   //   transition: fill 0.3s;
+  //   //   fill:$Accenlor;
+  //   // }
+  //   &:hover rect {
+  //     transition: fill 0.3s;
+  //     fill:$Accenlor;
+      
+  //   }
+  // }
+  &:hover {
+    transform: scale(0.8); /* Уменьшаем SVG на 20% при ховере */
+  }
+  svg {
+    cursor: pointer; /* Меняет курсор на указатель */
+    transition: background 0.3s, border-radius 0.3s; /* Плавный переход */
+  }
 }
+.arrow {
+  transition: transform 0.3s ease; /* Плавный переход для стрелки */
+  transform-origin: center; /* Задаем точку масштабирования внизу */
+}
+.button_mer_om_meg {
+  &:hover .arrow {
+  transform: scale(1.5); /* Увеличиваем стрелку на 20% при ховере */
+  }
+  &:hover rect {
+    transition: fill 0.3s;
+    fill:$Accenlor;
+    }
+}
+
+
+.background {
+  rx: 50; /* Радиус скругления */
+  ry: 50; /* Радиус скругления */
+    transition: fill 0.3s, rx 0.3s, ry 0.3s; /* Плавный переход для fill и радиусов */
+}
+
+svg:hover .background {
+    fill: $Accenlor; /* Цвет фона при ховере */
+    rx: 50; /* Радиус скругления */
+    ry: 50; /* Радиус скругления */
+}
+
+
+
 .button {
   display: flex;
   justify-content: center;
@@ -383,8 +439,8 @@
 @media (min-width:840px){
   .wrapper {
     max-width: 1600px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
     margin-left: auto;
     margin-right: auto;
   }
