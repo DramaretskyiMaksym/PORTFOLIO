@@ -242,7 +242,40 @@
     max-width: 600px;
     font-size: 18px;
     line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    p{
+      align-self: flex-end; /* Выравнивание по правому краю */
+      margin-top: 20px; /* Создаём вертикальный сдвиг */
+    };
+    p:last-child {
+      margin-left: auto;
+      align-self: flex-end; /* Выравнивание по правому краю */
+      margin-top: 20px; /* Создаём вертикальный сдвиг */
+      margin: 0px;
+    }
   }
+  // .flex_banner {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+  .cont-banner {
+    display: grid;
+    height: 200px;
+  }
+
+.block-left-banner{
+  display: flex;
+    grid-area: left;
+    justify-self: start; /* Слева */
+    align-self: start;
+}
+
+.block-right-banner{
+    justify-self: end;
+    margin-top: 20px; /* Сдвигаем ниже */
+}
+
 
   .about__block-text {
     padding-top: 0px;

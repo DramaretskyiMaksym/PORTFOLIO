@@ -1607,9 +1607,9 @@ body.lock {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
   letter-spacing: 0.03em;
   color: #878A8F;
   margin-bottom: 30px;
@@ -3322,6 +3322,32 @@ body.lock {
     max-width: 600px;
     font-size: 18px;
     line-height: 22px;
+    display: flex;
+    flex-direction: column;
+  }
+  .banner__description p {
+    align-self: flex-end; /* Выравнивание по правому краю */
+    margin-top: 20px; /* Создаём вертикальный сдвиг */
+  }
+  .banner__description p:last-child {
+    margin-left: auto;
+    align-self: flex-end; /* Выравнивание по правому краю */
+    margin-top: 20px; /* Создаём вертикальный сдвиг */
+    margin: 0px;
+  }
+  .cont-banner {
+    display: grid;
+    height: 200px;
+  }
+  .block-left-banner {
+    display: flex;
+    grid-area: left;
+    justify-self: start; /* Слева */
+    align-self: start;
+  }
+  .block-right-banner {
+    justify-self: end;
+    margin-top: 20px; /* Сдвигаем ниже */
   }
   .about__block-text {
     padding-top: 0px;
