@@ -1589,7 +1589,7 @@ body.lock {
   line-height: 28px;
   font-weight: 700;
   margin-bottom: 20px;
-  max-width: 800px;
+  margin-left: auto;
   transform: translate(0px, 200%);
   opacity: 0;
   transition: all 1s ease 0s;
@@ -1633,17 +1633,32 @@ body.lock {
 
 .banner__button-block {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 288px;
   margin-bottom: 100px;
 }
 
 .block__button {
   display: flex;
   transform: translate(0px, 120%);
+  margin-right: auto;
+  max-width: 345px;
   opacity: 0;
   transition: all 1s ease 1.6s;
+}
+.block__button p {
+  display: inline-block;
+  width: 215px;
+  margin-top: 33px;
+  margin-right: 24px;
+  padding-bottom: 33px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.button_mer_om_meg {
+  width: 106px;
+  height: 106px;
 }
 
 .button {
@@ -1677,6 +1692,24 @@ body.lock {
   transition: all 1s ease 1s;
 }
 
+.animated-text {
+  opacity: 0; /* Начальная прозрачность */
+  transform: translateX(200px); /* Начальное положение ниже на 20px */
+  animation: slideUpFadeIn 1.5s ease-out forwards;
+  animation-delay: 0.8s; /* Задержка 0.5 секунды перед началом анимации */
+}
+
+/* Определение анимации */
+@keyframes slideUpFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(200px); /* Начинаем ниже */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Сдвигаем к начальной позиции */
+  }
+}
 .button__secondary {
   display: flex;
   font-size: 18px;
@@ -1768,9 +1801,8 @@ body.lock {
   }
   .banner__button-block {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 20px;
+    justify-content: space-between;
     margin-bottom: 50px;
   }
 }
@@ -3180,7 +3212,7 @@ body.lock {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 2px; /* толщина подчеркивания */
+    height: 3px; /* толщина подчеркивания */
     background-color: #FD9103; /* цвет подчеркивания */
     transform: scaleX(0); /* начальная трансформация, подчеркивание скрыто */
     transform-origin: left; /* начинаем анимацию с левого края */
@@ -3297,7 +3329,6 @@ body.lock {
   }
   .banner__block {
     min-width: 300px;
-    margin-right: 42px;
   }
   .background__img::before {
     padding: 208px;
@@ -3344,9 +3375,15 @@ body.lock {
     grid-area: left;
     justify-self: start; /* Слева */
     align-self: start;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    color: black;
   }
   .block-right-banner {
-    justify-self: end;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
     margin-top: 20px; /* Сдвигаем ниже */
   }
   .about__block-text {

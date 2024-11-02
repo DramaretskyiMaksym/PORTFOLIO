@@ -33,6 +33,7 @@
     font-weight: 600;
     line-height: 26px;
     text-decoration: none;
+    
     transition: text-decoration 0.3s ease;
     // border-radius: 4px;
     // border: 3px solid#1D2430;
@@ -53,7 +54,7 @@
       left: 0;
       bottom: 0;
       width: 100%;
-      height: 2px; /* толщина подчеркивания */
+      height: 3px; /* толщина подчеркивания */
       background-color:$Accenlor; /* цвет подчеркивания */
       transform: scaleX(0); /* начальная трансформация, подчеркивание скрыто */
       transform-origin: left; /* начинаем анимацию с левого края */
@@ -211,7 +212,7 @@
 
   .banner__block {
     min-width: 300px;
-    margin-right: 42px;
+    // margin-right: 42px;
   }
 
   .background__img {
@@ -266,15 +267,29 @@
 
 .block-left-banner{
   display: flex;
-    grid-area: left;
-    justify-self: start; /* Слева */
-    align-self: start;
+  grid-area: left;
+  justify-self: start; /* Слева */
+  align-self: start;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  color: $BlackColor;
 }
 
 .block-right-banner{
-    justify-self: end;
+    // max-width: 606px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
     margin-top: 20px; /* Сдвигаем ниже */
 }
+
+
+
+
+
+
+
 
 
   .about__block-text {
