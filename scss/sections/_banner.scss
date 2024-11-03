@@ -4,6 +4,7 @@
   // align-items: center;
   padding-top: 112px;
   min-width: 320px;
+  margin-bottom: 48px;
 }
 
 .banner__block {
@@ -12,124 +13,67 @@
 }
 
 
-// .rotate-shadows:after,
-// .rotate-shadows:before {
-//   content: "";
-//   border-radius: 50%;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   transform-origin: center center;
-// }
 
-// .rotate-shadows:before {
-//   box-shadow: inset 0 20px 0 rgba(0, 250, 250, 0.6), inset 20px 0 0 rgba(0, 200, 200, 0.6), inset 0 -20px 0 rgba(0, 150, 200, 0.6), inset -20px 0 0 rgba(0, 200, 250, 0.6);
-//   animation: rotate-before 2s -0.5s linear infinite;
-// }
 
-// .rotate-shadows:after {
-//   box-shadow: inset 0 20px 0 rgba(250, 250, 0, 0.6), inset 20px 0 0 rgba(250, 200, 0, 0.6), inset 0 -20px 0 rgba(250, 150, 0, 0.6), inset -20px 0 0 rgba(250, 100, 0, 0.6);
-//   animation: rotate-after 2s -0.5s linear infinite;
-// }
-
-// @keyframes rotate-after {
-//   0% {transform: rotateZ(0deg) scaleX(1) scaleY(1);}
-//   50% {transform: rotateZ(180deg) scaleX(0.82) scaleY(0.95);}
-//   100% {transform: rotateZ(360deg) scaleX(1) scaleY(1);}
-// }
-
-// @keyframes rotate-before {
-//   0% {transform: rotateZ(0deg) scaleX(1) scaleY(1);}
-//   50% {transform: rotateZ(-180deg) scaleX(0.95) scaleY(0.85);}
-//   100% {transform: rotateZ(-360deg) scaleX(1) scaleY(1);}
-// }
-
-.background__img {
-  display: flex;
-  position: relative;
-  margin-bottom: 70px;
-}
-
-.banner__img {
-  display: flex;
-  position: relative;
-  width: 260px;
-  height: 260px;
-  border-radius: 136px;
-}
 
 .banner__title {
   display: flex;
   margin: 0px;
-  // flex-direction: column;
-  // text-align: center;
   flex-wrap: wrap;
   margin-bottom: 28px;
-  gap: 4px;
-  // transform: translate(0px,-120%);
-  // opacity: 1;
-  // transition:all 0.8s ease 0s;
+  font-size: 66px;
+  line-height: 110%;
+  font-weight: 800;
+  color:$Accenlor;
   span {
     color:$BlackColor;
-    font-size: 66px;
-    line-height: 110%;
-    font-weight: 800;
   }
 }
 
-// .banner__title._active {
-//   transform: translate(0px,0px);
-//   opacity: 1;
-// }
-
 .banner__subtitle {
-  // display: flex;
-  // margin: 0px;
-  // flex-direction: column;
-  // text-align: center;
+
   flex-wrap: wrap;
   color:$BlackColor;
-  // margin-bottom:20px;
-  // gap: 4px;
-  // transform: translate(0px,120%);
-  // opacity: 0;
-  // transition:all 1s ease 0s;
-}
-.språktrening{
   font-weight: 800;
-  font-size: 32px;
-  line-height: 54px;
+  font-size: 52px;
   line-height: 120%;
-  color: $Accenlor;
+  span {
+    color: $Accenlor;
+  }
 }
+// .språktrening{
+//   font-weight: 800;
+//   font-size: 32px;
+//   line-height: 54px;
+//   line-height: 120%;
+//   color: $Accenlor;
+// }
 
 // .banner__subtitle._active {
 //   transform: translate(0px,0px);
 //   opacity: 1;
 // }
 
-.banner__tertiary {
-  display: flex;
-  margin: 0px;
-  flex-wrap: wrap;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  color:$BaseColor;
-  margin-bottom: 34px;
-  // transform: translate(0px,120%);
-  // opacity: 0;
-  // transition:all 1s ease 0s;
-  span {
-    color:$AccentColor;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 600;
-    margin-right: 10px;
-  }
-}
+// .banner__tertiary {
+//   display: flex;
+//   margin: 0px;
+//   flex-wrap: wrap;
+//   font-weight: 500;
+//   font-size: 20px;
+//   line-height: 20px;
+//   color:$BaseColor;
+//   margin-bottom: 34px;
+//   // transform: translate(0px,120%);
+//   // opacity: 0;
+//   // transition:all 1s ease 0s;
+//   span {
+//     color:$AccentColor;
+//     font-size: 20px;
+//     line-height: 20px;
+//     font-weight: 600;
+//     margin-right: 10px;
+//   }
+// }
 
 // .banner__tertiary._active {
 //   transform: translate(0px,0px);
@@ -137,46 +81,34 @@
 // }
 .title__internship{
   color:$Accenlor;
-  // text-align:center;
   font-size: 24px;
-  line-height: 26px;
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 130%;
   margin-left: auto;
-  // max-width: 800px;
-  // transform: translate(0px,200%);
-  // opacity: 0;
-  // transition:all 1s ease 0s;
-  span {
-    color: $AccentColor;
-  }
 }
-// .title__internship._active{
-//   transform: translate(0px,0px);
-//   opacity: 1;
+
+// .banner__description {
+//   display: flex;
+//   flex-direction: column;
+//   text-align: center;
+//   font-weight: 400;
+//   font-size: 24px;
+//   line-height: 26px;
+//   letter-spacing: 0.03em;
+//   color: $TertiaryColor;
+//   margin-bottom: 30px;
+//   max-width: 560px;
+//   // transform: translate(0px,120%);
+//   // opacity: 0;
+//   // transition:all 2s ease 0s;
+//   p {
+//     margin-bottom: 10px;
+//   }
+//   p:last-child {
+//     margin: 0px;
+//   }
 // }
-.banner__description {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
-  letter-spacing: 0.03em;
-  color: $TertiaryColor;
-  margin-bottom: 30px;
-  max-width: 560px;
-  // transform: translate(0px,120%);
-  // opacity: 0;
-  // transition:all 2s ease 0s;
-  p {
-    margin-bottom: 10px;
-  }
-  p:last-child {
-    margin: 0px;
-  }
-}
 
 // .banner__description._active {
 //   transform: translate(0px,0px);
@@ -184,32 +116,38 @@
 //   transition:all 2s ease 0.4s;
 // }
 
-.banner__button-block {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  margin-bottom: 100px;
-}
+// .banner__button-block {
+//   display: flex;
+//   flex-direction: column-reverse;
+//   align-items: center;
+//   justify-content: space-between;
+//   gap: 24px;
+//   margin-bottom: 100px;
+// }
 
-.block__button {
+// .block__button {
+//   display: flex;
+//   // transform: translate(0px,120%);
+//   // align-items: center;
+//   margin-right: auto;
+//   min-width: 320px;//////////////////////////////
+//   // opacity: 0;
+//   // transition:all 1s ease 1.6s;
+//   p{
+//     display: inline-block;
+//     width: 215px;
+//     margin-top: 33px;
+//     margin-right: 24px;
+//     padding-bottom: 33px;
+//     font-size: 32px;
+//     font-weight: 600;
+//   }
+// }
+.text_block{
   display: flex;
-  // transform: translate(0px,120%);
-  // align-items: center;
-  margin-right: auto;
-  min-width: 320px;//////////////////////////////
-  // opacity: 0;
-  // transition:all 1s ease 1.6s;
-  p{
-    display: inline-block;
-    width: 215px;
-    margin-top: 33px;
-    margin-right: 24px;
-    padding-bottom: 33px;
-    font-size: 32px;
-    font-weight: 600;
-  }
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
 }
 .text_Banner{
   text-align: start;
@@ -218,6 +156,17 @@
   color: $SecondaryColor;
   line-height: 140%;
 }
+
+.text_buttom{
+  display: flex;
+  align-items: center;
+  gap:16px ;
+  p{
+    font-size: 28px;
+    font-weight: 600;
+  }
+}
+
 .button_mer_om_meg{
   display: flex;
   align-items: center;
@@ -225,20 +174,15 @@
   width: 106px;
   height: 106px;
   transition: fill 0.3s;
-  // display: inline-block; /* Чтобы правильно отображать SVG */
+  display: inline-block; /* Чтобы правильно отображать SVG */
   transition: transform 0.3s ease; /* Плавный переход */
-  // svg{
-  //   // &:hover path{
-  //   //   background-color: $Accenlor;
-  //   //   transition: fill 0.3s;
-  //   //   fill:$Accenlor;
-  //   // }
-  //   &:hover rect {
-  //     transition: fill 0.3s;
-  //     fill:$Accenlor;
+  svg{
+    &:hover rect {
+      transition: fill 0.3s;
+      fill:$Accenlor;
       
-  //   }
-  // }
+    }
+  }
   &:hover {
     transform: scale(0.8); /* Уменьшаем SVG на 20% при ховере */
   }
@@ -260,8 +204,6 @@
     fill:$Accenlor;
     }
 }
-
-
 .background {
   rx: 50; /* Радиус скругления */
   ry: 50; /* Радиус скругления */
@@ -276,62 +218,62 @@ svg:hover .background {
 
 
 
-.button {
-  display: flex;
-  justify-content: center;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 500;
-  color: #FDFEFE;
-  background-color: $AccentColor;
-  padding:12px 40px;
-  border-radius: 4px;
-  border: 3px solid $AccentColor;
-  max-width: 250px;
-  &:hover{
-    border: 3px dashed $AccentColor;
-    color:$AccentColor;
-    background: rgba(0,0,0,0);
-    transition:all 0s ease 0s;
-  }
-}
+// .button {
+//   display: flex;
+//   justify-content: center;
+//   font-size: 18px;
+//   line-height: 18px;
+//   font-weight: 500;
+//   color: #FDFEFE;
+//   background-color: $AccentColor;
+//   padding:12px 40px;
+//   border-radius: 4px;
+//   border: 3px solid $AccentColor;
+//   max-width: 250px;
+//   &:hover{
+//     border: 3px dashed $AccentColor;
+//     color:$AccentColor;
+//     background: rgba(0,0,0,0);
+//     transition:all 0s ease 0s;
+//   }
+// }
 
-.block__button._active {
-  transform: translate(0px,0px);
-  opacity: 1;
-}
+// .block__button._active {
+//   transform: translate(0px,0px);
+//   opacity: 1;
+// }
 
-.block__button-secondary{
-  transform: translate(0px,-120%);
-  opacity: 0;
-  transition:all 1s ease 1s;
-}
-
-
+// .block__button-secondary{
+//   transform: translate(0px,-120%);
+//   opacity: 0;
+//   transition:all 1s ease 1s;
+// }
 
 
 
 
 
 
-.animated-text {
-  opacity: 0; /* Начальная прозрачность */
-  transform: translateX(200px); /* Начальное положение ниже на 20px */
-  animation: slideUpFadeIn 1.5s ease-out forwards;
-  animation-delay: 0.8s; /* Задержка 0.5 секунды перед началом анимации */
-}
+
+
+// .animated-text {
+//   opacity: 0; /* Начальная прозрачность */
+//   transform: translateX(200px); /* Начальное положение ниже на 20px */
+//   animation: slideUpFadeIn 1.5s ease-out forwards;
+//   animation-delay: 0.8s; /* Задержка 0.5 секунды перед началом анимации */
+// }
 
 /* Определение анимации */
-@keyframes slideUpFadeIn {
-  0% {
-      opacity: 0;
-      transform: translateX(200px); /* Начинаем ниже */
-  }
-  100% {
-      opacity: 1;
-      transform: translateX(0); /* Сдвигаем к начальной позиции */
-  }
-}
+// @keyframes slideUpFadeIn {
+//   0% {
+//       opacity: 0;
+//       transform: translateX(200px); /* Начинаем ниже */
+//   }
+//   100% {
+//       opacity: 1;
+//       transform: translateX(0); /* Сдвигаем к начальной позиции */
+//   }
+// }
 
 
 
@@ -349,60 +291,60 @@ svg:hover .background {
 
 
 
-.button__secondary{
-  display: flex;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 500;
-  padding: 12px 50px;
-  color: #B0B0B0;
-  border-radius: 4px;
-  background-color: #121723 !important;
-  max-width: 250px;
-  border: 3px solid $SecondaryColor;
-  &:hover{
-    border: 3px dashed $AccentColor;
-    color:$AccentColor;
-  }
-}
-.block__button-secondary._active {
-  transform: translate(0px,0px);
-  opacity: 1;
-}
+// .button__secondary{
+//   display: flex;
+//   font-size: 18px;
+//   line-height: 18px;
+//   font-weight: 500;
+//   padding: 12px 50px;
+//   color: #B0B0B0;
+//   border-radius: 4px;
+//   background-color: #121723 !important;
+//   max-width: 250px;
+//   border: 3px solid $SecondaryColor;
+//   &:hover{
+//     border: 3px dashed $AccentColor;
+//     color:$AccentColor;
+//   }
+// }
+// .block__button-secondary._active {
+//   transform: translate(0px,0px);
+//   opacity: 1;
+// }
 
-@media (min-width:540px) {
-  .banner__button-block {
-    flex-direction: row;
-  }
-}
+// @media (min-width:540px) {
+//   .banner__button-block {
+//     flex-direction: row;
+//   }
+// }
 
 
-@media (min-width:600px){
-  .banner__title{ 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    span{
-      margin-right: 10px;
-    }
-  }
+// @media (min-width:600px){
+//   .banner__title{ 
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     span{
+//       margin-right: 10px;
+//     }
+//   }
 
-  .banner__subtitle {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    span{
-      margin-right: 10px;
-    }
-  }
-  .banner__tertiary {
-    flex-direction: row;
-    justify-content: center;
-    span {
-      margin-right: 10px;
-    }
-  }
-}
+//   .banner__subtitle {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     span{
+//       margin-right: 10px;
+//     }
+//   }
+//   .banner__tertiary {
+//     flex-direction: row;
+//     justify-content: center;
+//     span {
+//       margin-right: 10px;
+//     }
+//   }
+// }
 
 
 

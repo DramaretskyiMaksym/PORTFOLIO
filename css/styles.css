@@ -947,10 +947,6 @@ html {
   margin: 0px;
 }
 
-hr {
-  display: none;
-}
-
 .menu__link.active-link {
   display: block;
   color: black;
@@ -1169,48 +1165,6 @@ body.lock {
   margin-bottom: 24px;
 }
 
-.block__title._active .main__title {
-  transform: translate(0px, 0px);
-  opacity: 1;
-  transition: all 0.8s ease 0.5s;
-}
-
-.block__title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 60px;
-}
-
-.description {
-  max-width: 600px;
-  transform: translate(0px, -50%);
-  opacity: 0;
-  transition: all 0.3s ease 0s;
-}
-
-.block__title._active .description {
-  font-size: 16px;
-  line-height: 24px;
-  transform: translate(0px, 0px);
-  opacity: 1;
-  transition: all 0.8s ease 0.3s;
-}
-
-.section__animation {
-  display: flex;
-  text-align: center;
-  padding: 50px 0px;
-}
-
-.title__aboutme {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 800;
-  font-size: 38px;
-  color: #FFFFFF;
-}
-
 .prosjekter_section {
   padding-top: 56px;
   padding-bottom: 56px;
@@ -1228,6 +1182,7 @@ body.lock {
   line-height: 140%;
   font-weight: 800;
   margin-bottom: 20px;
+  color: black;
 }
 .block_prosjektr_title p {
   font-family: "Montserrat Alternates", sans-serif;
@@ -1250,7 +1205,7 @@ body.lock {
 .kategori {
   display: flex;
   flex-direction: column;
-  margin-bottom: 46px;
+  margin-bottom: 40px;
 }
 .kategori a {
   min-width: 320px;
@@ -1290,8 +1245,8 @@ body.lock {
 }
 
 .img_project {
-  width: 320px;
-  height: 246px;
+  width: 390px;
+  height: 300px;
 }
 
 .p_left {
@@ -1304,6 +1259,7 @@ body.lock {
   flex-direction: column;
   gap: 48px;
   min-width: 320px;
+  margin-bottom: 24px;
 }
 .mine_ferdigheter p {
   font-size: 18px;
@@ -1439,7 +1395,7 @@ body.lock {
 
 .padding_footer {
   padding-top: 60px;
-  padding-bottom: 82px;
+  padding-bottom: 20px;
 }
 
 .footer_alltid_block {
@@ -1464,7 +1420,7 @@ body.lock {
 }
 .gmail_block h5 {
   font-family: "Montserrat Alternates", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 900;
   color: black;
 }
@@ -1477,10 +1433,6 @@ body.lock {
   background-color: black;
   width: 100%;
   bottom: -16px;
-}
-.gmail_block svg {
-  width: 86px;
-  height: 86px;
 }
 
 .footer_nav {
@@ -1522,6 +1474,7 @@ body.lock {
 .banner {
   padding-top: 112px;
   min-width: 320px;
+  margin-bottom: 48px;
 }
 
 .banner__block {
@@ -1529,119 +1482,45 @@ body.lock {
   flex-direction: column;
 }
 
-.background__img {
-  display: flex;
-  position: relative;
-  margin-bottom: 70px;
-}
-
-.banner__img {
-  display: flex;
-  position: relative;
-  width: 260px;
-  height: 260px;
-  border-radius: 136px;
-}
-
 .banner__title {
   display: flex;
   margin: 0px;
   flex-wrap: wrap;
   margin-bottom: 28px;
-  gap: 4px;
-}
-.banner__title span {
-  color: black;
   font-size: 66px;
   line-height: 110%;
   font-weight: 800;
+  color: #FD9103;
+}
+.banner__title span {
+  color: black;
 }
 
 .banner__subtitle {
   flex-wrap: wrap;
   color: black;
-}
-
-.språktrening {
   font-weight: 800;
-  font-size: 32px;
-  line-height: 54px;
+  font-size: 52px;
   line-height: 120%;
+}
+.banner__subtitle span {
   color: #FD9103;
-}
-
-.banner__tertiary {
-  display: flex;
-  margin: 0px;
-  flex-wrap: wrap;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  color: #FFFFFF;
-  margin-bottom: 34px;
-}
-.banner__tertiary span {
-  color: #009AFE;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 600;
-  margin-right: 10px;
 }
 
 .title__internship {
   color: #FD9103;
   font-size: 24px;
-  line-height: 26px;
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 130%;
   margin-left: auto;
 }
-.title__internship span {
-  color: #009AFE;
-}
 
-.banner__description {
+.text_block {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
-  letter-spacing: 0.03em;
-  color: #878A8F;
-  margin-bottom: 30px;
-  max-width: 560px;
-}
-.banner__description p {
-  margin-bottom: 10px;
-}
-.banner__description p:last-child {
-  margin: 0px;
-}
-
-.banner__button-block {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  margin-bottom: 100px;
-}
-
-.block__button {
-  display: flex;
-  margin-right: auto;
-  min-width: 320px;
-}
-.block__button p {
-  display: inline-block;
-  width: 215px;
-  margin-top: 33px;
-  margin-right: 24px;
-  padding-bottom: 33px;
-  font-size: 32px;
-  font-weight: 600;
+  gap: 16px;
+  margin-bottom: 24px;
 }
 
 .text_Banner {
@@ -1652,6 +1531,16 @@ body.lock {
   line-height: 140%;
 }
 
+.text_buttom {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.text_buttom p {
+  font-size: 28px;
+  font-weight: 600;
+}
+
 .button_mer_om_meg {
   display: flex;
   align-items: center;
@@ -1659,7 +1548,12 @@ body.lock {
   width: 106px;
   height: 106px;
   transition: fill 0.3s;
+  display: inline-block; /* Чтобы правильно отображать SVG */
   transition: transform 0.3s ease; /* Плавный переход */
+}
+.button_mer_om_meg svg:hover rect {
+  transition: fill 0.3s;
+  fill: #FD9103;
 }
 .button_mer_om_meg:hover {
   transform: scale(0.8); /* Уменьшаем SVG на 20% при ховере */
@@ -1694,107 +1588,7 @@ svg:hover .background {
   ry: 50; /* Радиус скругления */
 }
 
-.button {
-  display: flex;
-  justify-content: center;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 500;
-  color: #FDFEFE;
-  background-color: #009AFE;
-  padding: 12px 40px;
-  border-radius: 4px;
-  border: 3px solid #009AFE;
-  max-width: 250px;
-}
-.button:hover {
-  border: 3px dashed #009AFE;
-  color: #009AFE;
-  background: rgba(0, 0, 0, 0);
-  transition: all 0s ease 0s;
-}
-
-.block__button._active {
-  transform: translate(0px, 0px);
-  opacity: 1;
-}
-
-.block__button-secondary {
-  transform: translate(0px, -120%);
-  opacity: 0;
-  transition: all 1s ease 1s;
-}
-
-.animated-text {
-  opacity: 0; /* Начальная прозрачность */
-  transform: translateX(200px); /* Начальное положение ниже на 20px */
-  animation: slideUpFadeIn 1.5s ease-out forwards;
-  animation-delay: 0.8s; /* Задержка 0.5 секунды перед началом анимации */
-}
-
 /* Определение анимации */
-@keyframes slideUpFadeIn {
-  0% {
-    opacity: 0;
-    transform: translateX(200px); /* Начинаем ниже */
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0); /* Сдвигаем к начальной позиции */
-  }
-}
-.button__secondary {
-  display: flex;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 500;
-  padding: 12px 50px;
-  color: #B0B0B0;
-  border-radius: 4px;
-  background-color: #121723 !important;
-  max-width: 250px;
-  border: 3px solid #808080;
-}
-.button__secondary:hover {
-  border: 3px dashed #009AFE;
-  color: #009AFE;
-}
-
-.block__button-secondary._active {
-  transform: translate(0px, 0px);
-  opacity: 1;
-}
-
-@media (min-width: 540px) {
-  .banner__button-block {
-    flex-direction: row;
-  }
-}
-@media (min-width: 600px) {
-  .banner__title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  .banner__title span {
-    margin-right: 10px;
-  }
-  .banner__subtitle {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  .banner__subtitle span {
-    margin-right: 10px;
-  }
-  .banner__tertiary {
-    flex-direction: row;
-    justify-content: center;
-  }
-  .banner__tertiary span {
-    margin-right: 10px;
-  }
-}
 @media (min-width: 840px) {
   .wrapper {
     max-width: 1600px;
@@ -3177,9 +2971,6 @@ svg:hover .background {
   .link_desktop_nav {
     display: flex;
     gap: 20px;
-  }
-  .menu__item::after {
-    display: none;
   }
   .link_desktop {
     list-style: none; /* Убираем точки в элементах списка */

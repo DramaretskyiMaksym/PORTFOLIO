@@ -47,17 +47,21 @@
     display: flex;
     margin-left: auto;
   }
+
   .menu__list{
     display: inline;
     margin-top: 40px;
   }
+
   .link_desktop_nav {
     display: flex;
     gap: 20px;
   }
-  .menu__item::after {
-    display: none;
-  }
+
+  // .menu__item::after {
+  //   display: none;
+  // }
+
   .link_desktop  {
     list-style: none; /* Убираем точки в элементах списка */
     padding: 0;       /* Убираем отступы */
