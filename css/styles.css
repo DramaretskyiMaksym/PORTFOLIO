@@ -1548,6 +1548,7 @@ body.lock {
   width: 106px;
   height: 106px;
   transition: fill 0.3s;
+  -webkit-tap-highlight-color: transparent; /* Отключает выделение на мобильных */
   display: inline-block; /* Чтобы правильно отображать SVG */
   transition: transform 0.3s ease; /* Плавный переход */
 }
