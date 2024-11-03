@@ -68,9 +68,9 @@
   flex-wrap: wrap;
   margin-bottom: 28px;
   gap: 4px;
-  transform: translate(0px,-120%);
-  opacity: 0;
-  transition:all 0.8s ease 0s;
+  // transform: translate(0px,-120%);
+  // opacity: 1;
+  // transition:all 0.8s ease 0s;
   span {
     color:$BlackColor;
     font-size: 66px;
@@ -79,10 +79,10 @@
   }
 }
 
-.banner__title._active {
-  transform: translate(0px,0px);
-  opacity: 1;
-}
+// .banner__title._active {
+//   transform: translate(0px,0px);
+//   opacity: 1;
+// }
 
 .banner__subtitle {
   // display: flex;
@@ -93,9 +93,9 @@
   color:$BlackColor;
   // margin-bottom:20px;
   // gap: 4px;
-  transform: translate(0px,120%);
-  opacity: 0;
-  transition:all 1s ease 0s;
+  // transform: translate(0px,120%);
+  // opacity: 0;
+  // transition:all 1s ease 0s;
 }
 .språktrening{
   font-weight: 800;
@@ -105,10 +105,10 @@
   color: $Accenlor;
 }
 
-.banner__subtitle._active {
-  transform: translate(0px,0px);
-  opacity: 1;
-}
+// .banner__subtitle._active {
+//   transform: translate(0px,0px);
+//   opacity: 1;
+// }
 
 .banner__tertiary {
   display: flex;
@@ -119,9 +119,9 @@
   line-height: 20px;
   color:$BaseColor;
   margin-bottom: 34px;
-  transform: translate(0px,120%);
-  opacity: 0;
-  transition:all 1s ease 0s;
+  // transform: translate(0px,120%);
+  // opacity: 0;
+  // transition:all 1s ease 0s;
   span {
     color:$AccentColor;
     font-size: 20px;
@@ -131,10 +131,10 @@
   }
 }
 
-.banner__tertiary._active {
-  transform: translate(0px,0px);
-  opacity: 1;
-}
+// .banner__tertiary._active {
+//   transform: translate(0px,0px);
+//   opacity: 1;
+// }
 .title__internship{
   color:$Accenlor;
   // text-align:center;
@@ -145,17 +145,17 @@
   line-height: 130%;
   margin-left: auto;
   // max-width: 800px;
-  transform: translate(0px,200%);
-  opacity: 0;
-  transition:all 1s ease 0s;
+  // transform: translate(0px,200%);
+  // opacity: 0;
+  // transition:all 1s ease 0s;
   span {
     color: $AccentColor;
   }
 }
-.title__internship._active{
-  transform: translate(0px,0px);
-  opacity: 1;
-}
+// .title__internship._active{
+//   transform: translate(0px,0px);
+//   opacity: 1;
+// }
 .banner__description {
   display: flex;
   flex-direction: column;
@@ -167,9 +167,9 @@
   color: $TertiaryColor;
   margin-bottom: 30px;
   max-width: 560px;
-  transform: translate(0px,120%);
-  opacity: 0;
-  transition:all 2s ease 0s;
+  // transform: translate(0px,120%);
+  // opacity: 0;
+  // transition:all 2s ease 0s;
   p {
     margin-bottom: 10px;
   }
@@ -178,11 +178,11 @@
   }
 }
 
-.banner__description._active {
-  transform: translate(0px,0px);
-  opacity: 1;
-  transition:all 2s ease 0.4s;
-}
+// .banner__description._active {
+//   transform: translate(0px,0px);
+//   opacity: 1;
+//   transition:all 2s ease 0.4s;
+// }
 
 .banner__button-block {
   display: flex;
@@ -195,12 +195,12 @@
 
 .block__button {
   display: flex;
-  transform: translate(0px,120%);
+  // transform: translate(0px,120%);
   // align-items: center;
   margin-right: auto;
   min-width: 320px;//////////////////////////////
-  opacity: 0;
-  transition:all 1s ease 1.6s;
+  // opacity: 0;
+  // transition:all 1s ease 1.6s;
   p{
     display: inline-block;
     width: 215px;

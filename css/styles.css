@@ -918,8 +918,7 @@ html {
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 20px;
-  margin-left: auto;
-  width: auto;
+  width: 100%;
 }
 
 .logo {
@@ -1540,9 +1539,6 @@ body.lock {
   flex-wrap: wrap;
   margin-bottom: 28px;
   gap: 4px;
-  transform: translate(0px, -120%);
-  opacity: 0;
-  transition: all 0.8s ease 0s;
 }
 .banner__title span {
   color: black;
@@ -1551,17 +1547,9 @@ body.lock {
   font-weight: 800;
 }
 
-.banner__title._active {
-  transform: translate(0px, 0px);
-  opacity: 1;
-}
-
 .banner__subtitle {
   flex-wrap: wrap;
   color: black;
-  transform: translate(0px, 120%);
-  opacity: 0;
-  transition: all 1s ease 0s;
 }
 
 .språktrening {
@@ -1570,11 +1558,6 @@ body.lock {
   line-height: 54px;
   line-height: 120%;
   color: #FD9103;
-}
-
-.banner__subtitle._active {
-  transform: translate(0px, 0px);
-  opacity: 1;
 }
 
 .banner__tertiary {
@@ -1586,9 +1569,6 @@ body.lock {
   line-height: 20px;
   color: #FFFFFF;
   margin-bottom: 34px;
-  transform: translate(0px, 120%);
-  opacity: 0;
-  transition: all 1s ease 0s;
 }
 .banner__tertiary span {
   color: #009AFE;
@@ -1596,11 +1576,6 @@ body.lock {
   line-height: 20px;
   font-weight: 600;
   margin-right: 10px;
-}
-
-.banner__tertiary._active {
-  transform: translate(0px, 0px);
-  opacity: 1;
 }
 
 .title__internship {
@@ -1611,17 +1586,9 @@ body.lock {
   margin-bottom: 20px;
   line-height: 130%;
   margin-left: auto;
-  transform: translate(0px, 200%);
-  opacity: 0;
-  transition: all 1s ease 0s;
 }
 .title__internship span {
   color: #009AFE;
-}
-
-.title__internship._active {
-  transform: translate(0px, 0px);
-  opacity: 1;
 }
 
 .banner__description {
@@ -1635,21 +1602,12 @@ body.lock {
   color: #878A8F;
   margin-bottom: 30px;
   max-width: 560px;
-  transform: translate(0px, 120%);
-  opacity: 0;
-  transition: all 2s ease 0s;
 }
 .banner__description p {
   margin-bottom: 10px;
 }
 .banner__description p:last-child {
   margin: 0px;
-}
-
-.banner__description._active {
-  transform: translate(0px, 0px);
-  opacity: 1;
-  transition: all 2s ease 0.4s;
 }
 
 .banner__button-block {
@@ -1663,11 +1621,8 @@ body.lock {
 
 .block__button {
   display: flex;
-  transform: translate(0px, 120%);
   margin-right: auto;
   min-width: 320px;
-  opacity: 0;
-  transition: all 1s ease 1.6s;
 }
 .block__button p {
   display: inline-block;
@@ -3177,240 +3132,6 @@ svg:hover .background {
   }
   .blocks__social-link {
     gap: 10px;
-  }
-}
-@media (min-width: 1024px) {
-  .header {
-    background-color: #ffffff;
-  }
-  .logo__img {
-    display: flex;
-    width: 100px;
-    height: 40px;
-  }
-  .container {
-    justify-content: space-between;
-    padding: 40px 100px;
-  }
-  .menu__list {
-    display: flex;
-    min-width: 100%;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  .menu__link {
-    position: relative;
-    color: black;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 26px;
-    text-decoration: none;
-    transition: text-decoration 0.3s ease;
-  }
-  .menu__link:hover {
-    color: #FD9103;
-    font-weight: 600;
-  }
-  .menu__link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 3px; /* толщина подчеркивания */
-    background-color: #FD9103; /* цвет подчеркивания */
-    transform: scaleX(0); /* начальная трансформация, подчеркивание скрыто */
-    transform-origin: left; /* начинаем анимацию с левого края */
-    transition: transform 0.3s ease; /* плавный переход */
-  }
-  .menu__link:hover::after {
-    transform: scaleX(1); /* подчеркивание растягивается до полной ширины */
-  }
-  .menu__link.active-link {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22px;
-    border-radius: 4px;
-    padding: 4px 20px;
-  }
-  .menu__item {
-    display: flex;
-    margin-right: 0px;
-  }
-  .title__portfolio {
-    display: none;
-  }
-  .banner {
-    padding-top: 160px;
-  }
-  .banner__block {
-    min-width: 300px;
-  }
-  .background__img::before {
-    padding: 208px;
-    top: -21px;
-    left: -3px;
-    margin-right: 14px;
-  }
-  .rotate-shadows {
-    width: 450px;
-    height: 450px;
-    position: absolute;
-    top: -26px;
-    right: -23px;
-    overflow: hidden;
-  }
-  .banner__img {
-    width: 400px;
-    height: 400px;
-    border-radius: 300px;
-  }
-  .banner__description {
-    max-width: 600px;
-    font-size: 18px;
-    line-height: 22px;
-    display: flex;
-    flex-direction: column;
-  }
-  .banner__description p {
-    align-self: flex-end; /* Выравнивание по правому краю */
-    margin-top: 20px; /* Создаём вертикальный сдвиг */
-  }
-  .banner__description p:last-child {
-    margin-left: auto;
-    align-self: flex-end; /* Выравнивание по правому краю */
-    margin-top: 20px; /* Создаём вертикальный сдвиг */
-    margin: 0px;
-  }
-  .cont-banner {
-    display: grid;
-    height: 200px;
-  }
-  .block-left-banner {
-    display: flex;
-    grid-area: left;
-    justify-self: start; /* Слева */
-    align-self: start;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 140%;
-    color: black;
-  }
-  .block-right-banner {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 140%;
-    margin-top: 20px; /* Сдвигаем ниже */
-  }
-  .about__block-text {
-    padding-top: 0px;
-  }
-  .about__description {
-    margin-bottom: 0px;
-  }
-  .text__noneMobile {
-    display: flex;
-    flex-direction: column;
-  }
-  .block__work {
-    gap: 60px;
-    flex-direction: row;
-  }
-  .work img {
-    width: 300px;
-    height: 200px;
-  }
-  .work__design-app img {
-    width: auto;
-    height: 190px;
-  }
-  .blocks__me {
-    gap: 100px;
-  }
-  .block__story {
-    gap: 100px;
-  }
-}
-@media (min-width: 1200px) {
-  .banner__title {
-    font-size: 88px;
-    line-height: 90px;
-    font-weight: 800;
-  }
-  .banner__title span {
-    font-size: 88px;
-    line-height: 90px;
-    font-weight: 800;
-  }
-  .banner__subtitle {
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 500;
-  }
-  .banner__subtitle span {
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 700;
-  }
-  .block__cv {
-    flex-direction: row;
-    align-items: center;
-    gap: 30px;
-  }
-  .block__trainee-title {
-    max-width: 500px;
-  }
-  .title__trainee {
-    font-size: 28px;
-    line-height: 36px;
-    font-weight: 36px;
-  }
-  .blocks__social-link {
-    max-width: 550px;
-    flex-direction: row;
-  }
-  .block__git-hub {
-    width: 100%;
-    max-width: 550px;
-    gap: 60px;
-  }
-  .git__hub-title {
-    gap: 10px;
-  }
-  .git__hub-title span {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 700;
-  }
-  .git__hub-title h3 {
-    max-width: 120px;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 500;
-  }
-  .git__hub-title h2 {
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 700;
-    color: #009AFE;
-  }
-  .git__hub-title h2::after {
-    content: "";
-    position: absolute;
-    left: -1px;
-    bottom: -6px;
-    width: 140px;
-    background-color: #009AFE;
-    height: 3px;
-  }
-  .block__change {
-    display: flex;
-    gap: 10px;
-    width: 100%;
-    flex-wrap: nowrap;
   }
 }
 @media (min-width: 1440px) {
