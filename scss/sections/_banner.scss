@@ -192,6 +192,13 @@
     transition: background 0.3s, border-radius 0.3s; /* Плавный переход */
   }
 }
+
+.button_mer_om_meg:focus,
+.button_mer_om_meg:active {
+    outline: none; /* Убирает стандартную рамку фокуса */
+    box-shadow: none; /* Убирает тень, если она есть */
+}
+
 .arrow {
   transition: transform 0.3s ease; /* Плавный переход для стрелки */
   transform-origin: center; /* Задаем точку масштабирования внизу */
