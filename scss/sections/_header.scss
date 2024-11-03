@@ -7,11 +7,10 @@
 }
 
 .header {
-
   z-index: 1;
-  // min-width: 380px;
   position: fixed;
-  // margin-bottom: 24px;
+  background-color: $BaseColor;
+  width: 100%;
 }
 
 .container {
@@ -20,8 +19,8 @@
   align-items: center;
   // margin: 0px auto;
   // padding: 40px 20px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 35px;
+  padding-bottom: 20px;
   // padding-right: 15px;
   padding-left: 20px;
   // margin-left: auto;
@@ -144,11 +143,7 @@ body.lock {
   }
 }
 
-@media (max-width:1024px) {
-  // .header__burger-btn {
-  //   display: block;
-  //   margin-left: auto;
-  // }
+
 
   .menu {
     position: absolute;
@@ -201,11 +196,9 @@ body.lock {
     left: 24px;
     bottom: 0;
     height: 1px; /* Толщина линии */
-    // width: 100%;
-    // width: 100vw; /* Растягиваем на всю ширину окна */
     background-color:#B4B4B4;
     max-width: calc(100% + 260px); /* Делаем линию на всю ширину родителя */
-      margin-left: -20px; /* Подгоняем, чтобы выйти за границы текста */
+    margin-left: -20px; /* Подгоняем, чтобы выйти за границы текста */
     width: 100%;
   }
 
@@ -213,4 +206,7 @@ body.lock {
   .header.open .menu {
     transform: translateX(100%);
   }
+  .menu_desktop{
+    display: none;
   }
+  
