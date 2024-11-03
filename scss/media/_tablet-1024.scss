@@ -108,99 +108,89 @@
     margin-right: 0px;
   }
 
-  hr {
-    border: none;
-    display: flex;
-    height: 20px;
-    width: 2px;
-    border-radius: 10px;
-    background-color:$AccentColor;
-    margin: 0px 10px;
-  }
+  // .link__linkedin{
+  //   padding: 6px 10px;
+  //   display: flex;
+  //   align-items: center;
+  //   letter-spacing: 0.03em;
+  //   font-size: 18px;
+  //   font-weight: 500;
+  //   border-radius: 4px;
+  //   color: #fff;
+  //   &:hover {
+  //   -webkit-transform: scale(1.1);
+  //   -ms-transform: scale(1.1);
+  //   transform: scale(1.1);
+  //   transition:0.1s;
+  //   color:$BaseColor;
+  //   padding: 6px 10px;
+  //   border-radius: 10px;
+  //   background-color:#0e76a8;
+  //   }
+  // }
 
-  .link__linkedin{
-    padding: 6px 10px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 4px;
-    color: #fff;
-    &:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    transition:0.1s;
-    color:$BaseColor;
-    padding: 6px 10px;
-    border-radius: 10px;
-    background-color:#0e76a8;
-    }
-  }
+  // .link__instagram {
+  //   font-size: 18px;
+  //   font-weight: 500;
+  //   padding: 6px 10px;
+  //   display: flex;
+  //   align-items: center;
+  //   letter-spacing: 0.03em;
+  //   border-radius: 4px;
+  //   color: #fff;
+  //   &:hover {
+  //     -webkit-transform: scale(1.1);
+  //     -ms-transform: scale(1.1);
+  //     transform: scale(1.1);
+  //     transition:0.1s;
+  //     color:$BaseColor;
+  //     padding: 6px 10px;
+  //     border-radius: 10px;
+  //     background: radial-gradient(92.18% 99.11% at 26.56% 107.7%, #FFDD55 0%, #FFDD55 10%, #FF543E 50%, #C837AB 100%);
+  //   }
+  // }
 
-  .link__instagram {
-    font-size: 18px;
-    font-weight: 500;
-    padding: 6px 10px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    border-radius: 4px;
-    color: #fff;
-    &:hover {
-      -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      transform: scale(1.1);
-      transition:0.1s;
-      color:$BaseColor;
-      padding: 6px 10px;
-      border-radius: 10px;
-      background: radial-gradient(92.18% 99.11% at 26.56% 107.7%, #FFDD55 0%, #FFDD55 10%, #FF543E 50%, #C837AB 100%);
-    }
-  }
+  // .link__behance{
+  //   padding: 6px 10px;
+  //   display: flex;
+  //   align-items: center;
+  //   letter-spacing: 0.03em;
+  //   font-size: 18px;
+  //   font-weight: 500;
+  //   border-radius: 4px;
+  //   color: #fff;
+  //   &:hover {
+  //     -webkit-transform: scale(1.1);
+  //     -ms-transform: scale(1.1);
+  //     transform: scale(1.1);
+  //     transition:0.1s;
+  //     color:$BaseColor;
+  //     padding: 6px 10px;
+  //     border-radius: 10px;
+  //     background-color: #053eff;
+  //   }
+  // }
 
-  .link__behance{
-    padding: 6px 10px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 4px;
-    color: #fff;
-    &:hover {
-      -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      transform: scale(1.1);
-      transition:0.1s;
-      color:$BaseColor;
-      padding: 6px 10px;
-      border-radius: 10px;
-      background-color: #053eff;
-    }
-  }
-
-  .link__github{
-    padding: 6px 10px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 4px;
-    color: #fff;
-    &:hover {
-      -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      transform: scale(1.1);
-      transition:0.1s;
-      color:$BaseColor;
-      padding:6px 10px;
-      border-radius: 10px;
-      background-color: #171515;
-    }
-  }
+  // .link__github{
+  //   padding: 6px 10px;
+  //   display: flex;
+  //   align-items: center;
+  //   letter-spacing: 0.03em;
+  //   font-size: 18px;
+  //   font-weight: 500;
+  //   border-radius: 4px;
+  //   color: #fff;
+  //   &:hover {
+  //     -webkit-transform: scale(1.1);
+  //     -ms-transform: scale(1.1);
+  //     transform: scale(1.1);
+  //     transition:0.1s;
+  //     color:$BaseColor;
+  //     padding:6px 10px;
+  //     border-radius: 10px;
+  //     background-color: #171515;
+  //   }
+  // }
 
   .title__portfolio {
     display: none;
