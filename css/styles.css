@@ -1664,6 +1664,11 @@ body.lock {
   color: black;
 }
 
+.svg_poster {
+  display: flex;
+  max-width: 390px;
+}
+
 .banner {
   display: flex;
   flex-direction: column;
