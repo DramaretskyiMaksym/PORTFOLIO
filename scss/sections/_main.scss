@@ -31,7 +31,7 @@
       left: 0px;
       height: 1px; /* Толщина линии */
       // width: 100%;
-      width: 100vw; /* Растягиваем на всю ширину окна */
+      // width: 100vw; /* Растягиваем на всю ширину окна */
       background-color:#B4B4B4;
       width: 100%;
       bottom: -10px;
@@ -192,7 +192,7 @@
       left: 0px;
       height: 1px; /* Толщина линии */
       // width: 100%;
-      width: 100vw; /* Растягиваем на всю ширину окна */
+      // width: 100vw; /* Растягиваем на всю ширину окна */
       background-color:#B4B4B4;
       width: 100%;
       bottom: -30px;
@@ -203,6 +203,9 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 46px;
+  a {
+    min-width: 320px;
+  }
   h5{
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 24px;
@@ -236,6 +239,11 @@
     bottom: -20px;
   }
 }
+.img_project{
+  width: 320px;
+  height: 246px;
+}
+
 .p_left{
   margin-right: 75px;
 }
@@ -252,8 +260,10 @@
 
 .mine_ferdigheter{
   position: relative;
-  margin-bottom:48px;
-  min-width: 390px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  min-width: 320px;
   p{
     
     font-size: 18px;
@@ -269,7 +279,7 @@
     font-size: 38px;
     line-height: 140%;
     font-weight: 800;
-    margin-bottom: 52px;
+    // margin-bottom: 52px;
     color: $BlackColor;
     &:after {
       display: inline;
@@ -312,7 +322,7 @@
   // flex-direction: column;
   // align-items: center;
   // justify-content: __;
-  margin-bottom: 48px;
+  // margin-bottom: 48px;
   position: relative;
   &:after {
     display: inline;
@@ -435,7 +445,7 @@ p {
   position: relative;
   h5{
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 900;
     color: $BlackColor;
   }
@@ -448,6 +458,10 @@ p {
     background-color:$BlackColor;
     width: 100%;
     bottom: -16px;
+  }
+  svg {
+    width: 86px;
+    height: 86px;
   }
 }
 .footer_nav{
