@@ -919,8 +919,37 @@ html {
   align-items: center;
   padding-top: 35px;
   padding-bottom: 20px;
-  padding-left: 20px;
   width: 100%;
+}
+
+/* Начальные стили для ссылок в меню */
+.menu__link {
+  position: relative;
+  color: black; /* Исходный цвет ссылки */
+  text-decoration: none; /* Убираем стандартное подчеркивание */
+  transition: color 0.3s ease; /* Плавный переход цвета */
+}
+
+/* Изменение цвета текста при наведении */
+.menu__link:hover {
+  color: #FD9103; /* Цвет ссылки при наведении */
+}
+
+/* Подчеркивание при наведении, начинающееся слева */
+.menu__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Расстояние от текста до линии */
+  width: 0;
+  height: 2px; /* Толщина подчеркивания */
+  background-color: #FD9103; /* Цвет линии */
+  transition: width 0.3s ease; /* Плавное появление линии */
+}
+
+/* Показываем подчеркивание при наведении */
+.menu__link:hover::after {
+  width: 100%; /* Линия занимает всю ширину текста при ховере */
 }
 
 .logo {
@@ -1066,7 +1095,6 @@ body.lock {
   font-size: 22px;
   font-weight: 600;
   display: block;
-  padding: 28px 0px;
 }
 
 .menu__item::after {
@@ -1508,19 +1536,18 @@ body.lock {
 }
 
 .title__internship {
+  font-family: "Montserrat Alternates", sans-serif;
   color: #FD9103;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 130%;
-  margin-left: auto;
 }
 
 .text_block {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 24px;
 }
 
 .text_Banner {
@@ -1529,6 +1556,8 @@ body.lock {
   font-weight: 500;
   color: #808080;
   line-height: 140%;
+  margin-bottom: 24px;
+  max-width: 390px;
 }
 
 .text_buttom {
@@ -1547,99 +1576,60 @@ body.lock {
   justify-content: center;
   width: 106px;
   height: 106px;
-  transition: fill 0.3s;
+  transition: fill 0.3s, transform 0.3s ease; /* Плавный переход для fill и transform */
   -webkit-tap-highlight-color: transparent; /* Отключает выделение на мобильных */
   display: inline-block; /* Чтобы правильно отображать SVG */
-  transition: transform 0.3s ease; /* Плавный переход */
-}
-.button_mer_om_meg svg:hover rect {
-  transition: fill 0.3s;
-  fill: #FD9103;
-}
-.button_mer_om_meg:hover {
-  transform: scale(0.8); /* Уменьшаем SVG на 20% при ховере */
+  /* Увеличение SVG на 20% при ховере */
+  /* Убираем стандартную рамку фокуса и тень */
 }
 .button_mer_om_meg svg {
   cursor: pointer; /* Меняет курсор на указатель */
-  transition: background 0.3s, border-radius 0.3s; /* Плавный переход */
+  transition: background 0.3s, border-radius 0.3s; /* Плавный переход для фона и радиуса */
+  /* Цвет фона при наведении */
 }
-
-.button_mer_om_meg:focus,
-.button_mer_om_meg:active {
-  outline: none; /* Убирает стандартную рамку фокуса */
-  box-shadow: none; /* Убирает тень, если она есть */
-}
-
-.arrow {
-  transition: transform 0.3s ease; /* Плавный переход для стрелки */
-  transform-origin: center; /* Задаем точку масштабирования внизу */
-}
-
-.button_mer_om_meg:hover .arrow {
-  transform: scale(1.5); /* Увеличиваем стрелку на 20% при ховере */
-}
-.button_mer_om_meg:hover rect {
+.button_mer_om_meg svg:hover rect {
   transition: fill 0.3s;
-  fill: #FD9103;
+  fill: #FD9103; /* Устанавливаем цвет для элемента SVG */
+}
+.button_mer_om_meg:hover {
+  transform: scale(1.2); /* Увеличиваем SVG на 20% при ховере */
+}
+.button_mer_om_meg:focus, .button_mer_om_meg:active {
+  outline: none;
+  box-shadow: none;
 }
 
-.background {
-  rx: 50; /* Радиус скругления */
-  ry: 50; /* Радиус скругления */
-  transition: fill 0.3s, rx 0.3s, ry 0.3s; /* Плавный переход для fill и радиусов */
+.button_mer_om_meg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 109px;
+  height: 109px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Плавный переход для фона */
+  transform-origin: center; /* Центрируем трансформацию */
+  border-radius: 50%; /* Скругляем фон контейнера, чтобы он совпадал с кругом */
 }
 
-svg:hover .background {
-  fill: #FD9103; /* Цвет фона при ховере */
-  rx: 50; /* Радиус скругления */
-  ry: 50; /* Радиус скругления */
+.button_mer_om_meg:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+  background-color: orange; /* Заливка фона при ховере */
 }
 
-/* Определение анимации */
-@media (min-width: 840px) {
-  .wrapper {
-    max-width: 1600px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .title__portfolio {
-    padding-top: 15px;
-  }
-  .banner {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .background__img {
-    margin-right: 10px;
-  }
-  .banner__block {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .banner__title {
-    text-align: start;
-  }
-  .title__internship {
-    color: #878A8F;
-    text-align: start;
-    font-size: 26px;
-    line-height: 34px;
-  }
-  .banner__description {
-    text-align: start;
-  }
-  .banner__button-block {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 50px;
-  }
+.button_mer_om_meg:hover .circle-bg {
+  stroke: transparent; /* Убираем обводку круга при ховере */
 }
+
+.button_mer_om_meg svg {
+  width: 100%;
+  height: 100%;
+}
+
+.text_banner_adaptive {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .title__aboutme {
   position: relative;
   display: flex;
@@ -2936,7 +2926,9 @@ svg:hover .background {
 
 @media (min-width: 768px) {
   .container {
-    padding: 40px;
+    padding-top: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .menu__list {
     display: flex;
@@ -2977,215 +2969,40 @@ svg:hover .background {
   }
   .link_desktop_nav {
     display: flex;
-    gap: 20px;
+    gap: 22px;
+  }
+  .menu__link {
+    font-size: 24px;
   }
   .link_desktop {
     list-style: none; /* Убираем точки в элементах списка */
     padding: 0; /* Убираем отступы */
     margin: 0; /* Убираем внешние отступы */
   }
-}
-.menu__link.active-link {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 22px;
-  border-radius: 4px;
-  padding: 4px 20px;
-}
-
-.menu__item {
-  display: flex;
-  margin-right: 0px;
-}
-
-.title__portfolio {
-  display: none;
-}
-
-.banner {
-  padding-top: 160px;
-}
-
-.banner__block {
-  min-width: 300px;
-}
-
-.background__img::before {
-  padding: 208px;
-  top: -21px;
-  left: -3px;
-  margin-right: 14px;
-}
-
-.rotate-shadows {
-  width: 450px;
-  height: 450px;
-  position: absolute;
-  top: -26px;
-  right: -23px;
-  overflow: hidden;
-}
-
-.banner__img {
-  width: 400px;
-  height: 400px;
-  border-radius: 300px;
-}
-
-.banner__description {
-  max-width: 600px;
-  font-size: 18px;
-  line-height: 22px;
-  display: flex;
-  flex-direction: column;
-}
-.banner__description p {
-  align-self: flex-end; /* Выравнивание по правому краю */
-  margin-top: 20px; /* Создаём вертикальный сдвиг */
-}
-.banner__description p:last-child {
-  margin-left: auto;
-  align-self: flex-end; /* Выравнивание по правому краю */
-  margin-top: 20px; /* Создаём вертикальный сдвиг */
-  margin: 0px;
-}
-
-.cont-banner {
-  display: grid;
-  height: 200px;
-}
-
-.block-left-banner {
-  display: flex;
-  grid-area: left;
-  justify-self: start; /* Слева */
-  align-self: start;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 140%;
-  color: black;
-}
-
-.block-right-banner {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 140%;
-  margin-top: 20px; /* Сдвигаем ниже */
-}
-
-.about__block-text {
-  padding-top: 0px;
-}
-
-.about__description {
-  margin-bottom: 0px;
-}
-
-.text__noneMobile {
-  display: flex;
-  flex-direction: column;
-}
-
-.block__work {
-  gap: 60px;
-  flex-direction: row;
-}
-
-.work img {
-  width: 300px;
-  height: 200px;
-}
-
-.work__design-app img {
-  width: auto;
-  height: 190px;
-}
-
-.blocks__me {
-  gap: 100px;
-}
-
-.block__story {
-  gap: 100px;
-}
-
-@media (min-width: 1200px) {
-  .banner__title {
-    font-size: 88px;
-    line-height: 90px;
-    font-weight: 800;
-  }
   .banner__title span {
-    font-size: 88px;
-    line-height: 90px;
-    font-weight: 800;
+    margin-right: 23px; /* Задайте нужный размер отступа */
   }
   .banner__subtitle {
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 500;
+    font-size: 54px;
   }
-  .banner__subtitle span {
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 700;
+  .text_Banner {
+    max-width: 334px;
+    margin-bottom: 0px;
   }
-  .block__cv {
-    flex-direction: row;
-    align-items: center;
-    gap: 30px;
-  }
-  .block__trainee-title {
-    max-width: 500px;
-  }
-  .title__trainee {
-    font-size: 28px;
-    line-height: 36px;
-    font-weight: 36px;
-  }
-  .blocks__social-link {
-    max-width: 550px;
-    flex-direction: row;
-  }
-  .block__git-hub {
-    width: 100%;
-    max-width: 550px;
-    gap: 60px;
-  }
-  .git__hub-title {
-    gap: 10px;
-  }
-  .git__hub-title span {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 700;
-  }
-  .git__hub-title h3 {
-    max-width: 120px;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 500;
-  }
-  .git__hub-title h2 {
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 700;
-    color: #009AFE;
-  }
-  .git__hub-title h2::after {
-    content: "";
-    position: absolute;
-    left: -1px;
-    bottom: -6px;
-    width: 140px;
-    background-color: #009AFE;
-    height: 3px;
-  }
-  .block__change {
+  .text_banner_adaptive {
     display: flex;
-    gap: 10px;
-    width: 100%;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+  .banner__title {
+    font-size: 88px;
+  }
+  .wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 @media (min-width: 1440px) {
@@ -3194,8 +3011,13 @@ svg:hover .background {
     padding-right: 100px;
   }
   .container {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+  }
+  .header {
+    z-index: 0;
+    position: relative;
   }
   .menu__list {
     gap: 30px;
@@ -3204,15 +3026,19 @@ svg:hover .background {
     width: 3px;
     left: 130px;
   }
+  .banner {
+    padding-top: 0px;
+  }
   .banner__title {
     font-weight: 800;
     font-size: 88px;
-    line-height: 90px;
+    line-height: 150%;
+    margin-bottom: 0px;
   }
   .banner__title span {
     font-weight: 800;
     font-size: 88px;
-    line-height: 90px;
+    line-height: 150%;
   }
   .banner__subtitle {
     font-weight: 800;
@@ -3224,4 +3050,13 @@ svg:hover .background {
     font-size: 64px;
     line-height: 66px;
   }
+  .title__internship {
+    display: flex;
+    justify-content: end;
+  }
+  .text_Banner {
+    font-size: 24px;
+    max-width: 612px;
+  }
+  /* Стиль для кнопки */
 }

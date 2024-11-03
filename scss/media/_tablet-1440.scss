@@ -1,11 +1,17 @@
 @media  (min-width:1440px) {
+
   .wrapper {
     padding-left: 100px;
     padding-right: 100px;
   }
   .container {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+  }
+  .header {
+    z-index: 0;
+    position: relative;
   }
 
   .menu__list{
@@ -20,14 +26,18 @@
     }
   }
 
+  .banner {
+    padding-top: 0px;
+  }
   .banner__title {
     font-weight: 800;
     font-size: 88px;
-    line-height: 90px;
+    line-height: 150%;
+    margin-bottom: 0px;
     span {
       font-weight: 800;
       font-size: 88px;
-      line-height: 90px;
+      line-height: 150%;
     }
   }
 
@@ -41,4 +51,23 @@
       line-height: 66px;
     }
   }
+  .title__internship {
+    display: flex;
+    justify-content: end;
+  }
+  .text_Banner {
+    font-size: 24px;
+    max-width: 612px;
+  }
+
+  // .text_banner_adaptive{
+  //   align-items: center;
+  // }
+  
+  // .text_buttom{
+  //   margin-left: 100px;
+  // }
+  /* Стиль для кнопки */
+
 }
+

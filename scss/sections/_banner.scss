@@ -1,7 +1,4 @@
 .banner{
-  // display: flex;
-  // justify-content: start;
-  // align-items: center;
   padding-top: 112px;
   min-width: 320px;
   margin-bottom: 48px;
@@ -11,10 +8,6 @@
   display: flex ;
   flex-direction: column;
 }
-
-
-
-
 
 .banner__title {
   display: flex;
@@ -31,7 +24,6 @@
 }
 
 .banner__subtitle {
-
   flex-wrap: wrap;
   color:$BlackColor;
   font-weight: 800;
@@ -41,113 +33,21 @@
     color: $Accenlor;
   }
 }
-// .språktrening{
-//   font-weight: 800;
-//   font-size: 32px;
-//   line-height: 54px;
-//   line-height: 120%;
-//   color: $Accenlor;
-// }
 
-// .banner__subtitle._active {
-//   transform: translate(0px,0px);
-//   opacity: 1;
-// }
-
-// .banner__tertiary {
-//   display: flex;
-//   margin: 0px;
-//   flex-wrap: wrap;
-//   font-weight: 500;
-//   font-size: 20px;
-//   line-height: 20px;
-//   color:$BaseColor;
-//   margin-bottom: 34px;
-//   // transform: translate(0px,120%);
-//   // opacity: 0;
-//   // transition:all 1s ease 0s;
-//   span {
-//     color:$AccentColor;
-//     font-size: 20px;
-//     line-height: 20px;
-//     font-weight: 600;
-//     margin-right: 10px;
-//   }
-// }
-
-// .banner__tertiary._active {
-//   transform: translate(0px,0px);
-//   opacity: 1;
-// }
 .title__internship{
+  font-family: 'Montserrat Alternates', sans-serif;
   color:$Accenlor;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 130%;
-  margin-left: auto;
 }
 
-// .banner__description {
-//   display: flex;
-//   flex-direction: column;
-//   text-align: center;
-//   font-weight: 400;
-//   font-size: 24px;
-//   line-height: 26px;
-//   letter-spacing: 0.03em;
-//   color: $TertiaryColor;
-//   margin-bottom: 30px;
-//   max-width: 560px;
-//   // transform: translate(0px,120%);
-//   // opacity: 0;
-//   // transition:all 2s ease 0s;
-//   p {
-//     margin-bottom: 10px;
-//   }
-//   p:last-child {
-//     margin: 0px;
-//   }
-// }
 
-// .banner__description._active {
-//   transform: translate(0px,0px);
-//   opacity: 1;
-//   transition:all 2s ease 0.4s;
-// }
-
-// .banner__button-block {
-//   display: flex;
-//   flex-direction: column-reverse;
-//   align-items: center;
-//   justify-content: space-between;
-//   gap: 24px;
-//   margin-bottom: 100px;
-// }
-
-// .block__button {
-//   display: flex;
-//   // transform: translate(0px,120%);
-//   // align-items: center;
-//   margin-right: auto;
-//   min-width: 320px;//////////////////////////////
-//   // opacity: 0;
-//   // transition:all 1s ease 1.6s;
-//   p{
-//     display: inline-block;
-//     width: 215px;
-//     margin-top: 33px;
-//     margin-right: 24px;
-//     padding-bottom: 33px;
-//     font-size: 32px;
-//     font-weight: 600;
-//   }
-// }
 .text_block{
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 24px;
 }
 .text_Banner{
   text-align: start;
@@ -155,6 +55,8 @@
   font-weight: 500;
   color: $SecondaryColor;
   line-height: 140%;
+  margin-bottom: 24px;
+  max-width: 390px;
 }
 
 .text_buttom{
@@ -167,247 +69,138 @@
   }
 }
 
-.button_mer_om_meg{
+.button_mer_om_meg {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 106px;
   height: 106px;
-  transition: fill 0.3s;
+  transition: fill 0.3s, transform 0.3s ease; /* Плавный переход для fill и transform */
   -webkit-tap-highlight-color: transparent; /* Отключает выделение на мобильных */
   display: inline-block; /* Чтобы правильно отображать SVG */
-  transition: transform 0.3s ease; /* Плавный переход */
-  svg{
-    &:hover rect {
-      transition: fill 0.3s;
-      fill:$Accenlor;
-      
-    }
-  }
-  &:hover {
-    transform: scale(0.8); /* Уменьшаем SVG на 20% при ховере */
-  }
+  
   svg {
     cursor: pointer; /* Меняет курсор на указатель */
-    transition: background 0.3s, border-radius 0.3s; /* Плавный переход */
+    transition: background 0.3s, border-radius 0.3s; /* Плавный переход для фона и радиуса */
+    
+    /* Цвет фона при наведении */
+    &:hover rect {
+      transition: fill 0.3s;
+      fill: $Accenlor; /* Устанавливаем цвет для элемента SVG */
+    }
+  }
+
+  /* Увеличение SVG на 20% при ховере */
+  &:hover {
+    transform: scale(1.2); /* Увеличиваем SVG на 20% при ховере */
+  }
+
+  /* Убираем стандартную рамку фокуса и тень */
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
   }
 }
+  
 
-.button_mer_om_meg:focus,
-.button_mer_om_meg:active {
-    outline: none; /* Убирает стандартную рамку фокуса */
-    box-shadow: none; /* Убирает тень, если она есть */
-}
-
-.arrow {
-  transition: transform 0.3s ease; /* Плавный переход для стрелки */
-  transform-origin: center; /* Задаем точку масштабирования внизу */
-}
+// .arrow {
+//   transition: transform 0.3s ease; /* Плавный переход для стрелки */
+//   transform-origin: center; /* Задаем точку масштабирования внизу */
+// }
+// .button_mer_om_meg {
+//   &:hover .arrow {
+//   transform: scale(1.5); /* Увеличиваем стрелку на 20% при ховере */
+//   }
+//   &:hover rect {
+//     transition: fill 0.3s;
+//     fill:$Accenlor;
+//     }
+// }
 .button_mer_om_meg {
-  &:hover .arrow {
-  transform: scale(1.5); /* Увеличиваем стрелку на 20% при ховере */
-  }
-  &:hover rect {
-    transition: fill 0.3s;
-    fill:$Accenlor;
-    }
-}
-.background {
-  rx: 50; /* Радиус скругления */
-  ry: 50; /* Радиус скругления */
-    transition: fill 0.3s, rx 0.3s, ry 0.3s; /* Плавный переход для fill и радиусов */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 109px;
+  height: 109px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Плавный переход для фона */
+  transform-origin: center; /* Центрируем трансформацию */
+  border-radius: 50%; /* Скругляем фон контейнера, чтобы он совпадал с кругом */
 }
 
-svg:hover .background {
-    fill: $Accenlor; /* Цвет фона при ховере */
-    rx: 50; /* Радиус скругления */
-    ry: 50; /* Радиус скругления */
+.button_mer_om_meg:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+  background-color: orange; /* Заливка фона при ховере */
+}
+
+.button_mer_om_meg:hover .circle-bg {
+  stroke: transparent; /* Убираем обводку круга при ховере */
+}
+
+.button_mer_om_meg svg {
+  width: 100%;
+  height: 100%;
 }
 
 
 
-// .button {
-//   display: flex;
-//   justify-content: center;
-//   font-size: 18px;
-//   line-height: 18px;
-//   font-weight: 500;
-//   color: #FDFEFE;
-//   background-color: $AccentColor;
-//   padding:12px 40px;
-//   border-radius: 4px;
-//   border: 3px solid $AccentColor;
-//   max-width: 250px;
-//   &:hover{
-//     border: 3px dashed $AccentColor;
-//     color:$AccentColor;
-//     background: rgba(0,0,0,0);
-//     transition:all 0s ease 0s;
+
+
+// @media (min-width:840px){
+//   .wrapper {
+//     max-width: 1600px;
+//     padding-left: 100px;
+//     padding-right: 100px;
+//     margin-left: auto;
+//     margin-right: auto;
 //   }
-// }
 
-// .block__button._active {
-//   transform: translate(0px,0px);
-//   opacity: 1;
-// }
-
-// .block__button-secondary{
-//   transform: translate(0px,-120%);
-//   opacity: 0;
-//   transition:all 1s ease 1s;
-// }
-
-
-
-
-
-
-
-
-// .animated-text {
-//   opacity: 0; /* Начальная прозрачность */
-//   transform: translateX(200px); /* Начальное положение ниже на 20px */
-//   animation: slideUpFadeIn 1.5s ease-out forwards;
-//   animation-delay: 0.8s; /* Задержка 0.5 секунды перед началом анимации */
-// }
-
-/* Определение анимации */
-// @keyframes slideUpFadeIn {
-//   0% {
-//       opacity: 0;
-//       transform: translateX(200px); /* Начинаем ниже */
+//   .title__portfolio {
+//     padding-top: 15px;
 //   }
-//   100% {
-//       opacity: 1;
-//       transform: translateX(0); /* Сдвигаем к начальной позиции */
+
+//   .banner {
+//     display: flex;
+//     flex-direction: row-reverse;
+//     justify-content: space-between;
+//     align-items: center;
+//     }
+
+//   .background__img {
+//     margin-right: 10px;
 //   }
-// }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .button__secondary{
-//   display: flex;
-//   font-size: 18px;
-//   line-height: 18px;
-//   font-weight: 500;
-//   padding: 12px 50px;
-//   color: #B0B0B0;
-//   border-radius: 4px;
-//   background-color: #121723 !important;
-//   max-width: 250px;
-//   border: 3px solid $SecondaryColor;
-//   &:hover{
-//     border: 3px dashed $AccentColor;
-//     color:$AccentColor;
+//   .banner__block{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
 //   }
-// }
-// .block__button-secondary._active {
-//   transform: translate(0px,0px);
-//   opacity: 1;
-// }
 
-// @media (min-width:540px) {
+//   .banner__title {
+//     text-align: start;
+//   }
+//   .title__internship{
+//     color:$TertiaryColor;
+//     text-align:start;
+//     font-size: 26px;
+//     line-height: 34px;
+//   }
+//   .banner__description{
+//     text-align: start;
+//   }
+
 //   .banner__button-block {
-//     flex-direction: row;
+//     display: flex;
+//     // flex-direction: row;
+//     align-items: center;
+//     // gap: 20px;
+//     justify-content: space-between;
+
+//     margin-bottom: 50px;
 //   }
 // }
-
-
-// @media (min-width:600px){
-//   .banner__title{ 
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     span{
-//       margin-right: 10px;
-//     }
-//   }
-
-//   .banner__subtitle {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     span{
-//       margin-right: 10px;
-//     }
-//   }
-//   .banner__tertiary {
-//     flex-direction: row;
-//     justify-content: center;
-//     span {
-//       margin-right: 10px;
-//     }
-//   }
-// }
-
-
-
-
-
-@media (min-width:840px){
-  .wrapper {
-    max-width: 1600px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .title__portfolio {
-    padding-top: 15px;
-  }
-
-  .banner {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    }
-
-  .background__img {
-    margin-right: 10px;
-  }
-
-  .banner__block{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .banner__title {
-    text-align: start;
-  }
-  .title__internship{
-    color:$TertiaryColor;
-    text-align:start;
-    font-size: 26px;
-    line-height: 34px;
-  }
-  .banner__description{
-    text-align: start;
-  }
-
-  .banner__button-block {
-    display: flex;
-    // flex-direction: row;
-    align-items: center;
-    // gap: 20px;
-    justify-content: space-between;
-
-    margin-bottom: 50px;
-  }
+.text_banner_adaptive{
+  display: flex;
+  flex-direction: column-reverse;
 }

@@ -22,10 +22,65 @@
   padding-top: 35px;
   padding-bottom: 20px;
   // padding-right: 15px;
-  padding-left: 20px;
+  // padding-left: 20px;
   // margin-left: auto;
   width: 100%;
 }
+
+
+/* Начальные стили для ссылок в меню */
+.menu__link {
+  position: relative;
+  color: black; /* Исходный цвет ссылки */
+  text-decoration: none; /* Убираем стандартное подчеркивание */
+  transition: color 0.3s ease; /* Плавный переход цвета */
+}
+
+/* Изменение цвета текста при наведении */
+.menu__link:hover {
+  color:$Accenlor; /* Цвет ссылки при наведении */
+}
+
+/* Подчеркивание при наведении, начинающееся слева */
+.menu__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Расстояние от текста до линии */
+  width: 0;
+  height: 2px; /* Толщина подчеркивания */
+  background-color: $Accenlor; /* Цвет линии */
+  transition: width 0.3s ease; /* Плавное появление линии */
+}
+
+/* Показываем подчеркивание при наведении */
+.menu__link:hover::after {
+  width: 100%; /* Линия занимает всю ширину текста при ховере */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // .header__containe {
 //   display: flex;
@@ -184,7 +239,6 @@ body.lock {
     // height: 24px;
     font-weight: 600;
     display: block;
-    padding: 28px 0px;
   }
   .menu__item::after {
     display: inline;
@@ -206,4 +260,6 @@ body.lock {
   .menu_desktop{
     display: none;
   }
-  
+
+
+
