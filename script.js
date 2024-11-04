@@ -92,3 +92,50 @@ document.addEventListener("DOMContentLoaded", function() {
     button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>';
   });
 });
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  var video = document.getElementById("myVideo");
+
+  // Функция для начала воспроизведения видео с начала
+  function startVideo() {
+      video.currentTime = 0; // Перематываем видео на начало
+      video.play();
+  }
+
+  // Функция для остановки видео
+  function stopVideo() {
+      video.pause();
+  }
+
+  // Создаем новый IntersectionObserver
+  var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              // Когда видео появляется в области видимости, запускаем его с начала
+              startVideo();
+          } else {
+              // Когда видео выходит из зоны видимости, останавливаем его
+              stopVideo();
+          }
+      });
+  }, {
+      threshold: 0.5 // Видео начинает воспроизводиться, когда более 50% его площади находится в видимости
+  });
+
+  // Начинаем отслеживать видео
+  observer.observe(video);
+
+  // Обработчик события, чтобы перезапустить видео после полного воспроизведения
+  video.addEventListener("ended", function () {
+      startVideo(); // Перезапускаем видео
+  });
+});
+
+

@@ -7,7 +7,7 @@
   flex-direction: column;
   // align-items: center ;
   border-radius: 8px;
-  padding: 50px 20px;
+  padding: 50px 0px;
 }
 
 
@@ -69,45 +69,6 @@
 }
 
 
-
-
-// .section__aboutSite {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: start;
-//   padding: 150px 0px 50px;
-//   position: relative;
-//   // &::after {
-//   //   content: "</>";
-//   //   position: absolute;
-//   //   left: auto;
-//   //   right: auto;
-//   //   top: 90px;
-//   //   color:$TertiaryColor;
-//   //   font-size: 18px;
-//   //   font-weight: 600;
-//   //   line-height: 24px;
-//   // }
-//   p {
-//     letter-spacing: 0.03em;
-//     font-size: 16px;
-//     font-weight: 500;
-//     line-height: 22px;
-//     color: $SecondaryColor;
-//     text-align: center;
-//   }
-// }
-
-// .main__title {
-//   // margin-right: auto;
-//   color: $BlackColor;
-//   margin-bottom: 10px;
-//   letter-spacing: 0.03em;
-//   transform: translate(0px,-50%);
-//   opacity: 0;
-//   transition:all 0.3s ease 0s;
-// }
-
 .programmer_h2 {
   font-family: 'Montserrat Alternates', sans-serif;
   display: flex;
@@ -117,49 +78,6 @@
   color: $BlackColor;
   margin-bottom: 24px;
 }
-
-// .block__title._active .main__title {
-//   transform: translate(0px,0px);
-//   opacity: 1;
-//   transition:all 0.8s ease 0.5s;
-// }
-
-// .block__title {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   margin-bottom: 60px;
-// }
-// .description {
-//   max-width: 600px;
-//   transform: translate(0px,-50%);
-//   opacity: 0;
-//   transition:all 0.3s ease 0s;
-// }
-// .block__title._active .description{
-//   font-size: 16px;
-//   line-height: 24px;
-//   transform: translate(0px,0px);
-//   opacity: 1;
-//   transition:all 0.8s ease 0.3s;
-// }
-
-// .section__animation {
-//   display: flex;
-//   text-align: center;
-//   padding: 50px 0px;
-// }
-// // .section__aboutme{
-// //   background-color: $BlackColor;
-// //   padding: 56px 20px;
-// // }
-// .title__aboutme{
-//   font-family: 'Montserrat Alternates', sans-serif;
-//   font-weight: 800;
-//   font-size: 38px;
-//   color: $BaseColor;
-// }
 
 
 
@@ -505,3 +423,33 @@ p {
   gap: 50px;
   margin-bottom: 24px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Основной стиль контейнера */
+.video-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Адаптивное видео */
+.responsive-video {
+  width: 100%;
+  max-height: 100%;
+}
+

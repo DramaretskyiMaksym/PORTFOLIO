@@ -7,6 +7,32 @@
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  .title__internship {
+    display: flex;
+    justify-content: end;
+  }
+
+  .text_Banner {
+    font-size: 24px;
+  }
+  .text_ostup {
+    margin-bottom: 24px;
+    // padding-right: 522px;
+    padding-right: 440px;
+  }
+
+  .text_banner_adaptive{
+    gap: 136px;
+  }
+
+  .text_buttom{
+    min-width: 345px;
+    p{
+      font-size: 32px;
+    }
+  }
+
 }
 
 

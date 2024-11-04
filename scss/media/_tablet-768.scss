@@ -85,9 +85,11 @@
     // margin-bottom: 20px;
     // line-height: 130%;
   }
-
+  .text_buttom{
+    justify-content: space-between;
+    gap: 0px;
+  }
   .text_Banner {
-    max-width: 334px;
     margin-bottom: 0px;
   }
   .text_banner_adaptive{
@@ -95,5 +97,54 @@
     flex-direction: row;
     align-items: end;
     justify-content: space-between;
+    gap: 46px;
   }
+
+  .text_ostup {
+    margin-bottom: 24px;
+    padding-right: 349px;
+  }
+  .wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+
+  // Arbeidsefraing 
+
+  .title__aboutme{
+    font-size: 48px;
+  }
+  .block_jobber{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  
+  .width__all{
+    width: 106%;
+  }
+  .textDesrc__margin{
+    // margin-left: 21px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+  .arbeidserfaring{
+    h5{
+      margin-bottom: 0px;
+      &::after {
+        bottom: -20px;
+      }
+    }
+  }
+
+  .title_expirc{
+    font-size: 32px;
+  }
+  .textDesrc{
+    font-size: 24px;
+  }
+
 }

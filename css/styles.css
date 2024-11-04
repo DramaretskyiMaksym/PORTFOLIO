@@ -1126,7 +1126,7 @@ body.lock {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-  padding: 50px 20px;
+  padding: 50px 0px;
 }
 
 .arbeidserfaring {
@@ -1499,8 +1499,20 @@ body.lock {
   margin-bottom: 24px;
 }
 
+/* Основной стиль контейнера */
+.video-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Адаптивное видео */
+.responsive-video {
+  width: 100%;
+  max-height: 100%;
+}
+
 .banner {
-  padding-top: 112px;
+  padding-top: 140px;
   min-width: 320px;
   margin-bottom: 48px;
 }
@@ -1557,17 +1569,27 @@ body.lock {
   color: #808080;
   line-height: 140%;
   margin-bottom: 24px;
-  max-width: 390px;
+  width: 100%;
 }
 
 .text_buttom {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  min-width: 306px;
   gap: 16px;
 }
 .text_buttom p {
   font-size: 28px;
   font-weight: 600;
+}
+
+.text__margin {
+  width: 100%;
+}
+
+.text_ostup {
+  margin-bottom: 16px;
 }
 
 .button_mer_om_meg {
@@ -1741,24 +1763,6 @@ body.lock {
   align-items: center;
 }
 
-@media (min-width: 600px) {
-  .block__about {
-    flex-direction: row;
-  }
-  .about__block-text {
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 50px;
-  }
-  .about__description, .about__description-desktop {
-    max-width: 550px;
-  }
-  .about__description p, .about__description-desktop p {
-    text-align: start;
-  }
-}
 .section__skills {
   display: flex;
   position: relative;
@@ -2985,8 +2989,11 @@ body.lock {
   .banner__subtitle {
     font-size: 54px;
   }
+  .text_buttom {
+    justify-content: space-between;
+    gap: 0px;
+  }
   .text_Banner {
-    max-width: 334px;
     margin-bottom: 0px;
   }
   .text_banner_adaptive {
@@ -2994,6 +3001,44 @@ body.lock {
     flex-direction: row;
     align-items: end;
     justify-content: space-between;
+    gap: 46px;
+  }
+  .text_ostup {
+    margin-bottom: 24px;
+    padding-right: 349px;
+  }
+  .wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .title__aboutme {
+    font-size: 48px;
+  }
+  .block_jobber {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .width__all {
+    width: 106%;
+  }
+  .textDesrc__margin {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+  .arbeidserfaring h5 {
+    margin-bottom: 0px;
+  }
+  .arbeidserfaring h5::after {
+    bottom: -20px;
+  }
+  .title_expirc {
+    font-size: 32px;
+  }
+  .textDesrc {
+    font-size: 24px;
   }
 }
 @media (min-width: 1024px) {
@@ -3003,6 +3048,26 @@ body.lock {
   .wrapper {
     padding-left: 40px;
     padding-right: 40px;
+  }
+  .title__internship {
+    display: flex;
+    justify-content: end;
+  }
+  .text_Banner {
+    font-size: 24px;
+  }
+  .text_ostup {
+    margin-bottom: 24px;
+    padding-right: 440px;
+  }
+  .text_banner_adaptive {
+    gap: 136px;
+  }
+  .text_buttom {
+    min-width: 345px;
+  }
+  .text_buttom p {
+    font-size: 32px;
   }
 }
 @media (min-width: 1440px) {
@@ -3050,13 +3115,12 @@ body.lock {
     font-size: 64px;
     line-height: 66px;
   }
-  .title__internship {
-    display: flex;
-    justify-content: end;
-  }
   .text_Banner {
     font-size: 24px;
     max-width: 612px;
   }
   /* Стиль для кнопки */
+  .text_ostup {
+    padding-right: 0px;
+  }
 }
