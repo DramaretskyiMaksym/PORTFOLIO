@@ -1129,6 +1129,10 @@ body.lock {
   padding: 50px 0px;
 }
 
+.bg_main_arbiederaring {
+  background-color: black;
+}
+
 .arbeidserfaring {
   display: flex;
   flex-direction: column;
@@ -1236,7 +1240,7 @@ body.lock {
   margin-bottom: 40px;
 }
 .kategori a {
-  min-width: 320px;
+  min-width: 106px;
 }
 .kategori h5 {
   font-family: "Montserrat Alternates", sans-serif;
@@ -1257,7 +1261,7 @@ body.lock {
 
 .kategori_blocks {
   display: flex;
-  justify-content: space-between;
+  gap: 100px;
   margin-bottom: 42px;
   position: relative;
 }
@@ -1278,7 +1282,7 @@ body.lock {
 }
 
 .p_left {
-  margin-right: 75px;
+  margin-left: 62px;
 }
 
 .mine_ferdigheter {
@@ -1419,6 +1423,10 @@ body.lock {
   width: 99px;
   height: 99px;
   margin-bottom: 8px;
+}
+
+.displye__to {
+  display: none;
 }
 
 .padding_footer {
@@ -1592,6 +1600,10 @@ body.lock {
   margin-bottom: 16px;
 }
 
+.displye__to {
+  display: none;
+}
+
 .button_mer_om_meg {
   display: flex;
   align-items: center;
@@ -1650,117 +1662,6 @@ body.lock {
 .text_banner_adaptive {
   display: flex;
   flex-direction: column-reverse;
-}
-
-.title__aboutme {
-  position: relative;
-  display: flex;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 38px;
-  font-weight: 800;
-  line-height: 140%;
-  color: #FFF;
-  margin-bottom: 40px;
-  letter-spacing: 0.03em;
-}
-
-.block__about {
-  display: flex;
-  align-items: start;
-  flex-direction: column;
-}
-
-.about__img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 280px;
-  height: 340px;
-  transform: scale(0);
-  transition: all 0.6s ease 1s;
-}
-.about__img img {
-  border-radius: 4px;
-}
-
-.block__сard._active .about__img {
-  transform: scale(1);
-  transition: all 0.6s ease 0.4s;
-}
-
-.about__block-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.block__сard._active .about__description {
-  opacity: 1;
-  transform: translate(0px, 0px);
-  transition: all 0.8s ease 0.4s;
-}
-
-.about__description-desktop {
-  max-width: 340px;
-  margin-bottom: 30px;
-  text-align: start;
-}
-.about__description-desktop p {
-  margin-bottom: 10px;
-  letter-spacing: 0.03em;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 22px;
-  color: #808080;
-  text-align: center;
-}
-
-.text__noneMobile {
-  display: none;
-  overflow: hidden;
-  transform: translate(0px, -100%);
-  opacity: 0;
-  transition: all 0.8s ease 0.4s;
-}
-
-.block__сard._active .text__noneMobile {
-  opacity: 1;
-  transform: translate(0px, 0px);
-  transition: all 0.8s ease 0.4s;
-}
-
-.aboutme__buttom {
-  display: flex;
-}
-
-.button__link-page {
-  display: flex;
-  padding: 12px 34px;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 500;
-  max-width: 240px;
-  color: white;
-  border-style: none;
-  border-radius: 4px;
-  background-color: #009AFE;
-  border: 3px dashed #009AFE;
-}
-.button__link-page:hover {
-  border: 3px dashed #009AFE;
-  color: white;
-  transition: all 0s ease 0s;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.block__сard._active .aboutme__buttom {
-  opacity: 1;
-  transform: translate(0px, 0px);
-}
-
-.other__courses {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .section__skills {
@@ -3040,6 +2941,10 @@ body.lock {
   .textDesrc {
     font-size: 24px;
   }
+  .text_buttom {
+    justify-content: start;
+    gap: 16px;
+  }
 }
 @media (min-width: 1024px) {
   .banner__title {
@@ -3068,6 +2973,9 @@ body.lock {
   }
   .text_buttom p {
     font-size: 32px;
+  }
+  .text_buttom {
+    gap: 24px;
   }
 }
 @media (min-width: 1440px) {
@@ -3122,5 +3030,24 @@ body.lock {
   /* Стиль для кнопки */
   .text_ostup {
     padding-right: 0px;
+  }
+  .displye {
+    display: none;
+  }
+  .displye__to {
+    display: flex;
+  }
+  .displye__to a {
+    display: flex;
+    align-items: start;
+  }
+  .flex__dirc {
+    display: flex;
+    gap: 50px;
+  }
+  .kat_marg {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 26px;
   }
 }

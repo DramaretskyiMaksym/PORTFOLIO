@@ -74,10 +74,27 @@
 
 
 
-
   .text_ostup {
     padding-right: 0px;
   }
-
+  .displye {
+    display: none;
+  }
+  .displye__to {
+    display: flex;
+    a {
+      display: flex;
+      align-items: start;
+    }
+  }
+  .flex__dirc{
+    display: flex;
+    gap: 50px;
+  }
+  .kat_marg {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 26px;
+  }
 }
 
