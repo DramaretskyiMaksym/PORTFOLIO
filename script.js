@@ -41,6 +41,30 @@
 // }
 
 // document.querySelectorAll('.button').forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
   const burger = document.getElementById("burger");
   const header = document.querySelector("header");
@@ -137,5 +161,52 @@ document.addEventListener("DOMContentLoaded", function () {
       startVideo(); // Перезапускаем видео
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

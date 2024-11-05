@@ -1098,9 +1098,10 @@ body.lock {
   .gmail_nav {
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 14px;
-    font-weight: 800;
+    font-weight: 600;
     color: black;
-    margin-top: 384px;
+    margin-top: 16px;
+    text-decoration: underline;
   }
 }
 .BGMain {
