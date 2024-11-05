@@ -883,21 +883,6 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-@media (min-width: 700px) {
-  .footer__content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-@media (min-width: 780px) {
-  .footer__secondary {
-    flex-direction: row;
-  }
-  .footer__secondary img {
-    margin-right: 10px;
-  }
-}
 .wrapper {
   max-width: 1600px;
   padding-left: 20px;
@@ -1056,70 +1041,74 @@ body.lock {
   .header__burger-btn {
     display: block;
   }
+  .menu {
+    position: absolute;
+    left: -100vw;
+    top: 0px;
+    background-color: transparent;
+    width: 100vw;
+    transition: transform 0.2s;
+    background-color: #FFFFFF;
+    height: 100vh;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  .menu__list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 56px;
+    margin-top: 124px;
+    padding: 0px 20px;
+  }
+  .menu__item {
+    position: relative;
+    margin-top: 0px;
+    text-decoration: none;
+    color: black;
+    min-width: 100px;
+    width: 100%;
+  }
+  .menu__link {
+    color: black;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    display: block;
+  }
+  .menu__item::after {
+    display: inline;
+    content: "";
+    position: absolute;
+    left: 24px;
+    bottom: 0;
+    height: 1px; /* Толщина линии */
+    background-color: #B4B4B4;
+    max-width: calc(100% + 260px); /* Делаем линию на всю ширину родителя */
+    margin-left: -20px; /* Подгоняем, чтобы выйти за границы текста */
+    width: 100%;
+  }
+  .header.open .menu {
+    transform: translateX(100%);
+  }
+  .menu_desktop {
+    display: none;
+  }
+  .gmail_nav {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: black;
+    margin-top: 384px;
+  }
 }
-.menu {
-  position: absolute;
-  left: -100vw;
-  top: 0px;
-  background-color: transparent;
-  width: 100vw;
-  transition: transform 0.2s;
-  background-color: #FFFFFF;
-  height: 100vh;
-  display: block;
-  padding: 0;
-  margin: 0;
-}
-
-.menu__list {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 124px;
-  padding: 0px 20px;
-}
-
-.menu__item {
-  position: relative;
-  margin-top: 0px;
-  text-decoration: none;
-  color: black;
-  min-width: 100px;
-  width: 100%;
-}
-
-.menu__link {
-  color: black;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 22px;
-  font-weight: 600;
-  display: block;
-}
-
-.menu__item::after {
-  display: inline;
-  content: "";
-  position: absolute;
-  left: 24px;
-  bottom: 0;
-  height: 1px; /* Толщина линии */
-  background-color: #B4B4B4;
-  max-width: calc(100% + 260px); /* Делаем линию на всю ширину родителя */
-  margin-left: -20px; /* Подгоняем, чтобы выйти за границы текста */
-  width: 100%;
-}
-
-.header.open .menu {
-  transform: translateX(100%);
-}
-
-.menu_desktop {
-  display: none;
-}
-
 .BGMain {
   background-color: #FFFFFF;
+}
+
+.video-container {
+  margin-bottom: 40px;
 }
 
 .block__сard {
@@ -1234,10 +1223,13 @@ body.lock {
   bottom: -30px;
 }
 
+.block__margin {
+  margin-bottom: 32px;
+}
+
 .kategori {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
 }
 .kategori a {
   min-width: 106px;
@@ -1285,6 +1277,24 @@ body.lock {
   margin-left: 62px;
 }
 
+/* Основной стиль контейнера */
+.video-container {
+  max-width: 100%;
+  margin: 40px auto;
+}
+
+/* Адаптивное видео */
+.responsive-video {
+  width: 100%;
+  max-height: 100%;
+}
+
+.block__change__posit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .mine_ferdigheter {
   position: relative;
   display: flex;
@@ -1321,9 +1331,6 @@ body.lock {
 }
 
 .h2_block {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -1435,7 +1442,7 @@ body.lock {
 }
 
 .footer_alltid_block {
-  margin-bottom: 40px;
+  margin-bottom: 56px;
 }
 
 .alltid_block h2 {
@@ -1469,6 +1476,11 @@ body.lock {
   background-color: black;
   width: 100%;
   bottom: -16px;
+}
+
+.footer_gmail_buttom {
+  width: 106px;
+  height: 106px;
 }
 
 .footer_nav {
@@ -1505,18 +1517,6 @@ body.lock {
   display: flex;
   gap: 50px;
   margin-bottom: 24px;
-}
-
-/* Основной стиль контейнера */
-.video-container {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-/* Адаптивное видео */
-.responsive-video {
-  width: 100%;
-  max-height: 100%;
 }
 
 .banner {
@@ -1608,8 +1608,6 @@ body.lock {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 106px;
-  height: 106px;
   transition: fill 0.3s, transform 0.3s ease; /* Плавный переход для fill и transform */
   -webkit-tap-highlight-color: transparent; /* Отключает выделение на мобильных */
   display: inline-block; /* Чтобы правильно отображать SVG */
@@ -1637,8 +1635,6 @@ body.lock {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 109px;
-  height: 109px;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease; /* Плавный переход для фона */
   transform-origin: center; /* Центрируем трансформацию */
@@ -2945,6 +2941,66 @@ body.lock {
     justify-content: start;
     gap: 16px;
   }
+  .block_prosjektr_title h3 {
+    font-size: 48px;
+  }
+  .block_prosjektr_title p {
+    line-height: 150%;
+  }
+  .mine_ferdigheter {
+    gap: 78px;
+    margin-bottom: 64px;
+  }
+  .mine_ferdigheter h2 {
+    font-size: 48px;
+  }
+  .mine_ferdigheter h3 {
+    font-size: 32px;
+  }
+  .programmer_h2 {
+    font-size: 48px;
+    margin-bottom: 32px;
+  }
+  .blocks {
+    gap: 90px;
+  }
+  .block img {
+    width: 136px;
+    height: 136px;
+  }
+  .block p {
+    font-size: 18px;
+  }
+  .padding_footer {
+    padding-top: 84px;
+  }
+  .gmail_block h5 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .alltid_block h2 {
+    font-size: 96px;
+  }
+  .footer_menu {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 110px;
+  }
+  .footer_menu a {
+    font-size: 24px;
+    margin-bottom: 0px;
+  }
+  .footer__block_change {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__block_change p {
+    max-width: 333px;
+  }
+  .footer_svg {
+    margin-bottom: 33px;
+    row-gap: 16px;
+  }
 }
 @media (min-width: 1024px) {
   .banner__title {
@@ -2976,6 +3032,57 @@ body.lock {
   }
   .text_buttom {
     gap: 24px;
+  }
+  .block_prosjektr_title h3 {
+    font-size: 48px;
+  }
+  .block_prosjektr_title p {
+    font-size: 24px;
+    line-height: 150%;
+  }
+  .programmer_h2 {
+    margin-bottom: 40px;
+  }
+  .blockS_orfingsanimasjoner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+  }
+  .blockS_orfingsanimasjoner p {
+    max-width: 462px;
+    font-size: 24px;
+  }
+  .blocks {
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .block__change__posit {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 32px;
+  }
+  .h2_block {
+    margin-bottom: 0px;
+  }
+  .alltid_block h2 {
+    font-size: 132px;
+  }
+  .gmail_block h5 {
+    font-size: 44px;
+  }
+  .footer_social_block {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+  }
+  .footer__block_change p {
+    display: flex;
+    max-width: 400px;
+  }
+  .footer_text_kommune {
+    margin-top: 53px;
   }
 }
 @media (min-width: 1440px) {
@@ -3049,5 +3156,20 @@ body.lock {
     display: flex;
     flex-direction: column;
     margin-bottom: 26px;
+  }
+  .blockS_orfingsanimasjoner p {
+    max-width: 610px;
+  }
+  .programmer_h2 {
+    margin-bottom: 48px;
+  }
+  .footer_alltid_block {
+    margin-bottom: 104px;
+  }
+  .footer_social_block {
+    gap: 246px;
+  }
+  .gmail_block h5 {
+    font-size: 56px;
   }
 }

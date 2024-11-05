@@ -35,8 +35,76 @@
   .text_buttom{
     gap: 24px;
   }
-}
 
+    /// PROSJEKTER
+
+.block_prosjektr_title {
+  h3{
+    font-size: 48px;
+  }
+  p {
+    font-size: 24px;
+    line-height: 150%;
+  }
+
+  }
+  // MINE Ferdigheter
+
+  .programmer_h2{
+    margin-bottom: 40px;
+  }
+  .blockS_orfingsanimasjoner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    p {
+      max-width: 462px;
+      font-size: 24px;
+    }
+  }
+  // .h2_block {
+
+  // }
+  .blocks{
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .block__change__posit{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 32px;
+  }
+  .h2_block {
+    margin-bottom: 0px;
+  }
+
+
+  ///FOOTER
+  
+  .alltid_block h2{
+    font-size: 132px;
+  }
+
+  .gmail_block h5 {
+    font-size: 44px;
+  }
+  .footer_social_block{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+  }
+  .footer__block_change p{
+    display: flex;
+    max-width: 400px;
+  }
+  
+  .footer_text_kommune {
+    margin-top: 53px;
+  }
+
+}
 
 
 

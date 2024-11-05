@@ -193,7 +193,7 @@ body.lock {
   .header__burger-btn {
     display: block;
   }
-}
+
 
 
 
@@ -217,7 +217,7 @@ body.lock {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    gap: 10px;
+    gap: 56px;
     margin-top: 124px;
     padding: 0px 20px;
   }
@@ -260,6 +260,13 @@ body.lock {
   .menu_desktop{
     display: none;
   }
+  .gmail_nav {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color:$BlackColor;
+    margin-top: 384px;
+  }
 
-
+}
 

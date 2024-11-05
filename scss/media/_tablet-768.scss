@@ -158,4 +158,83 @@
     justify-content:start;
     gap: 16px;
   }
+  /// PROSJEKTER
+
+  .block_prosjektr_title {
+    h3{
+      font-size: 48px;
+    }
+    p {
+      line-height: 150%;
+    }
+  
+    }
+    
+  //Mine ferdigheter
+
+  .mine_ferdigheter{
+    gap: 78px;
+    margin-bottom: 64px;
+    h2 {
+      font-size: 48px;
+    }
+    h3{
+      font-size: 32px;
+    }
+  }
+
+
+//// Programmer som jeg beherser
+  .programmer_h2{
+    font-size: 48px;
+    margin-bottom: 32px;
+  }
+  .blocks{
+    gap:90px;
+  }
+  .block {
+    img {
+      width: 136px;
+      height: 136px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+
+/// FOOTERR
+
+
+.padding_footer {
+  padding-top: 84px;
+}
+
+.gmail_block h5 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.alltid_block h2{
+  font-size: 96px;
+}
+  .footer_menu {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 110px;
+    a {
+      font-size: 24px;
+      margin-bottom: 0px;
+    }
+  }
+
+  .footer__block_change {
+    display: flex;
+    justify-content: space-between;
+    p{
+      max-width: 333px;
+    }
+  }
+  .footer_svg {
+    margin-bottom: 33px;
+    row-gap: 16px;
+  }
 }
