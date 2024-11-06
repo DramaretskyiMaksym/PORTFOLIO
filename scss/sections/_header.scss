@@ -186,9 +186,22 @@
   height: 2px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 body.lock {
   overflow: hidden;
 }
+
 @media (max-width:768px){
   .header__burger-btn {
     display: block;
@@ -245,7 +258,7 @@ body.lock {
     content: "";
     position: absolute;
     left: 24px;
-    bottom: 0;
+    bottom: -28px;
     height: 1px; /* Толщина линии */
     background-color:#B4B4B4;
     max-width: calc(100% + 260px); /* Делаем линию на всю ширину родителя */
