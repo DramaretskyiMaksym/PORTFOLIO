@@ -108,9 +108,48 @@ document.addEventListener("DOMContentLoaded", function () {
 //////////////////////////////
 
 
+  // Получаем текущий URL
+  const currentPath = window.location.pathname;
 
+  // Получаем все ссылки в меню
+  document.querySelectorAll('.menu__link').forEach(link => {
+    // Если href ссылки совпадает с текущим путем, добавляем класс 'active'
+    if (link.getAttribute('href') === '.' + currentPath) {
+      link.classList.add('active');
+    }
+  });
 
+  //-------------------------------------------------------------------------------------------------
 
+      // При загрузке страницы добавляем класс "visible" к body для плавного появления
+      document.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.add("visible");
+      });
+    
+      // Находим все ссылки в навигации
+      document.querySelectorAll('a.menu__link').forEach(link => {
+        link.addEventListener("click", function(event) {
+          // Отключаем стандартное поведение ссылки
+          event.preventDefault();
+          
+          // Убираем класс "visible", чтобы запустить анимацию исчезновения
+          document.body.classList.remove("visible");
+    
+          // Переходим на новую страницу после завершения анимации (600 мс)
+          setTimeout(() => {
+            window.location.href = this.href;
+          }, 10); // задержка должна совпадать со временем анимации
+        });
+      });
+
+///-----------------------------------------------------------------------------------------------------
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   const lazyLoadFont = new FontFace('Montserrat', 'url(../fonts/Montserrat-Bold.woff2)');
+//   lazyLoadFont.load().then(function (loaded_face) {
+//     document.fonts.add(loaded_face);
+//   });
+// });
 
 
 

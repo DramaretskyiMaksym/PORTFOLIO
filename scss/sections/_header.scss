@@ -46,7 +46,7 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: -2px; /* Расстояние от текста до линии */
+  bottom: -3px; /* Расстояние от текста до линии */
   width: 0;
   height: 2px; /* Толщина подчеркивания */
   background-color: $Accenlor; /* Цвет линии */
@@ -187,6 +187,11 @@
 }
 
 
+.menu__link.active {
+  color:$Accenlor; /* Цвет для активной ссылки */
+  font-weight: bold; /* Полужирный текст */
+  border-bottom: 4px solid $Accenlor; /* Подчеркнуть нижнюю границу */
+}
 
 
 
@@ -201,6 +206,8 @@
 body.lock {
   overflow: hidden;
 }
+
+
 
 @media (max-width:768px){
   .header__burger-btn {

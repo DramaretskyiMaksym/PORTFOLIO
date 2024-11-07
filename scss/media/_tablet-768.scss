@@ -60,6 +60,7 @@
   }
   .menu__link{
     font-size: 24px;
+    font-weight: 600;
   }
 
   // .menu__item::after {
@@ -206,7 +207,7 @@
 
 
 .padding_footer {
-  padding-top: 84px;
+  padding-top: 88px;
 }
 
 .gmail_block h5 {
@@ -236,5 +237,51 @@
   .footer_svg {
     margin-bottom: 33px;
     row-gap: 16px;
+  }
+
+
+
+
+  
+  /// ABOUT
+  /// 
+  ///
+
+  .en_ting_til {
+    h3 {
+      font-size: 48px;
+  }
+  h5{
+    font-size: 32px;
+    max-width: 533px;
+  }
+  .block_friv{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    img{
+      max-width: 613px;
+    }
+    }
+  }
+  .block_fiske {
+    display: flex;
+    gap: 53px;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      min-width: 300px;
+    }
+  }
+  .liker_tur{
+    max-width: 300px;
+  }
+  .main_block_om_meg {
+    h2{
+      font-size: 48px;
+    }
+  }
+  .turSVG_photo  {
+    width: 563px;
   }
 }

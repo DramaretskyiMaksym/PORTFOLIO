@@ -6,11 +6,15 @@
 // учитывать границы и отступы в значениях которое мы указываем для высоты и ширины 
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-style: normal;
   min-width: 430px;
   overflow: auto;
   background-color: #ffffff;
+
+  //-------
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
   a {
   text-decoration: none;
   }
@@ -20,3 +24,7 @@ body {
   // }
 }
 
+/* Состояние, при котором страница видна */
+body.visible {
+  opacity: 1;
+}

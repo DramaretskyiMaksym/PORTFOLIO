@@ -104,6 +104,34 @@
     margin-top: 53px;
   }
 
+  /////// ABOUT
+
+  .en_ting_til .block_friv img {
+    max-width: 620px;
+  }
+  .en_ting_til {
+    
+    h5 {
+      max-width: 620px;
+    }
+  }
+
+  .flex_om_meg {
+    flex-direction: row;
+  }
+
+  .block_fiske {
+    gap: 32px;
+  }
+
+  .fiskSVG_photo {
+    display: flex;
+    width: 623px;
+    margin-left: auto;
+  }
+  .turSVG_photo {
+    width: 462px;
+  }
 }
 
 
