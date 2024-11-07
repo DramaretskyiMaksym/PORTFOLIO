@@ -2663,10 +2663,37 @@ body.lock {
     height: 600px;
     width: 600px;
   }
-  .min_block_om_meg {
+  .min_block_om_meg h2 {
     font-size: 64px;
+  }
+  .flex_om_meg {
+    gap: 124px;
   }
   .flex_om_meg p {
     font-size: 24px;
+  }
+  .about_p {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .block_fiske {
+    gap: 226px;
+  }
+  .block_fiske h2 {
+    min-width: 552px;
+  }
+  .BLOKS_active {
+    position: relative;
+  }
+  .block_LIKER {
+    position: absolute;
+    bottom: -360px;
+  }
+  .turSVG_photo {
+    width: 400px;
+  }
+  .padding_footer {
+    padding-top: 500px;
   }
 }
