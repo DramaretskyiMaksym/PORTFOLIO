@@ -942,6 +942,7 @@ body.lock {
 .responsive-video {
   width: 100%;
   max-height: 100%;
+  border-radius: 8px;
 }
 
 .block__change__posit {
@@ -1133,9 +1134,40 @@ body.lock {
   bottom: -16px;
 }
 
+/* Начальные стили для ссылок в меню */
+.liNK_footer_Gmail {
+  position: relative;
+  color: black; /* Исходный цвет ссылки */
+  text-decoration: none; /* Убираем стандартное подчеркивание */
+  transition: color 0.3s ease; /* Плавный переход цвета */
+}
+
+/* Изменение цвета текста при наведении */
+.liNK_footer_Gmail h5:hover {
+  color: #FD9103; /* Цвет ссылки при наведении */
+}
+
+/* Подчеркивание при наведении, начинающееся слева */
+.liNK_footer_Gmail h5::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Расстояние от текста до линии */
+  width: 0;
+  height: 4px; /* Толщина подчеркивания */
+  background-color: #FD9103; /* Цвет линии */
+  transition: width 0.3s ease; /* Плавное появление линии */
+}
+
+/* Показываем подчеркивание при наведении */
+.liNK_footer_Gmail h5:hover::after {
+  width: 100%; /* Линия занимает всю ширину текста при ховере */
+}
+
 .footer__block_change {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .footer_gmail_buttom {
@@ -1177,6 +1209,82 @@ body.lock {
   display: flex;
   gap: 50px;
   margin-bottom: 24px;
+}
+
+.block_project {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.UT_class_page_project {
+  padding: 20px 31px 20px 31px;
+  background-color: black;
+  border-radius: 12px;
+}
+.UT_class_page_project h4 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.UT_class_page_project .video-container {
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+.UT_class_app_project {
+  border-radius: 12px;
+  background-color: #FD9103;
+  padding: 18px 15px 24px 15px;
+}
+.UT_class_app_project .video-container {
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+.UT_class_app_project h4 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 22px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-weight: 120%;
+  width: 231px;
+  margin-bottom: 16px;
+}
+.UT_class_app_project p {
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-weight: 140%;
+}
+
+.UT_class_motion_project {
+  background-color: #F2F0F1;
+  padding: 24px 21px;
+  border-radius: 12px;
+}
+.UT_class_motion_project .video-container {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.UT_class_2020_project {
+  border-radius: 22px;
+  padding: 18px 16px 28px 16px;
+  background-color: #FAFAFA;
+}
+.UT_class_2020_project .video-container {
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+.UT_class_2020_project h4 {
+  font-family: "Montserrat Alternates", sans-serif;
+  margin-bottom: 8px;
+}
+.UT_class_2020_project p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
 }
 
 .banner {
@@ -2470,6 +2578,8 @@ body.lock {
   .footer__block_change {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
   }
   .footer__block_change p {
     max-width: 333px;
@@ -2585,14 +2695,18 @@ body.lock {
   .footer_social_block {
     display: flex;
     flex-direction: row-reverse;
-    gap: 40px;
+    align-items: flex-end;
+    gap: 20px;
+  }
+  .footer__block_change {
+    align-items: flex-start;
   }
   .footer__block_change p {
     display: flex;
     max-width: 400px;
   }
   .footer_text_kommune {
-    margin-top: 53px;
+    margin-bottom: 10px;
   }
   .en_ting_til .block_friv img {
     max-width: 620px;
@@ -2698,7 +2812,7 @@ body.lock {
     margin-bottom: 104px;
   }
   .footer_social_block {
-    gap: 246px;
+    gap: 366px;
   }
   .gmail_block h5 {
     font-size: 56px;
