@@ -159,6 +159,7 @@
   }
   .BLOKS_active {
     position: relative;
+    margin-bottom: 300px;
   }
   .block_LIKER{
     position: absolute;
@@ -170,7 +171,18 @@
   }
 
   .padding_footer{
-    padding-top: 500px;
+    padding-top: 150px;
+  }
+  .footer_social_block{
+    display: flex;
+  }
+  .footer__block_change{
+    display: flex;
+    align-items: start;
+  }
+
+  .footer_text_kommune {
+    margin-top: 20px;
   }
 }
 

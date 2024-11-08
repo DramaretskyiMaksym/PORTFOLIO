@@ -493,6 +493,33 @@ body.visible {
   opacity: 1;
 }
 
+.button__FOOTER_ANIM {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: fill 0.3s, transform 0.3s ease; /* Плавный переход для fill и transform */
+  -webkit-tap-highlight-color: transparent; /* Отключает выделение на мобильных */
+  display: inline-block; /* Чтобы правильно отображать SVG */
+  /* Увеличение SVG на 20% при ховере */
+  /* Убираем стандартную рамку фокуса и тень */
+}
+.button__FOOTER_ANIM svg {
+  cursor: pointer; /* Меняет курсор на указатель */
+  transition: background 0.3s, border-radius 0.3s; /* Плавный переход для фона и радиуса */
+  /* Цвет фона при наведении */
+}
+.button__FOOTER_ANIM svg:hover rect {
+  transition: fill 0.3s;
+  fill: #FD9103; /* Устанавливаем цвет для элемента SVG */
+}
+.button__FOOTER_ANIM:hover {
+  transform: scale(1.2); /* Увеличиваем SVG на 20% при ховере */
+}
+.button__FOOTER_ANIM:focus, .button__FOOTER_ANIM:active {
+  outline: none;
+  box-shadow: none;
+}
+
 .wrapper {
   max-width: 1600px;
   padding-left: 20px;
@@ -545,6 +572,18 @@ body.visible {
 /* Показываем подчеркивание при наведении */
 .menu__link:hover::after {
   width: 100%; /* Линия занимает всю ширину текста при ховере */
+}
+
+/* Добавьте этот стиль в ваш CSS */
+.page-transition {
+  opacity: 0;
+  transform: translateY(70px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.page-transition-active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .logo {
@@ -1094,6 +1133,11 @@ body.lock {
   bottom: -16px;
 }
 
+.footer__block_change {
+  display: flex;
+  align-items: center;
+}
+
 .footer_gmail_buttom {
   width: 106px;
   height: 106px;
@@ -1122,7 +1166,7 @@ body.lock {
   color: black;
 }
 
-.footer_social_block p {
+.footer_social_block {
   font-size: 12px;
   font-weight: 400;
   line-height: 150%;
@@ -2685,6 +2729,7 @@ body.lock {
   }
   .BLOKS_active {
     position: relative;
+    margin-bottom: 300px;
   }
   .block_LIKER {
     position: absolute;
@@ -2694,6 +2739,16 @@ body.lock {
     width: 400px;
   }
   .padding_footer {
-    padding-top: 500px;
+    padding-top: 150px;
+  }
+  .footer_social_block {
+    display: flex;
+  }
+  .footer__block_change {
+    display: flex;
+    align-items: start;
+  }
+  .footer_text_kommune {
+    margin-top: 20px;
   }
 }

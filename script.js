@@ -120,27 +120,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   //-------------------------------------------------------------------------------------------------
-
-      // При загрузке страницы добавляем класс "visible" к body для плавного появления
-      document.addEventListener("DOMContentLoaded", () => {
-        document.body.classList.add("visible");
-      });
+//ВАРИАНТ НОРМ
+      // // При загрузке страницы добавляем класс "visible" к body для плавного появления
+      // document.addEventListener("DOMContentLoaded", () => {
+      //   document.body.classList.add("visible");
+      // });
     
-      // Находим все ссылки в навигации
-      document.querySelectorAll('a.menu__link').forEach(link => {
-        link.addEventListener("click", function(event) {
-          // Отключаем стандартное поведение ссылки
-          event.preventDefault();
+      // // Находим все ссылки в навигации
+      // document.querySelectorAll('a.menu__link').forEach(link => {
+      //   link.addEventListener("click", function(event) {
+      //     // Отключаем стандартное поведение ссылки
+      //     event.preventDefault();
           
-          // Убираем класс "visible", чтобы запустить анимацию исчезновения
-          document.body.classList.remove("visible");
+      //     // Убираем класс "visible", чтобы запустить анимацию исчезновения
+      //     document.body.classList.remove("visible");
     
-          // Переходим на новую страницу после завершения анимации (600 мс)
-          setTimeout(() => {
-            window.location.href = this.href;
-          }, 10); // задержка должна совпадать со временем анимации
-        });
-      });
+      //     // Переходим на новую страницу после завершения анимации (600 мс)
+      //     setTimeout(() => {
+      //       window.location.href = this.href;
+      //     }, 10); // задержка должна совпадать со временем анимации
+      //   });
+      // });
 
 ///-----------------------------------------------------------------------------------------------------
 
@@ -151,6 +151,32 @@ document.addEventListener("DOMContentLoaded", function () {
 //   });
 // });
 
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const content = document.querySelector(".page-transition");
+
+    // При загрузке страницы добавляем активный класс
+    content.classList.add("page-transition-active");
+
+    // Плавный переход при смене страниц
+    document.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", event => {
+        const target = link.getAttribute("href");
+
+        if (target && target.includes(".html")) {
+          event.preventDefault();
+
+          // Убираем активный класс и ждем завершения анимации
+          content.classList.remove("page-transition-active");
+
+          setTimeout(() => {
+            window.location.href = target;
+          }, 600); // Время, синхронизированное с CSS-анимацией (0.5s)
+        }
+      });
+    });
+  });
 
 
 
