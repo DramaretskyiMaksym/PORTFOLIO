@@ -1287,6 +1287,58 @@ body.lock {
   line-height: 140%;
 }
 
+.UT_class_eldorado_project h4 {
+  font-size: 22px;
+  font-family: "Montserrat Alternates", sans-serif;
+  margin-bottom: 16px;
+  color: #FD9103;
+}
+.UT_class_eldorado_project .video-container {
+  margin-top: 24px;
+}
+
+.UT_class_familia_project {
+  display: flex;
+  flex-direction: column;
+}
+.UT_class_familia_project h4 {
+  font-size: 22px;
+  font-family: "Montserrat Alternates", sans-serif;
+  margin-bottom: 12px;
+  color: #FD9103;
+}
+.UT_class_familia_project p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  margin-bottom: 24px;
+}
+
+.block_famil_bg_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.familia_backgraund {
+  border-radius: 12px;
+  background-color: #FD9103;
+  width: 348px;
+  height: 279px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.familia_backgraund .responsive-video {
+  width: 390px;
+  border-radius: 8px;
+}
+.familia_backgraund .video-container {
+  max-width: 390px;
+}
+
 .banner {
   padding-top: 140px;
   min-width: 320px;

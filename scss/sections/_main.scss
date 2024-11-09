@@ -584,6 +584,69 @@ p {
   }
 }
 
+.UT_class_eldorado_project{
+  h4 {
+    font-size: 22px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-bottom: 16px;
+    color: $Accenlor;
+
+  }
+  .video-container{
+    margin-top: 24px;
+  }
+}
+
+
+
+
+.UT_class_familia_project {
+  display: flex;
+  flex-direction: column;
+  h4 {
+    font-size: 22px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-bottom: 12px;
+    color: $Accenlor;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 24px;
+  }
+  // .video-container{
+  //   width: 390px;
+  //   height: 247px;
+  // }
+}
+
+.block_famil_bg_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.familia_backgraund {
+  border-radius: 12px;
+  background-color: $Accenlor;
+  width: 348px;
+  height: 279px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .responsive-video {
+    width:390px;
+    // height: 247px;
+    border-radius: 8px;
+  }
+  .video-container {
+    max-width: 390px;
+  }
+}
+
 
 
 
