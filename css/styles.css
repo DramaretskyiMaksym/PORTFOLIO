@@ -1512,6 +1512,115 @@ body.lock {
   gap: 12px;
 }
 
+.Anmeldelser_Padding {
+  padding: 100px 0px 100px 0px;
+}
+.Anmeldelser_Padding h2 {
+  font-size: 48px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 800;
+}
+.Anmeldelser_Padding p {
+  font-size: 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  line-height: 140%;
+}
+.Anmeldelser_Padding svg {
+  width: 205px;
+  height: 205px;
+}
+
+.Anmeldelser_descr {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  gap: 20px;
+}
+
+.Tilbakemelding_padding {
+  padding-bottom: 40px;
+}
+
+.all_bloks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.Tilbakemelding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 64px;
+  align-items: center;
+}
+
+.title_Tilbakemelding {
+  font-size: 32px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  margin-bottom: 24px;
+  width: 274px;
+}
+
+.block_coach {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.block_coach p, .block_coach a {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+.block_desc_Tilbakemelding {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.block_desc_Tilbakemelding p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.btn_linkedin {
+  padding-top: 20px;
+}
+.btn_linkedin a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn_linkedin svg {
+  width: 70px;
+  height: 70px;
+}
+
+.img_hillel img {
+  width: 334px;
+  height: 334px;
+}
+
+.last_block_Hillel {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.last_block_Hillel h2 {
+  font-size: 48px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 800;
+}
+.last_block_Hillel img {
+  width: 100%;
+  height: 100%;
+}
+
 .banner {
   padding-top: 140px;
   min-width: 320px;
