@@ -206,6 +206,7 @@
 /// FOOTERR
 
 
+
 .padding_footer {
   padding-top: 88px;
 }
@@ -252,18 +253,18 @@
   .en_ting_til {
     h3 {
       font-size: 48px;
-  }
-  h5{
-    font-size: 32px;
-    max-width: 533px;
-  }
-  .block_friv{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    img{
-      max-width: 613px;
     }
+    h5{
+      font-size: 32px;
+      max-width: 533px;
+    }
+    .block_friv{
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      img{
+        max-width: 613px;
+      }
     }
   }
   .block_fiske {
@@ -286,4 +287,171 @@
   .turSVG_photo  {
     width: 563px;
   }
+
+//// Utdanning
+/// 
+
+  .UT_class_page_project {
+    padding: 40px 55px 24px 55px;
+
+  h4  {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  .video-container {
+    margin-bottom: 18px;;
+  }
+
+
+  .UT_class_motion_project{
+    .video-container {
+      background-color: #F2F0F1;
+      padding: 42px 38px;
+      border-radius: 12px;
+    }
 }
+
+
+
+.UT_class_familia_project {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  h4{
+    max-width: 209px;
+  }
+  p {
+    max-width: 209px;
+  }
+  }
+  .familia_backgraund {
+    width: 336px;
+    height: 217px;
+    .responsive-video {
+      display: flex;
+      width: 390px;
+      height: 169px;
+    }
+    .video-container {
+      margin-right: 220px;
+      border-radius: 20px;
+    }
+  }
+  .UT_class_motion_project {
+    padding: 42px 38px
+    }
+  }
+
+  .UT_class_app_project {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 44px 37px 44px 34px;
+  }
+  .app_desc {
+    width: 200px;
+    h4 {
+      width: auto;
+    }
+  }
+
+  .UT_class_app_project{
+    .video-container{
+      max-width: 402px;
+      padding: 0px 0px 0px 0px;
+      margin-bottom: 0px;
+      margin: 0px 0px;
+    }
+  }
+
+  .UT_class_newvideo_project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .new_video_block {
+    padding: 96px 82px 103px 39px;
+    h4 {
+      width: 218px;
+    }
+  }
+
+
+
+
+
+  // VIDEOOOOO LOGO
+
+  .UT_class_newvideo_project {
+    .video-container{
+      display: flex;
+      margin: 0px 0px;
+      align-items: center;
+    }
+  }
+
+.video-section_logo {
+  position: relative;
+  overflow: hidden;
+  width: 360px;
+  height: 400px; /* Или заданная высота вашей секции */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-background_logo {
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none; /* Полностью отключает элементы управления */
+}
+.ellips_svg_logo_newvideo {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 4px;
+  width: 328px;
+  height: 386px;
+}
+
+
+///2020
+///
+///  
+.UT_class_2020_project {
+  padding: 39px 36px 39px 53px;
+}
+.block_2020 {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  .disc2020_desc  {
+    h4{
+    width: 152px;
+    }
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

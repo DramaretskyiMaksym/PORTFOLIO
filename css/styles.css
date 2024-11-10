@@ -1247,7 +1247,7 @@ body.lock {
   font-size: 22px;
   color: #FFFFFF;
   font-weight: 700;
-  font-weight: 120%;
+  line-height: 120%;
   width: 231px;
   margin-bottom: 16px;
 }
@@ -1255,7 +1255,7 @@ body.lock {
   font-size: 14px;
   color: #FFFFFF;
   font-weight: 500;
-  font-weight: 140%;
+  line-height: 140%;
 }
 
 .UT_class_motion_project {
@@ -1295,6 +1295,23 @@ body.lock {
 }
 .UT_class_eldorado_project .video-container {
   margin-top: 24px;
+}
+
+.new_video_block {
+  padding: 58px 35px 40px 24px;
+  background-color: black;
+  border-radius: 12px;
+}
+.new_video_block h4 {
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.new_video_block p {
+  font-size: 14px;
+  line-height: 140%;
+  color: #FFFFFF;
 }
 
 .UT_class_familia_project {
@@ -1337,6 +1354,43 @@ body.lock {
 }
 .familia_backgraund .video-container {
   max-width: 390px;
+}
+
+.video-section_logo {
+  position: relative;
+  overflow: hidden;
+  width: 360px;
+  height: 400px; /* Или заданная высота вашей секции */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new_video_block h4 {
+  width: 218px;
+}
+
+.video-background_logo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none; /* Полностью отключает элементы управления */
+}
+
+.ellips_svg_logo_newvideo {
+  display: flex;
+  position: absolute;
+  top: 47px;
+  left: 6px;
+  width: 342px;
+  height: 342px;
+}
+
+.disc2020_desc h4 {
+  font-size: 22px;
+  font-family: "Montserrat Alternates", sans-serif;
+  line-height: 120%;
 }
 
 .banner {
@@ -2673,6 +2727,122 @@ body.lock {
   .turSVG_photo {
     width: 563px;
   }
+  .UT_class_page_project {
+    padding: 40px 55px 24px 55px;
+  }
+  .UT_class_page_project h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  .UT_class_page_project .video-container {
+    margin-bottom: 18px;
+  }
+  .UT_class_page_project .UT_class_motion_project .video-container {
+    background-color: #F2F0F1;
+    padding: 42px 38px;
+    border-radius: 12px;
+  }
+  .UT_class_page_project .UT_class_familia_project {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  .UT_class_page_project .UT_class_familia_project h4 {
+    max-width: 209px;
+  }
+  .UT_class_page_project .UT_class_familia_project p {
+    max-width: 209px;
+  }
+  .UT_class_page_project .familia_backgraund {
+    width: 336px;
+    height: 217px;
+  }
+  .UT_class_page_project .familia_backgraund .responsive-video {
+    display: flex;
+    width: 390px;
+    height: 169px;
+  }
+  .UT_class_page_project .familia_backgraund .video-container {
+    margin-right: 220px;
+    border-radius: 20px;
+  }
+  .UT_class_page_project .UT_class_motion_project {
+    padding: 42px 38px;
+  }
+  .UT_class_app_project {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 44px 37px 44px 34px;
+  }
+  .app_desc {
+    width: 200px;
+  }
+  .app_desc h4 {
+    width: auto;
+  }
+  .UT_class_app_project .video-container {
+    max-width: 402px;
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 0px;
+    margin: 0px 0px;
+  }
+  .UT_class_newvideo_project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .new_video_block {
+    padding: 96px 82px 103px 39px;
+  }
+  .new_video_block h4 {
+    width: 218px;
+  }
+  .UT_class_newvideo_project .video-container {
+    display: flex;
+    margin: 0px 0px;
+    align-items: center;
+  }
+  .video-section_logo {
+    position: relative;
+    overflow: hidden;
+    width: 360px;
+    height: 400px; /* Или заданная высота вашей секции */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .video-background_logo {
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none; /* Полностью отключает элементы управления */
+  }
+  .ellips_svg_logo_newvideo {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    width: 328px;
+    height: 386px;
+  }
+  .UT_class_2020_project {
+    padding: 39px 36px 39px 53px;
+  }
+  .block_2020 {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  .disc2020_desc h4 {
+    width: 152px;
+  }
 }
 @media (min-width: 1024px) {
   .banner__title {
@@ -2779,6 +2949,69 @@ body.lock {
   }
   .turSVG_photo {
     width: 462px;
+  }
+  .UT_class_page_project {
+    padding: 55px 76px 25px 76px;
+  }
+  .UT_class_page_project h4 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 45px;
+  }
+  .UT_class_page_project .video-container {
+    margin-bottom: 25px;
+  }
+  .UT_class_motion_project {
+    padding: 55px 51px;
+  }
+  .UT_class_app_project {
+    padding: 55px 51px 55px 47px;
+  }
+  .app_desc {
+    width: 254px;
+  }
+  .app_desc h4 {
+    font-size: 32px;
+  }
+  .app_desc p {
+    font-size: 18px;
+  }
+  .UT_class_app_project .video-container {
+    max-width: 573px;
+  }
+  .new_video_block h4 {
+    font-size: 32px;
+  }
+  .new_video_block p {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .new_video_block h4 {
+    width: 357px;
+  }
+  .new_video_block {
+    padding: 135px 114px 134px 54px;
+  }
+  .video-section_logo {
+    width: 463px;
+    height: 463px;
+  }
+  .ellips_svg_logo_newvideo {
+    width: 400px;
+    height: 450px;
+  }
+  .disc2020_desc h4 {
+    font-size: 32px;
+    font-family: "Montserrat Alternates", sans-serif;
+    line-height: 120%;
+    width: 213px;
+  }
+  .disc2020_desc h4 p {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .UT_class_2020_project {
+    padding: 54px 49px 54px 72px;
   }
 }
 @media (min-width: 1440px) {
@@ -2916,5 +3149,66 @@ body.lock {
   }
   .footer_text_kommune {
     margin-top: 20px;
+  }
+  .UT_class_page_project {
+    padding: 72px 100px 32px 100px;
+  }
+  .UT_class_page_project h4 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 72px;
+  }
+  .UT_class_page_project .video-container {
+    margin-bottom: 32px;
+  }
+  .UT_class_motion_project {
+    padding: 72px 67px;
+  }
+  .UT_class_app_project {
+    padding: 74px 67px 74px 62px;
+  }
+  .app_desc {
+    width: 338px;
+  }
+  .app_desc h4 {
+    font-size: 32px;
+  }
+  .app_desc p {
+    font-size: 18px;
+  }
+  .UT_class_app_project .video-container {
+    max-width: 753px;
+  }
+  .new_video_block h4 {
+    font-size: 32px;
+  }
+  .new_video_block p {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .new_video_block h4 {
+    width: 491px;
+  }
+  .new_video_block {
+    padding: 187px 114px 250px 54px;
+  }
+  .video-section_logo {
+    width: 610px;
+    height: 610px;
+  }
+  .ellips_svg_logo_newvideo {
+    width: 560px;
+    height: 592px;
+  }
+  .UT_class_2020_project {
+    padding: 72px 108px 72px 95px;
+  }
+  .block_2020 {
+    display: flex;
+    gap: 56px;
+    align-items: start;
+  }
+  .disc2020_desc {
+    margin-top: 72px;
   }
 }
