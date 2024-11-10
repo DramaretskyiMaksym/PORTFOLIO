@@ -584,6 +584,7 @@ p {
   }
 }
 
+/// ELDORADO
 .UT_class_eldorado_project{
   h4 {
     font-size: 22px;
@@ -592,8 +593,14 @@ p {
     color: $Accenlor;
 
   }
-  .video-container{
+  p {
+    font-size: 14px;
+    line-height: 140%;
+    color: $BlackColor;
+  }
+  .video-container_Eldorado{
     margin-top: 24px;
+    height: 400px;
   }
 }
 
@@ -614,7 +621,7 @@ p {
   }
 }
 
-
+// FAMILIA
 .UT_class_familia_project {
   display: flex;
   flex-direction: column;
@@ -695,10 +702,126 @@ p {
   font-size: 22px;
   font-family: 'Montserrat Alternates', sans-serif;
   line-height: 120%;
+  font-weight: 700;
   }
 }
 
+//SUMMER 
 
+.UT_class_summer_projectn {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  h4 {
+    font-size: 22px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    line-height: 120%;
+    font-weight: 700;
+    margin-bottom: 16px;
+    }
+  p {
+    font-size: 14px;
+    line-height: 140%;
+    font-weight: 500;
+  }
+}
+.video-container_logo_summer {
+  position: relative;
+  overflow: hidden;
+  width: 360px;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ellips_svg_logo_SUMMER {
+  display: flex;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  width: 342px;
+  height: 342px;
+}
+.responsive-video_qw {
+  object-fit: cover;
+  width: auto;
+  max-height: 100%;
+  border-radius: 8px;
+}
+
+// VIDEO SCREENSAVER
+
+.UT_class_screensaver_project {
+  h4 {
+    font-size: 22px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    line-height: 120%;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 140%;
+    font-weight: 500;
+  }
+}
+
+.utdanning_main {
+  padding-top: 144px;
+  padding-bottom: 100px;
+  h2 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 24px;
+  }
+  h5 {
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 500;
+  }
+}
+/// sertifikater
+.sertifikater_bg {
+  background-color: $BlackColor;
+}
+
+.block_sertifikar {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  h3 {
+    color: $Accenlor;
+    font-size: 48px;
+    font-weight: 800;
+    margin-left: 96px;
+    margin-bottom: 34px;
+  }
+
+}
+
+.block_Utd {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.sertifikater_IMG {
+  display:flex;
+  width: 390px;
+  height: 276px;
+  margin-bottom: 24px;
+}
+.btn_motion {
+  display: flex;
+  align-items: center;
+  a {
+    display: flex;
+    align-items: center;
+    color: $BaseColor;
+    gap: 12px;
+  }
+}
 
 
 

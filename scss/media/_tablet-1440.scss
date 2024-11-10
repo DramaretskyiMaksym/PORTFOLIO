@@ -185,7 +185,9 @@
     margin-top: 20px;
   }
 
-
+  .block_project {
+    gap: 72px;
+  }
 
   //// Undanning 
   .UT_class_page_project {
@@ -270,8 +272,92 @@
 }
 
 
-
-
-
+.block_project {
+  gap: 100px;
 }
+
+
+/// ELDORADO
+/// 
+
+  .UT_class_eldorado_project {
+    .video-container_Eldorado{
+      margin: 0px 0px;
+      width: 800px;
+      height: 800px;
+    }
+  }
+  .eldoradod_block {
+    margin-top: 200px;
+  }
+
+
+  //SUMMER
+
+.video-container_logo_summer {
+  width: 610px;
+  height: 610px;
+}
+
+.ellips_svg_logo_SUMMER {
+  width: 610px;
+  height: 610px;
+  top: 0px;
+  left: 0px;
+}
+
+
+
+
+
+// VIDEO SCREENSAVER
+
+.UT_class_screensaver_project {
+
+  h4 {
+    width: 330px;
+    font-size: 32px;
+  }
+  p {
+    width: 317px;
+    font-size: 24px;
+    line-height: 140%;
+  }
+}
+
+
+////FAMILIA
+/// 
+/// 
+
+.UT_class_familia_project {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  .responsive-video {
+    width: 587px;
+  }
+  h4 {
+    font-size: 32px;
+    width: 154px;
+  }
+  p {
+    font-size: 24px;
+    width: 317px;
+  }
+  .familia_backgraund {
+    position: relative;
+
+    .video-container{
+      position: absolute;
+      right: 400px;
+    }
+  }
+}
+.familia_backgraund {
+  width: 566px;
+  height: 379px;
+}
+}
+
 

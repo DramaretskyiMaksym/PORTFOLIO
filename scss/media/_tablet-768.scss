@@ -440,8 +440,76 @@
     }
   }
 
+  .UT_class_eldorado_project {
+    display: flex;
+    justify-content: space-between;
+    .video-container_Eldorado{
+      margin: 0px 0px;
+      height: 600px;
+    }
+  }
+  .eldoradod_block {
+    margin-top: 100px;
+    h4 {
+      width: 213px;
+    }
+    p {
+      width: 260px;
+    }
+  }
 
 
+  //SUMMER
+
+
+  .UT_class_summer_projectn {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    h4 {
+      width: 317px;
+    }
+    p {
+      width: 254px;
+    }
+  }
+
+
+  // VIDEO SCREENSAVER
+  .UT_class_screensaver_project {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    h4 {
+      width: 240px;
+    }
+  }
+
+
+  ///FAMILIA
+  /// 
+  /// 
+  
+  .UT_class_familia_project {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    h4 {
+      width: 112px;
+    }
+    p {
+
+      width: 200px;
+    }
+    .familia_backgraund {
+      position: relative;
+
+      .video-container{
+        position: absolute;
+        right: 100px;
+      }
+    }
+  }
 }
 
 

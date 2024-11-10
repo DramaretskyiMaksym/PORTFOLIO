@@ -141,6 +141,11 @@
   
 
   //// Undanning 
+  /// 
+  //
+  .block_project {
+    gap: 56px;
+  }
   .UT_class_page_project {
     padding: 55px 76px 25px 76px;
   
@@ -213,16 +218,120 @@
   font-family: 'Montserrat Alternates', sans-serif;
   line-height: 120%;
   width: 213px;
+  }
   p {
     font-size: 24px;
     font-weight: 400;
-  }
   }
 }
 .UT_class_2020_project {
   padding: 54px 49px 54px 72px;
 }
 
+
+/// ELDORADO
+/// 
+
+  .UT_class_eldorado_project {
+    display: flex;
+    justify-content: space-around;
+    .video-container_Eldorado{
+      margin: 0px 0px;
+      width: 500px;
+      height: 800px;
+    }
+  }
+  .eldoradod_block {
+    margin-top: 100px;
+    h4 {
+      font-size: 32px;
+      width: 300px;
+    }
+    p {
+      font-size: 24px;
+      width: 300px;
+    }
+  }
+
+  
+
+  //SUMMER
+
+  .UT_class_summer_projectn {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    h4 {
+      font-size: 32px;
+      width: 476px;
+    }
+    p {
+      font-size: 24px;
+      width: 368px;
+      font-weight: 400;
+    }
+  }
+
+  .video-container_logo_summer {
+    width: 460px;
+    height: 460px;
+  }
+  .ellips_svg_logo_SUMMER {
+    width: 460px;
+    height: 460px;
+    top: 0px;
+    left: 0px;
+  }
+
+
+  // VIDEO SCREENSAVER
+  .UT_class_screensaver_project {
+
+    h4 {
+      width: 317px;
+      font-size: 32px;
+    }
+    p {
+      width: 254px;
+      font-size: 24px;
+      line-height: 140%;
+    }
+  }
+
+
+  
+  ///FAMILIA
+  /// 
+  /// 
+  
+  .UT_class_familia_project {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .responsive-video {
+      width: 487px;
+    }
+    h4 {
+      font-size: 32px;
+      width: 154px;
+    }
+    p {
+      font-size: 24px;
+      width: 301px;
+    }
+    .familia_backgraund {
+      position: relative;
+
+      .video-container{
+        position: absolute;
+        right: 200px;
+      }
+    }
+  }
+  .familia_backgraund {
+    width: 426px;
+    height: 379px;
+  }
 
 }
 

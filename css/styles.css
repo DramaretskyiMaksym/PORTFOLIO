@@ -1293,8 +1293,14 @@ body.lock {
   margin-bottom: 16px;
   color: #FD9103;
 }
-.UT_class_eldorado_project .video-container {
+.UT_class_eldorado_project p {
+  font-size: 14px;
+  line-height: 140%;
+  color: black;
+}
+.UT_class_eldorado_project .video-container_Eldorado {
   margin-top: 24px;
+  height: 400px;
 }
 
 .new_video_block {
@@ -1391,6 +1397,119 @@ body.lock {
   font-size: 22px;
   font-family: "Montserrat Alternates", sans-serif;
   line-height: 120%;
+  font-weight: 700;
+}
+
+.UT_class_summer_projectn {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.UT_class_summer_projectn h4 {
+  font-size: 22px;
+  font-family: "Montserrat Alternates", sans-serif;
+  line-height: 120%;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.UT_class_summer_projectn p {
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 500;
+}
+
+.video-container_logo_summer {
+  position: relative;
+  overflow: hidden;
+  width: 360px;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ellips_svg_logo_SUMMER {
+  display: flex;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  width: 342px;
+  height: 342px;
+}
+
+.responsive-video_qw {
+  object-fit: cover;
+  width: auto;
+  max-height: 100%;
+  border-radius: 8px;
+}
+
+.UT_class_screensaver_project h4 {
+  font-size: 22px;
+  font-family: "Montserrat Alternates", sans-serif;
+  line-height: 120%;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.UT_class_screensaver_project p {
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 500;
+}
+
+.utdanning_main {
+  padding-top: 144px;
+  padding-bottom: 100px;
+}
+.utdanning_main h2 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.utdanning_main h5 {
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 500;
+}
+
+.sertifikater_bg {
+  background-color: black;
+}
+
+.block_sertifikar {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.block_sertifikar h3 {
+  color: #FD9103;
+  font-size: 48px;
+  font-weight: 800;
+  margin-left: 96px;
+  margin-bottom: 34px;
+}
+
+.block_Utd {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.sertifikater_IMG {
+  display: flex;
+  width: 390px;
+  height: 276px;
+  margin-bottom: 24px;
+}
+
+.btn_motion {
+  display: flex;
+  align-items: center;
+}
+.btn_motion a {
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  gap: 12px;
 }
 
 .banner {
@@ -2843,6 +2962,60 @@ body.lock {
   .disc2020_desc h4 {
     width: 152px;
   }
+  .UT_class_eldorado_project {
+    display: flex;
+    justify-content: space-between;
+  }
+  .UT_class_eldorado_project .video-container_Eldorado {
+    margin: 0px 0px;
+    height: 600px;
+  }
+  .eldoradod_block {
+    margin-top: 100px;
+  }
+  .eldoradod_block h4 {
+    width: 213px;
+  }
+  .eldoradod_block p {
+    width: 260px;
+  }
+  .UT_class_summer_projectn {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .UT_class_summer_projectn h4 {
+    width: 317px;
+  }
+  .UT_class_summer_projectn p {
+    width: 254px;
+  }
+  .UT_class_screensaver_project {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  .UT_class_screensaver_project h4 {
+    width: 240px;
+  }
+  .UT_class_familia_project {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .UT_class_familia_project h4 {
+    width: 112px;
+  }
+  .UT_class_familia_project p {
+    width: 200px;
+  }
+  .UT_class_familia_project .familia_backgraund {
+    position: relative;
+  }
+  .UT_class_familia_project .familia_backgraund .video-container {
+    position: absolute;
+    right: 100px;
+  }
 }
 @media (min-width: 1024px) {
   .banner__title {
@@ -2950,6 +3123,9 @@ body.lock {
   .turSVG_photo {
     width: 462px;
   }
+  .block_project {
+    gap: 56px;
+  }
   .UT_class_page_project {
     padding: 55px 76px 25px 76px;
   }
@@ -3006,12 +3182,92 @@ body.lock {
     line-height: 120%;
     width: 213px;
   }
-  .disc2020_desc h4 p {
+  .disc2020_desc p {
     font-size: 24px;
     font-weight: 400;
   }
   .UT_class_2020_project {
     padding: 54px 49px 54px 72px;
+  }
+  .UT_class_eldorado_project {
+    display: flex;
+    justify-content: space-around;
+  }
+  .UT_class_eldorado_project .video-container_Eldorado {
+    margin: 0px 0px;
+    width: 500px;
+    height: 800px;
+  }
+  .eldoradod_block {
+    margin-top: 100px;
+  }
+  .eldoradod_block h4 {
+    font-size: 32px;
+    width: 300px;
+  }
+  .eldoradod_block p {
+    font-size: 24px;
+    width: 300px;
+  }
+  .UT_class_summer_projectn {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .UT_class_summer_projectn h4 {
+    font-size: 32px;
+    width: 476px;
+  }
+  .UT_class_summer_projectn p {
+    font-size: 24px;
+    width: 368px;
+    font-weight: 400;
+  }
+  .video-container_logo_summer {
+    width: 460px;
+    height: 460px;
+  }
+  .ellips_svg_logo_SUMMER {
+    width: 460px;
+    height: 460px;
+    top: 0px;
+    left: 0px;
+  }
+  .UT_class_screensaver_project h4 {
+    width: 317px;
+    font-size: 32px;
+  }
+  .UT_class_screensaver_project p {
+    width: 254px;
+    font-size: 24px;
+    line-height: 140%;
+  }
+  .UT_class_familia_project {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .UT_class_familia_project .responsive-video {
+    width: 487px;
+  }
+  .UT_class_familia_project h4 {
+    font-size: 32px;
+    width: 154px;
+  }
+  .UT_class_familia_project p {
+    font-size: 24px;
+    width: 301px;
+  }
+  .UT_class_familia_project .familia_backgraund {
+    position: relative;
+  }
+  .UT_class_familia_project .familia_backgraund .video-container {
+    position: absolute;
+    right: 200px;
+  }
+  .familia_backgraund {
+    width: 426px;
+    height: 379px;
   }
 }
 @media (min-width: 1440px) {
@@ -3150,6 +3406,9 @@ body.lock {
   .footer_text_kommune {
     margin-top: 20px;
   }
+  .block_project {
+    gap: 72px;
+  }
   .UT_class_page_project {
     padding: 72px 100px 32px 100px;
   }
@@ -3210,5 +3469,62 @@ body.lock {
   }
   .disc2020_desc {
     margin-top: 72px;
+  }
+  .block_project {
+    gap: 100px;
+  }
+  .UT_class_eldorado_project .video-container_Eldorado {
+    margin: 0px 0px;
+    width: 800px;
+    height: 800px;
+  }
+  .eldoradod_block {
+    margin-top: 200px;
+  }
+  .video-container_logo_summer {
+    width: 610px;
+    height: 610px;
+  }
+  .ellips_svg_logo_SUMMER {
+    width: 610px;
+    height: 610px;
+    top: 0px;
+    left: 0px;
+  }
+  .UT_class_screensaver_project h4 {
+    width: 330px;
+    font-size: 32px;
+  }
+  .UT_class_screensaver_project p {
+    width: 317px;
+    font-size: 24px;
+    line-height: 140%;
+  }
+  .UT_class_familia_project {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .UT_class_familia_project .responsive-video {
+    width: 587px;
+  }
+  .UT_class_familia_project h4 {
+    font-size: 32px;
+    width: 154px;
+  }
+  .UT_class_familia_project p {
+    font-size: 24px;
+    width: 317px;
+  }
+  .UT_class_familia_project .familia_backgraund {
+    position: relative;
+  }
+  .UT_class_familia_project .familia_backgraund .video-container {
+    position: absolute;
+    right: 400px;
+  }
+  .familia_backgraund {
+    width: 566px;
+    height: 379px;
   }
 }
