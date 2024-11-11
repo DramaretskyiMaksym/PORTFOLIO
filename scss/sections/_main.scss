@@ -11,13 +11,17 @@
   flex-direction: column;
   // align-items: center ;
   border-radius: 8px;
-  padding: 50px 0px;
+  padding: 100px 0px;
 }
 
 .bg_main_arbiederaring{
   background-color: $BlackColor;
 }
-
+.bannerBLOKS {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .arbeidserfaring{
   display: flex;
   flex-direction: column;
@@ -458,7 +462,7 @@ p {
 
 .footer__block_change{
   display: flex;
-  align-items: center;
+  // align-items: center;
   flex-direction: column;
 }
 
@@ -808,8 +812,8 @@ p {
 
 .sertifikater_IMG {
   display:flex;
-  width: 390px;
-  height: 276px;
+  width: 100%;
+  height: 100%;
   margin-bottom: 24px;
 }
 .btn_motion {
@@ -855,7 +859,7 @@ p {
 .all_bloks {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 20px;
   padding-top: 50px;
 }
 .Tilbakemelding{
@@ -871,7 +875,7 @@ p {
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 700;
   margin-bottom: 24px;
-  width: 274px;
+  // width: 274px;
 }
 .block_coach {
   display: flex;
@@ -927,6 +931,10 @@ p {
     width:100%;
     height: 100%;
   }
+}
+
+.title__aboutme {
+  color: $BaseColor;
 }
 
 
