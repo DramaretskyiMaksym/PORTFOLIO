@@ -283,12 +283,11 @@
     height: 1px; /* Толщина линии */
     background-color:#B4B4B4;
     width: 100%;
-    bottom: -26px;
+    bottom: -40px;
   }
-  &:last-child:after {
-    display: none;
-  }
-  
+// &:last-child:after {
+//   display: none;
+//   }
 }
 
 
@@ -795,13 +794,13 @@ p {
   padding-top: 64px;
   padding-bottom: 64px;
   h3 {
+    display: flex;
     color: $Accenlor;
     font-size: 48px;
     font-weight: 800;
-    margin-left: 96px;
+    justify-content: end;
     margin-bottom: 34px;
   }
-
 }
 
 .block_Utd {
@@ -936,6 +935,73 @@ p {
 .title__aboutme {
   color: $BaseColor;
 }
+
+.btn_motion {
+  display: flex;
+  gap:16px;
+  p{
+    font-size: 24px;
+    font-weight: 400;
+    color: $BaseColor;
+  }
+}
+
+/// ANIMATION
+/// 
+/// 
+/* Начальное состояние текста — прозрачный и смещен */
+.fade-in-nav {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+/* Состояние после загрузки */
+.fade-in-nav.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.fade-in-text_banner_title {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+/* Состояние после загрузки */
+.fade-in-text_banner_title.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+.fade-in-text-subtitle{
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 1.3s ease-out, transform 1.3s ease-out;
+}
+/* Состояние после загрузки */
+.fade-in-text-subtitle.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.fade-in-text-banner {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+/* Состояние после загрузки */
+.fade-in-text-banner.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
 
 
 

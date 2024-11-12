@@ -7,6 +7,7 @@
 .banner__block {
   display: flex ;
   flex-direction: column;
+  position: relative;
 }
 
 .banner__title {
@@ -34,7 +35,7 @@
   }
 }
 
-.title__internship{
+.title__internship {
   font-family: 'Montserrat Alternates', sans-serif;
   color:$Accenlor;
   font-size: 24px;
@@ -52,8 +53,8 @@
 .text_Banner{
   text-align: start;
   font-size: 18px;
-  font-weight: 500;
-  color: $SecondaryColor;
+  font-weight: 400;
+  color: $BlackColor;
   line-height: 140%;
   margin-bottom: 24px;
   width: 100%;
@@ -66,6 +67,7 @@
   min-width: 306px;
   gap: 16px;
   p{
+    width: 194px;
     font-size: 28px;
     font-weight: 600;
   }

@@ -180,11 +180,65 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+  ////ANIMATION 
+
+  // window.addEventListener('load', () => {
+  //   const textElements = document.querySelectorAll('.fade-in-text');
+  //   textElements.forEach((el) => {
+  //     el.classList.add('active');
+  //   });
+  // });
+  
 
 
+// Настройка наблюдателя
+const observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target); // Остановка отслеживания после появления
+      }
+    });
+  },
+  { threshold: 0.1 } // Анимация начнется, когда элемент будет виден на 10%
+);
+
+// Применение наблюдателя к каждому текстовому элементу
+document.querySelectorAll('.scroll-fade-in').forEach(el => {
+  observer.observe(el);
+});
 
 
+///ANIM TEXT
+window.addEventListener('load', () => {
+  const textElements = document.querySelectorAll('.fade-in-nav');
+  textElements.forEach((el) => {
+    el.classList.add('active');
+  });
+});
 
+window.addEventListener('load', () => {
+  const textElements = document.querySelectorAll('.fade-in-text_banner_title');
+  textElements.forEach((el) => {
+    el.classList.add('active');
+  });
+});
+
+
+window.addEventListener('load', () => {
+  const textElements = document.querySelectorAll('.fade-in-text-subtitle');
+  textElements.forEach((el) => {
+    el.classList.add('active');
+  });
+});
+
+window.addEventListener('load', () => {
+  const textElements = document.querySelectorAll('.fade-in-text-banner');
+  textElements.forEach((el) => {
+    el.classList.add('active');
+  });
+});
 
 
 

@@ -1021,10 +1021,7 @@ body.lock {
   height: 1px; /* Толщина линии */
   background-color: #B4B4B4;
   width: 100%;
-  bottom: -26px;
-}
-.blockS_orfingsanimasjoner:last-child:after {
-  display: none;
+  bottom: -40px;
 }
 
 .blocks {
@@ -1486,10 +1483,11 @@ body.lock {
   padding-bottom: 64px;
 }
 .block_sertifikar h3 {
+  display: flex;
   color: #FD9103;
   font-size: 48px;
   font-weight: 800;
-  margin-left: 96px;
+  justify-content: end;
   margin-bottom: 34px;
 }
 
@@ -1629,6 +1627,65 @@ body.lock {
   color: #FFFFFF;
 }
 
+.btn_motion {
+  display: flex;
+  gap: 16px;
+}
+.btn_motion p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+/* Начальное состояние текста — прозрачный и смещен */
+.fade-in-nav {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+/* Состояние после загрузки */
+.fade-in-nav.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-text_banner_title {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Состояние после загрузки */
+.fade-in-text_banner_title.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-text-subtitle {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 1.3s ease-out, transform 1.3s ease-out;
+}
+
+/* Состояние после загрузки */
+.fade-in-text-subtitle.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-text-banner {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+/* Состояние после загрузки */
+.fade-in-text-banner.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .banner {
   padding-top: 140px;
   min-width: 320px;
@@ -1638,6 +1695,7 @@ body.lock {
 .banner__block {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .banner__title {
@@ -1683,8 +1741,8 @@ body.lock {
 .text_Banner {
   text-align: start;
   font-size: 18px;
-  font-weight: 500;
-  color: #808080;
+  font-weight: 400;
+  color: black;
   line-height: 140%;
   margin-bottom: 24px;
   width: 100%;
@@ -1698,6 +1756,7 @@ body.lock {
   gap: 16px;
 }
 .text_buttom p {
+  width: 194px;
   font-size: 28px;
   font-weight: 600;
 }
@@ -2907,6 +2966,7 @@ body.lock {
   }
   .alltid_block h2 {
     font-size: 96px;
+    width: 700px;
   }
   .footer_menu {
     display: flex;
@@ -3224,6 +3284,7 @@ body.lock {
   }
   .alltid_block h2 {
     font-size: 132px;
+    width: auto;
   }
   .gmail_block h5 {
     font-size: 44px;
@@ -3417,6 +3478,15 @@ body.lock {
     font-size: 24px;
   }
   .last_block_Hillel h2 {
+    font-size: 64px;
+  }
+  .text_buttom p {
+    width: 218px;
+  }
+  .mine_ferdigheter {
+    padding-bottom: 80px;
+  }
+  .block_sertifikar h3 {
     font-size: 64px;
   }
 }
@@ -3688,5 +3758,29 @@ body.lock {
   }
   .block_card {
     padding: 140px 0px;
+  }
+  .title__internship {
+    position: absolute;
+    bottom: 510px;
+    right: -6px;
+  }
+  .bannerBLOKS {
+    padding-top: 50px;
+  }
+  .text_buttom p {
+    width: 218px;
+  }
+  .mine_ferdigheter {
+    padding-bottom: 100px;
+  }
+  .block_Utd {
+    gap: 120px;
+  }
+  .block_Utd a {
+    font-size: 24px;
+  }
+  .btn_motion svg {
+    width: 100px;
+    height: 100px;
   }
 }
