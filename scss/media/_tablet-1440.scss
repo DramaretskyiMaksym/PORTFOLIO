@@ -222,13 +222,14 @@
       font-size: 32px;
     }
     p {
-      font-size: 18px;
+      font-size: 24px;
+      font-weight: 400;
     }
   }
 
   .UT_class_app_project{
     .video-container{
-      max-width: 753px;
+      max-width: 880px;
     }
   }
 
@@ -277,7 +278,7 @@
 
 
 .block_project {
-  gap: 100px;
+  gap: 300px;
 }
 
 
@@ -287,12 +288,18 @@
   .UT_class_eldorado_project {
     .video-container_Eldorado{
       margin: 0px 0px;
-      width: 800px;
-      height: 800px;
+      width: 1000px;
+      height:1000px;
+      display: flex;
+      align-items: end;
     }
   }
   .eldoradod_block {
     margin-top: 200px;
+  }
+
+  .UT_class_eldorado_project  {
+    justify-content: space-between;
   }
 
 
@@ -309,7 +316,10 @@
   top: 0px;
   left: 0px;
 }
-
+.UT_class_summer_projectn  {
+  justify-content:left;
+  gap: 150px;
+}
 
 
 
@@ -400,6 +410,10 @@
     width: 100px;
     height: 100px;
   }
+  .main_block_om_meg h2 {
+    font-size: 64px;
+  }
+
 
 }
 

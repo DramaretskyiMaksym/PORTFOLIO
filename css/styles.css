@@ -1637,53 +1637,99 @@ body.lock {
   color: #FFFFFF;
 }
 
-/* Начальное состояние текста — прозрачный и смещен */
-.fade-in-nav {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+.button__FOOTER_ANIM svg {
+  transition: transform 0.3s ease, fill 0.3s ease, stroke 0.3s ease;
 }
 
-/* Состояние после загрузки */
-.fade-in-nav.active {
-  opacity: 1;
-  transform: translateY(0);
+.button__FOOTER_ANIM:hover svg {
+  transform: scale(1.1); /* Увеличиваем svg на 10% */
 }
 
-.fade-in-text_banner_title {
-  opacity: 0;
-  transform: translateY(80px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
+/* При наведении меняем обводку внешнего круга на желтый */
+.button__FOOTER_ANIM:hover circle {
+  stroke: #FD9103;
 }
 
-/* Состояние после загрузки */
-.fade-in-text_banner_title.active {
-  opacity: 1;
-  transform: translateY(0);
+/* Внутренний фон круга становится желтым */
+.button__FOOTER_ANIM:hover path:nth-of-type(1) {
+  fill: #FD9103; /* Заливка фона для внутреннего круга */
 }
 
-.fade-in-text-subtitle {
-  opacity: 0;
-  transform: translateY(80px);
-  transition: opacity 1.3s ease-out, transform 1.3s ease-out;
+/* Сам значок внутри становится черным */
+.button__FOOTER_ANIM:hover path:nth-of-type(2),
+.button__FOOTER_ANIM:hover path:nth-of-type(3),
+.button__FOOTER_ANIM:hover path:nth-of-type(4) {
+  fill: black; /* Цвет иконки внутри — черный */
 }
 
-/* Состояние после загрузки */
-.fade-in-text-subtitle.active {
-  opacity: 1;
-  transform: translateY(0);
+.serRef_paddding {
+  padding-top: 148px;
 }
 
-.fade-in-text-banner {
-  opacity: 0;
-  transform: translateY(80px);
-  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+.sec_referanser_blockS {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.sec_referanser_blockS h2 {
+  margin-bottom: 64px;
 }
 
-/* Состояние после загрузки */
-.fade-in-text-banner.active {
-  opacity: 1;
-  transform: translateY(0);
+.Main_block_referanser {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.Main_block_referanser::after {
+  content: "";
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+  width: 100%;
+  height: 1px; /* Увеличиваем высоту линии снизу */
+  background-color: #000;
+}
+
+.Main_block_referanser:first-of-type {
+  border-top: 1px solid #000; /* Линия сверху для первого блока */
+}
+
+.sec_referanser_blockS {
+  padding-top: 34px;
+}
+.sec_referanser_blockS h5 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%;
+  min-width: 116px;
+}
+.sec_referanser_blockS p, .sec_referanser_blockS a {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.sec_referanser_blockS a {
+  text-decoration: underline;
+  color: black;
+  max-width: 274px;
+  overflow-wrap: break-word; /* Перенос длинных слов на новую строку */
+  word-wrap: break-word; /* Для старых браузеров (хотя это обычно уже поддерживается) */
+}
+.sec_referanser_blockS a:hover {
+  color: #FD9103;
+}
+.sec_referanser_blockS h2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+}
+
+.flex_block_ref {
+  display: flex;
+  align-items: center;
 }
 
 .banner {
@@ -3659,10 +3705,11 @@ body.lock {
     font-size: 32px;
   }
   .app_desc p {
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 400;
   }
   .UT_class_app_project .video-container {
-    max-width: 753px;
+    max-width: 880px;
   }
   .new_video_block h4 {
     font-size: 32px;
@@ -3697,15 +3744,20 @@ body.lock {
     margin-top: 72px;
   }
   .block_project {
-    gap: 100px;
+    gap: 300px;
   }
   .UT_class_eldorado_project .video-container_Eldorado {
     margin: 0px 0px;
-    width: 800px;
-    height: 800px;
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    align-items: end;
   }
   .eldoradod_block {
     margin-top: 200px;
+  }
+  .UT_class_eldorado_project {
+    justify-content: space-between;
   }
   .video-container_logo_summer {
     width: 610px;
@@ -3716,6 +3768,10 @@ body.lock {
     height: 610px;
     top: 0px;
     left: 0px;
+  }
+  .UT_class_summer_projectn {
+    justify-content: left;
+    gap: 150px;
   }
   .UT_class_screensaver_project h4 {
     width: 330px;
@@ -3782,5 +3838,8 @@ body.lock {
   .btn_motion svg {
     width: 100px;
     height: 100px;
+  }
+  .main_block_om_meg h2 {
+    font-size: 64px;
   }
 }

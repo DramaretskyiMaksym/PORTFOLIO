@@ -4,14 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" href="../fonts/Montserrat-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="../fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="../fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="../fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="../fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="../fonts/MontserratAlternates-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/Montserrat-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/MontserratAlternates-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    
+    <!-- Здесь можно добавить другие шрифты -->
+
   <link rel="stylesheet"  href="./css/styles.css">
   <link rel="icon" href="./images/MD.svg" type="image/icon type">
+
+
+
   <script defer src="./script.js"></script>
   <title>PORTFOLIO</title>
 </head>
@@ -19,7 +25,8 @@
   <header class="header wrapper">
     <div class="container header__container">
 
-      <a class="logo" href="./index.html">
+
+      <a class="logo fade-in-text" href="./index.html">
         <picture class="logo__img">
           <source media="(min-width:1024px )" width="100px" height="100px" srcset="./images/MD.svg">
           <svg  xmlns="http://www.w3.org/2000/svg" width="60" height="48" viewBox="0 0 54 23" fill="none">
@@ -28,14 +35,22 @@
         </picture>
       </a>
 
+
       <nav class="menu">
-        <ul class="menu__list ">
+        <ul class="menu__list fade-in-nav ">
+
+          <li class="menu__item  menu__link ">
+            <a href="./referanser.html" class="menu__link">
+              Referanser
+            </a>
+          </li>
 
           <li class="menu__item menu__link">
-            <a href="./about.html" class="menu__link ">
+            <a href="./about.html" class="menu__link">
               Om meg
             </a>
           </li>
+
 
           <li class="menu__item menu__link">
             <a href="./project.html" class="menu__link">
@@ -49,22 +64,28 @@
               Utdanning
             </a>
           </li>
-
           <a class="gmail_nav" href="mailto:maksymdramaretskyi@gmail.com">
             maksymdramaretskyi@gmail.com
           </a>
-
         </ul>
       </nav>
 
+
       <div class="menu_desktop">
         <ul class="link_desktop_nav">
+
+          <li class="link_desktop  menu__link ">
+            <a href="./referanser.html" class="menu__link">
+              Referanser
+            </a>
+          </li>
 
           <li class="link_desktop menu__link">
             <a href="./about.html" class="menu__link ">
               Om meg
             </a>
           </li>
+
 
           <li class="link_desktop menu__link">
             <a href="./project.html" class="menu__link">
@@ -78,7 +99,6 @@
               Utdanning
             </a>
           </li>
-
         </ul>
       </div>
       <button class="header__burger-btn" id = "burger">
@@ -89,64 +109,82 @@
     </div>
   </header>
 
+  <main class="wrapper serRef_paddding">
+    <h2>Referanser</h2>
+    <section class="sec_referanser_blockS">
+      <div class="Main_block_referanser">
+        
+        <div class="navn flex_block_ref">
+          <h5>Navn:</h5>
+          <p>Selma Birkeland</p>
+        </div>  
 
+        <div class="tlf flex_block_ref">
+          <h5>Tlf.:</h5>
+          <a target="_blank" href="tel:+4748055285">+47 480 55 285</a>
+        </div>
 
+        <div class="e-post flex_block_ref">
+          <h5>E-post:</h5>
+          <a target="_blank" href="mailto:Semira.Selma.Birkeland-Puzic@nav.no">Semira.Selma.Birkeland-Puzic@nav.no</a>
+        </div>
 
-
-
-    
-    <main class="wrapper main_block_om_meg sa">
-      <div class="min_block_om_meg">
-        <h2>Min fritid</h2>
-        <div class="flex_om_meg">
-          <div class="about_p">
-            <p>
-              I tillegg til norskkurset i Knarvik går jeg på språkkafé tre ganger i uken.
-              Der snakker jeg med folk som har norsk som morsmål, og vi deler nyttig informasjon.
-              Jeg går også i kirken i Knarvik og deltar på arrangementer på Frekhaug.
-            </p>
-            <p>
-              Der gjør jeg frivillig arbeid og er med på språkkafé.
-              Det er en god måte å hjelpe til i samfunnet, gi smil og glede til andre og skape fine opplevelser.
-            </p>
-          </div>
-          <img src="./images/MDjeg.png" alt="">
+        <div class="rolle flex_block_ref">
+          <h5>Rolle:</h5>
+          <p>Arbeider NAV « min kurator »</p>
         </div>
       </div>
 
 
-      <div class="en_ting_til">
-        <h3>En ting til</h3>
-        <div class="block_friv">
-          <img src="./images/jpegfrivilling.jpeg" alt="">
-          <h5>Jeg deltar i frivillighetsarbeid i min kommune.</h5>
+
+      <div class="Main_block_referanser">
+        <div class="navn flex_block_ref">
+          <h5>Navn:</h5>
+          <p>Hellestveit Marit</p>
+        </div>
+
+        <div class="tlf flex_block_ref">
+          <h5>Tlf.:</h5>
+          <a target="_blank" href="tel:+4746284258">+47 462 84 258</a>
+        </div>
+
+        <div class="e-post flex_block_ref">
+          <h5>E-post:</h5>
+          <a target="_blank" href="mailto:Marit.hellestveit@alver.kommune.no">Marit.hellestveit@alver.kommune.no</a>
+        </div>
+
+        <div class="rolle flex_block_ref">
+          <h5>Rolle:</h5>
+          <p>Prosjektmedarbeider. Språkvertstaden</p>
         </div>
       </div>
 
-      <div>
-        <div>
-          <div class="BLOKS_active">
-            <div>
-              <div class="block_fiske">
-                <h2>Jeg elsker fiske!</h2>
-                <p>
-                  Jeg liker veldig godt å fiske, og jeg drar på fisketur hver uke.
-                  På den måten slapper jeg av og nyter naturen.
-                </p>
-              </div>
-              <img class="fiskSVG_photo" src="./images/FiskeTur_jpeg.jpeg" alt="">
-            </div>
-            <div class="block_LIKER">
-              <h2 class="liker_tur">Jeg liker å gå på tur</h2>
-              <img class="turSVG_photo" src="./images/GåPåTUR.jpeg" alt="">
-            </div>
-          </div>
+
+      
+      <div class="Main_block_referanser">
+        <div class="navn flex_block_ref">
+          <h5>Navn:</h5>
+          <p>Bjørn Schille</p>
+        </div>
+
+        <div class="tlf flex_block_ref">
+          <h5>Tlf.:</h5>
+          <a target="_blank" href="tel:+4741286616">+47 412 86 616</a>
+        </div>
+
+        <div class="e-post flex_block_ref">
+          <h5>E-post:</h5>
+          <a target="_blank" href="mailto:Bjorn.schille@alver.kommune.no">Bjorn.schille@alver.kommune.no</a>
+        </div>
+
+        <div class="rolle flex_block_ref">
+          <h5>Rolle:</h5>
+          <p>Norskkurs lærer i Knarvik, Alver kommone</p>
         </div>
       </div>
-    </main>
-  
+    </section>
 
-
+  </main>
 
 
   <footer class=" wrapper padding_footer">
@@ -154,16 +192,18 @@
       <div class="alltid_block">
         <h2>Alltid åpen for forslag</h2>
       </div>
-      <div class="gmail_block">
-        <h5>maksymdramaretskyi@gmail.com</h5>
-        <div class="footer_gmail_buttom">
-          <a class="button_mer_om_meg" href="mailto:maksymdramaretskyi@gmail.com">
-            <svg width="109" height="109" viewBox="0 0 109 109" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle class="circle-bg" cx="53" cy="53" r="52" stroke="black" stroke-width="2"/>
-              <path d="M44.6666 64.0002L42.3333 61.6668L58.3333 45.6668H43.9999V42.3335H63.9999V62.3335H60.6666V48.0002L44.6666 64.0002Z" fill="black"/>
-            </svg>
-          </a>
-        </div>
+      <div class="gmail_block ">
+        <a class="liNK_footer_Gmail" href="mailto:maksymdramaretskyi@gmail.com">
+          <h5>maksymdramaretskyi@gmail.com</h5>
+          <div class="footer_gmail_buttom">
+            <a class="button_mer_om_meg" href="mailto:maksymdramaretskyi@gmail.com">
+              <svg width="109" height="109" viewBox="0 0 109 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle class="circle-bg" cx="53" cy="53" r="52" stroke="black" stroke-width="2"/>
+                <path d="M44.6666 64.0002L42.3333 61.6668L58.3333 45.6668H43.9999V42.3335H63.9999V62.3335H60.6666V48.0002L44.6666 64.0002Z" fill="black"/>
+              </svg>
+            </a>
+          </div>
+        </a>
       </div>
     </div>
     <div class="footer__block_change">
@@ -227,7 +267,3 @@
     </div>
     <div>
   </footer>
-
-</body>
-</html>
-

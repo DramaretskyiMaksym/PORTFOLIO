@@ -211,35 +211,6 @@ document.querySelectorAll('.scroll-fade-in').forEach(el => {
 
 
 ///ANIM TEXT
-window.addEventListener('load', () => {
-  const textElements = document.querySelectorAll('.fade-in-nav');
-  textElements.forEach((el) => {
-    el.classList.add('active');
-  });
-});
-
-window.addEventListener('load', () => {
-  const textElements = document.querySelectorAll('.fade-in-text_banner_title');
-  textElements.forEach((el) => {
-    el.classList.add('active');
-  });
-});
-
-
-window.addEventListener('load', () => {
-  const textElements = document.querySelectorAll('.fade-in-text-subtitle');
-  textElements.forEach((el) => {
-    el.classList.add('active');
-  });
-});
-
-window.addEventListener('load', () => {
-  const textElements = document.querySelectorAll('.fade-in-text-banner');
-  textElements.forEach((el) => {
-    el.classList.add('active');
-  });
-});
-
 
 
 
