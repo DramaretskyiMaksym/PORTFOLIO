@@ -541,7 +541,6 @@ body.visible {
   align-items: center;
   padding-top: 35px;
   padding-bottom: 20px;
-  width: 100%;
 }
 
 /* Начальные стили для ссылок в меню */
@@ -564,7 +563,7 @@ body.visible {
   left: 0;
   bottom: -3px; /* Расстояние от текста до линии */
   width: 0;
-  height: 2px; /* Толщина подчеркивания */
+  height: 3px; /* Толщина подчеркивания */
   background-color: #FD9103; /* Цвет линии */
   transition: width 0.3s ease; /* Плавное появление линии */
 }
@@ -1190,7 +1189,7 @@ body.lock {
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 18px;
 }
 
 .footer_link {
@@ -1730,6 +1729,16 @@ body.lock {
 .flex_block_ref {
   display: flex;
   align-items: center;
+}
+
+.section__aboutSite {
+  padding-top: 82px;
+}
+
+.serRef_paddding h2 {
+  font-size: 48px;
+  font-weight: 800;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 .banner {
@@ -3263,6 +3272,9 @@ body.lock {
     width: 301px;
     height: 301px;
   }
+  .sec_referanser_blockS p, .sec_referanser_blockS a {
+    max-width: 100%;
+  }
 }
 @media (min-width: 1024px) {
   .banner__title {
@@ -3534,6 +3546,14 @@ body.lock {
   }
   .block_sertifikar h3 {
     font-size: 64px;
+  }
+  .sec_referanser_blockS h5 {
+    font-size: 24px;
+    line-height: 140%;
+  }
+  .sec_referanser_blockS p, .sec_referanser_blockS a {
+    font-size: 24px;
+    max-width: 100%;
   }
 }
 @media (min-width: 1440px) {
