@@ -275,6 +275,7 @@
 
 .blockS_orfingsanimasjoner{
   position: relative;
+  margin-top: 40px;
   &:after {
     display: inline;
     content: "";
@@ -813,7 +814,7 @@ p {
   display:flex;
   width: 100%;
   height: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 34px;
 }
 .btn_motion {
   display: flex;
@@ -1061,4 +1062,69 @@ p {
     font-weight: 800;
     font-family: 'Montserrat Alternates', sans-serif;
   }
+}
+
+.block_prosjektr_title p {
+  color: black;
+}
+.blockS_orfingsanimasjoner p  {
+  color: black;
+}
+
+
+.white{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // width: 106px;
+  // height: 106px;
+  transition: fill 0.3s, transform 0.3s ease; /* Плавный переход для fill и transform */
+  -webkit-tap-highlight-color: transparent; /* Отключает выделение на мобильных */
+  display: inline-block; /* Чтобы правильно отображать SVG */
+  
+  svg {
+    cursor: pointer; /* Меняет курсор на указатель */
+    transition: background 0.3s, border-radius 0.3s; /* Плавный переход для фона и радиуса */
+    
+    /* Цвет фона при наведении */
+    &:hover rect {
+      transition: fill 0.3s;
+      fill: $Accenlor; /* Устанавливаем цвет для элемента SVG */
+    }
+  }
+
+  /* Увеличение SVG на 20% при ховере */
+  &:hover {
+    transform: scale(1.2); /* Увеличиваем SVG на 20% при ховере */
+  }
+
+  /* Убираем стандартную рамку фокуса и тень */
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.white  {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Плавный переход для фона */
+  transform-origin: center; /* Центрируем трансформацию */
+  border-radius: 50%; /* Скругляем фон контейнера, чтобы он совпадал с кругом */
+}
+
+.white:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+  background-color: orange; /* Заливка фона при ховере */
+}
+
+.white:hover .circle-bg {
+  stroke: transparent; /* Убираем обводку круга при ховере */
+}
+
+.white svg {
+  width: 100%;
 }
