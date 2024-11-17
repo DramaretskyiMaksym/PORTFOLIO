@@ -3925,4 +3925,7 @@ body.lock {
     width: 400px;
     height: 400px;
   }
+  .liker_tur {
+    max-width: 400px;
+  }
 }
